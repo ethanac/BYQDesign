@@ -6,8 +6,8 @@ package Scanner;
 public class Main {
     public static void main(String[] args){
         LexicalAnalyzer la = new LexicalAnalyzer();
-        la.importStateTransitionTable();
-        la.setColumnNumber();
+//        la.importStateTransitionTable();
+//        la.setColumnNumber();
 //        int j = 0;
 //        for(int[] ia : la.table) {
 //            for(int i : ia) {

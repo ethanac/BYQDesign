@@ -8,6 +8,7 @@ import java.util.HashMap;
  * Created by Ethan on 2017-01-19.
  */
 public class LexicalAnalyzer {
+
     private String newLine;
     private String fileName = "file.txt";
     String tableFileName = "STT_Alpha.csv";
@@ -31,11 +32,15 @@ public class LexicalAnalyzer {
             "rw_program"
     };
 
+    public LexicalAnalyzer(){
+        importStateTransitionTable();
+        setColumnNumber();
+    }
+
     public void extractTokens(){
         String line = "";
         try{
             br = new BufferedReader(new FileReader(fileName));
-            //StringBuilder sb = new StringBuilder();
             line = br.readLine();
         }
         catch(Exception e){
@@ -188,6 +193,30 @@ public class LexicalAnalyzer {
         }
         charMap.put('0', 3);
 
+    }
+
+    /*
+     * For testing
+     */
+    public String extractTokens(String line){
+        String result = "";
+        while (nextPosition < line.length()) {
+            String token = nextToken(line);
+            if (token == null && cmtCounter > 0) {
+                //System.out.println("------: " + line + "     at line " + numOfLine);
+                result = "------: " + line + ": " + numOfLine;
+            }
+            else if(!token.equals("sp")) {
+                //System.out.println(token + ": " + line.substring(currentPosition, nextPosition) + "     at line " + numOfLine);
+                result = token + ": " + line.substring(currentPosition, nextPosition) + ": " + numOfLine;
+                currentPosition = nextPosition;
+            }
+        }
+        currentPosition = 0;
+        nextPosition = 0;
+
+        numOfLine++;
+        return result;
     }
 
 }
