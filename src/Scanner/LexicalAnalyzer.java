@@ -1,11 +1,10 @@
 package Scanner;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.*;
 import java.util.HashMap;
 
 /**
- * Created by Ethan on 2017-01-19.
+ * Created by Hao on 2017-01-19.
  */
 public class LexicalAnalyzer {
 
@@ -16,18 +15,20 @@ public class LexicalAnalyzer {
     private int colNum = 40;
     HashMap<Character, Integer> charMap = null;
     int[][] table = new int[rowNum][colNum];
-    int cmtCounter = 0;
+    public int cmtCounter = 0;
     int nextPosition = 0;
     int currentPosition = 0;
     boolean inlineCmt = false;
-    int numOfLine = 1;
+    public int numOfLine = 1;
     BufferedReader br = null;
+    public boolean writeToFile = false;
+    PrintWriter out = null;
 
     String[] tokens = {
             "id", "num_integer", "num_float", "operator_equal", "operator_lessThan", "operator_greaterThan",
             "operator_greaterEqual", "operator_lessEqual", "angleBrackets", "semicolon", "comma", "dot", "plus",
             "minus", "underline", "star", "slash", "assign", "rw_and", "rw_not", "rw_or", "openPar", "closePar",
-            "openCurlyBracket", "closeCurlyBracket", "squareBracket", "squareBracket", "comment", "inlineComment",
+            "openCurlyBracket", "closeCurlyBracket", "openSquareBracket", "closeSquareBracket", "comment", "inlineComment",
             "rw_if", "rw_then", "rw_else", "rw_for", "rw_class", "rw_int", "rw_float", "rw_get", "rw_put", "rw_return",
             "rw_program"
     };
@@ -39,6 +40,14 @@ public class LexicalAnalyzer {
 
     public void extractTokens(){
         String line = "";
+
+        if(writeToFile){
+            try {
+                out = new PrintWriter(new BufferedWriter(new FileWriter("Output.txt", true)));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
         try{
             br = new BufferedReader(new FileReader(fileName));
             line = br.readLine();
@@ -49,13 +58,17 @@ public class LexicalAnalyzer {
         while(line != null){
             while (nextPosition < line.length()) {
                 String token = nextToken(line);
-                //System.out.println(cmtCounter);
                 if (token == null && cmtCounter > 0) {
-                    System.out.println("------: " + line + "     at line " + numOfLine);
+                    if(writeToFile)
+                        out.println("------: " + line + "     at line " + numOfLine);
+                    else
+                        System.out.println("------: " + line + "     at line " + numOfLine);
                 }
                 else if(!token.equals("sp")) {
-                    //System.out.println(numOfLine + ": " + token + currentPosition + ", " + nextPosition);
-                    System.out.println(token + ": " + line.substring(currentPosition, nextPosition) + "     at line " + numOfLine);
+                    if(writeToFile)
+                        out.println(token + ": " + line.substring(currentPosition, nextPosition) + "     at line " + numOfLine);
+                    else
+                        System.out.println(token + ": " + line.substring(currentPosition, nextPosition) + "     at line " + numOfLine);
                     currentPosition = nextPosition;
                 }
             }
@@ -72,6 +85,9 @@ public class LexicalAnalyzer {
         }
         try {
             br.close();
+            if(writeToFile) {
+                out.close();
+            }
         }
         catch(Exception e){
             e.printStackTrace();
@@ -99,6 +115,7 @@ public class LexicalAnalyzer {
     public String nextToken(String s){
         if(s.length() == 0 && cmtCounter > 0)
             return null;
+        s = s.replace("\t", " ");
         int state = 0;
         if(cmtCounter > 0)
             state = 37;
@@ -116,8 +133,12 @@ public class LexicalAnalyzer {
                 col = charMap.get(c);
             }
             else {
-                nextPosition++;
-                return "Unknown token";
+                if(cmtCounter > 0 || inlineCmt)
+                    col = charMap.get(';');
+                else {
+                    nextPosition++;
+                    return "Unknown token";
+                }
             }
             //System.out.println(col);
             state = table[state][col] - 1;
@@ -125,8 +146,7 @@ public class LexicalAnalyzer {
 
             if(state == 120) {
                 currentPosition++;
-//                System.out.println(currentPosition);
-//                System.out.println("line: " + s.length());
+
                 if(currentPosition == s.length()) {
                     nextPosition = s.length();
                     return "sp";
@@ -134,11 +154,11 @@ public class LexicalAnalyzer {
                 state = 0;
             }
             else {
-                if (state == 36)
+                if (state == 36)    // When got a '/*', counter increment.
                     cmtCounter++;
                 if (state == 41)
                     inlineCmt = true;
-                if (table[state][0] > -1) {
+                if (table[state][0] > -1) {     // Being greater than -1 means it is a final token.
                     token = tokens[table[state][0]];
                     if (table[state][1] == 1)
                         backupChar(state);
@@ -155,8 +175,12 @@ public class LexicalAnalyzer {
         }
         if(token.equals("comment") && cmtCounter > 0) {
             cmtCounter--;
-            if(cmtCounter > 0)
-                token = null;
+            if(cmtCounter > 0) {
+                if(nextPosition >= s.length())
+                    token = null;
+                else
+                    token = "sp";
+            }
         }
         //System.out.println(token);
         if(token == null)
@@ -200,15 +224,16 @@ public class LexicalAnalyzer {
      */
     public String extractTokens(String line){
         String result = "";
+
         while (nextPosition < line.length()) {
             String token = nextToken(line);
             if (token == null && cmtCounter > 0) {
                 //System.out.println("------: " + line + "     at line " + numOfLine);
-                result = "------: " + line + ": " + numOfLine;
+                result = "------: " + line + ": " + numOfLine + "\n";
             }
             else if(!token.equals("sp")) {
                 //System.out.println(token + ": " + line.substring(currentPosition, nextPosition) + "     at line " + numOfLine);
-                result = token + ": " + line.substring(currentPosition, nextPosition) + ": " + numOfLine;
+                result += token + ": " + line.substring(currentPosition, nextPosition) + ": " + numOfLine +"\n";
                 currentPosition = nextPosition;
             }
         }

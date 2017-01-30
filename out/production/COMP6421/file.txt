@@ -204,7 +204,7 @@ public class Artist_Swing extends Helper{
 			drawEmptyCircle(g, Color.white, tow.getPosX() + tileWidth/2, tow.getPosY() + tileHeight/2, tileWidth/4 + i*spaceBetweenCircles);
 		}
 	}
-	
+ 
 
     
 	
