@@ -12,10 +12,10 @@ import static org.junit.Assert.assertEquals;
 public class LexicalAnalyzerTest {
 
     LexicalAnalyzer la = new LexicalAnalyzer();
-    char[] chars = {'.','_','=','>','<',';',',','+','-','*','/','(',')','{','}','[',']','a','n','d',' ','t','h','e','n',
-            ' ','i','f',' ','e','l','s','e',' ','f','o','r',' ','c','l','a','s','s',' ','o','r',' ','n','o','t',' ',
-            'i','n','t',' ','i','n','t','e','g','e','r',' ','f','l','o','a','t',' ','g','e','t',' ','p','u','t',' ',
-            'p','r','o','g','r','a','m',' ', 'r','e','t','u','r','n', ' ','=','=',};
+//    char[] chars = {'.','_','=','>','<',';',',','+','-','*','/','(',')','{','}','[',']','a','n','d',' ','t','h','e','n',
+//            ' ','i','f',' ','e','l','s','e',' ','f','o','r',' ','c','l','a','s','s',' ','o','r',' ','n','o','t',' ',
+//            'i','n','t',' ','i','n','t','e','g','e','r',' ','f','l','o','a','t',' ','g','e','t',' ','p','u','t',' ',
+//            'p','r','o','g','r','a','m',' ', 'r','e','t','u','r','n', ' ','=','=',};
     String[] reservedWords = {".","_","=",">","<",";",",","+","-","*","/","(",")","{","}","[","]","and ","then ","if ",
             "else ","for ","class ","or ","not ","int ","float ","get ","put ","program ","return",">=","<=","==","<>",
             "/**/","//"};
@@ -32,15 +32,6 @@ public class LexicalAnalyzerTest {
     char[] undefinedLetters = {'~','`','!','@','#','$','%','^','&','?','|'};
     int length = reservedWords.length;
 
-//    @BeforeClass
-//    static void BeforeClass(){
-//        System.out.println("Scanner test is running.");
-//    }
-//
-//    @AfterClass
-//    static void AfterClass(){
-//        System.out.println("Scanner test is finished.");
-//    }
     @Before
     public void Before(){
         la.numOfLine = 1;

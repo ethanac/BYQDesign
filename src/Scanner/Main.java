@@ -24,6 +24,7 @@ public class Main {
         }
         la.extractTokens();
         sc.close();
+        System.out.println("Scanning is finished.");
     }
 
 }

@@ -83,6 +83,12 @@ public class LexicalAnalyzer {
             }
             numOfLine++;
         }
+        if(cmtCounter > 0){
+            if(writeToFile)
+                out.println("Error: " + cmtCounter + " \"*/\" is missing.");
+            else
+                System.out.println("Error: " + cmtCounter + " \"*/\" is missing.");
+        }
         try {
             br.close();
             if(writeToFile) {
