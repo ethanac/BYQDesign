@@ -1,0 +1,32 @@
+class A{
+    int id[1][2];
+    float B;
+    int C(int dd[3]){
+        int D;
+        int E;
+        D=E[4];
+        for(int i1=5;i1<>10;i1=i2){
+            if(D[id]<E)
+            then{
+                F=TT[T2];
+            }
+            else{};
+        };
+    };
+};
+program{
+    int G[5];
+    int max;
+    int min;
+    E find[11][12];
+    for(int i2=0;i2<=122;i2=i2+1){
+        get(F[min]);
+    };
+    Tr=find.F(C);
+    put(Q);
+};
+float w(){
+    float we;
+    we=1.5+((0.5*1.2)-3)+2.2;
+    return(H);
+};
