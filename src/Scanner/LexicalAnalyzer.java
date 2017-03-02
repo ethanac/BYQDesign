@@ -60,13 +60,22 @@ public class LexicalAnalyzer {
                 String token = nextToken(line);
                 if (token == null && cmtCounter > 0) {
                     if(writeToFile)
-                        out.println("------: " + line + "     at line " + numOfLine);
+                        out.println("comment," + numOfLine);
                     else
-                        System.out.println("------: " + line + "     at line " + numOfLine);
+                        System.out.println("comment," + numOfLine);
                 }
                 else if(!token.equals("sp")) {
-                    if(writeToFile)
-                        out.println(token + ": " + line.substring(currentPosition, nextPosition) + "     at line " + numOfLine);
+                    if(writeToFile) {
+                        if(token.toLowerCase().contains("comment"))
+                            token = "comment";
+                        else if(token.toLowerCase().contains("num_integer"))
+                            token = "integer";
+                        else if(token.toLowerCase().contains("num_float"))
+                            token = "nfloat";
+                        else if(!token.equals("id"))
+                            token = line.substring(currentPosition, nextPosition);
+                        out.println(token + ":" + line.substring(currentPosition, nextPosition));// + "     at line " + numOfLine);
+                    }
                     else
                         System.out.println(token + ": " + line.substring(currentPosition, nextPosition) + "     at line " + numOfLine);
                     currentPosition = nextPosition;
@@ -83,6 +92,7 @@ public class LexicalAnalyzer {
             }
             numOfLine++;
         }
+        out.println("$");
         if(cmtCounter > 0){
             if(writeToFile)
                 out.println("Error: " + cmtCounter + " \"*/\" is missing.");

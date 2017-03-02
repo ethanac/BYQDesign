@@ -2,8 +2,986 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e673e03-b941-4a31-8ac3-4a1e2f87f37f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scanner/LexicalAnalyzer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scanner/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.mylyn/.repositories.xml.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/net.genady.rmi/rmi-state73" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/80/80d17bc042d800161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8a/a0ae1f0ab9db001611a1f7bacaff5adb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/9d/209d3b53b8db001611a1f7bacaff5adb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a/50af8ddf40d800161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a0/00250e33bbd700161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a1/20384437bcd700161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a1/b053afbfb9db001611a1f7bacaff5adb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a1/d02bbb6cb8db001611a1f7bacaff5adb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a2/6095f66abbd700161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a9/10bd949439d800161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b0/50f00a64b9db001611a1f7bacaff5adb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d/a0e75e26bbdb001611a1f7bacaff5adb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e/501ffe1539d800161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/AuctionSystem/.markers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/AuctionSystem/1.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/AuctionSystem/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/COMP6231-A2/.markers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/COMP6231-A2/3.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/COMP6231-A2/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/COMP6231-A3-REST/.indexes/5b/a8/properties.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/COMP6231-A3-REST/.markers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/COMP6231-A3-REST/2.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/COMP6231-A3-REST/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/COMP6231-A3-REST/org.eclipse.wst.jsdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/COMP6231-A3/.markers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/COMP6231-A3/3.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/COMP6231-A3/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/COMP6521_Project/.indexes/properties.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/COMP6521_Project/.markers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/COMP6521_Project/2.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/COMP6521_Project/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/COMP6651-A1/.markers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/COMP6651-A1/1.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/COMP6651-A1/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/CORBA_Test/.markers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/CORBA_Test/2.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/CORBA_Test/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/Comp6231-A1/.markers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/Comp6231-A1/1.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/Comp6231-A1/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/DB_Index_Proj/.markers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/DB_Index_Proj/3.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/DB_Index_Proj/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/HelloSpring/.indexes/7/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/HelloSpring/.indexes/7/properties.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/HelloSpring/.indexes/e4/81/72/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/HelloSpring/.indexes/e4/81/81/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/HelloSpring/.indexes/e4/81/ef/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/HelloSpring/.indexes/e4/81/fb/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/HelloSpring/.indexes/e4/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/HelloSpring/.indexes/e4/properties.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/HelloSpring/.markers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/HelloSpring/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/Just4Test/.markers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/Just4Test/1.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/Just4Test/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/OA-PA3/.markers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/OA-PA3/2.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/OA-PA3/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/OS-PA2/.markers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/OS-PA2/1.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/OS-PA2/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/SOEN6441-Project/.indexes/7/a0/properties.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/SOEN6441-Project/.indexes/e4/a0/properties.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/SOEN6441-Project/.markers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/SOEN6441-Project/1.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/SOEN6441-Project/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/SOEN6441_TD/.location" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/SOEN6441_TD/.markers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/SOEN6441_TD/1.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/SOEN6441_TD/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/Servers/2.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/StoreClient/.markers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/StoreClient/2.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/StoreClient/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/StoreClientSample/.location" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/StoreClientSample/.markers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/StoreClientSample/1.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/StoreClientSample/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/StoreClientSample/org.eclipse.wst.jsdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/StoreServer/2.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/StoreServer/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/StoreServer/org.eclipse.wst.jsdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/UDPClient/1.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/UDPClient/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/bootstrap/.indexes/properties.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/bootstrap/.location" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/bootstrap/1.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/comp6231_tutorial2/.markers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/comp6231_tutorial2/1.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/comp6231_tutorial2/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/tmpTest/.markers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/tmpTest/2.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/tmpTest/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/200.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.dltk.core.index.sql.h2/model.h2.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.dltk.core/Containers.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_1.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_1.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_1.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_1.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_1.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_1.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_1.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_1.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_2.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_2.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_2.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_2.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_2.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_2.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_2.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_2.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_3.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_3.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_3.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_3.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_3.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_3.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_3.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_3.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_4.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_4.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_4.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_4.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_4.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_4.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_4.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_4.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_5.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_5.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_5.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_5.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_5.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_5.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_5.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_5.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_6.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_6.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_6.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_6.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_6.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_6.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_6.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_6.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_7.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_7.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_7.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_7.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_7.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_7.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_7.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_7.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_8.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_8.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_8.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_8.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_8.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_8.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_8.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/_8.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/segments_9" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_q.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_q.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_q.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_q.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_q.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_q.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_q.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_q.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/segments_r" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/1178852858.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/1743912323.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/1886152968.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/1954227090.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2261850983.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/236727541.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2492937131.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2558794754.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2592854591.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2612391957.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2626901656.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2636453734.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2661062821.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/270507401.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2751177306.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2824703013.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/282493841.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2825986342.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2852710572.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2921308726.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2963247386.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2967181074.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2972620676.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2979937895.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3028867968.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3033324936.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3045684477.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3052351035.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3089812766.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3158148996.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/321905023.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3228232187.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3271547795.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3279116513.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3296568161.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3337130249.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3420370073.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/348244235.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3616079564.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3780722840.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3847096834.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3862640570.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/389589989.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3936100836.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3958448138.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/42323611.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/442674067.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/487330024.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/511041801.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/562527785.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/598697269.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/625212785.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/630207667.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/661382713.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/666382255.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/690416376.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/726935137.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/758227042.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/792947963.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/844041711.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/911755125.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/925178134.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/931282100.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.j2ee.web/webLibrariesCache.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.j2ee/earLibrariesCache.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.jsf.apache.trinidad.tagsupport/dtRezProvCache/myfaces.apache.org_trinidad/skinning/images/close.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.jsf.apache.trinidad.tagsupport/dtRezProvCache/myfaces.apache.org_trinidad/skinning/images/list-bullet.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.jsf.apache.trinidad.tagsupport/dtRezProvCache/myfaces.apache.org_trinidad/skinning/images/logo-dark.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.jsf.apache.trinidad.tagsupport/dtRezProvCache/myfaces.apache.org_trinidad/skinning/images/tab3-bot-deselected.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.jsf.apache.trinidad.tagsupport/dtRezProvCache/myfaces.apache.org_trinidad/skinning/images/tab3-bot-end-selected.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.jsf.apache.trinidad.tagsupport/dtRezProvCache/myfaces.apache.org_trinidad/skinning/images/tab3-bot-mid-selected.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.jsf.apache.trinidad.tagsupport/dtRezProvCache/myfaces.apache.org_trinidad/skinning/images/tab3-bot-start-selected.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.jsf.apache.trinidad.tagsupport/dtRezProvCache/myfaces.apache.org_trinidad/skinning/images/tab3-end-deselected.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.jsf.apache.trinidad.tagsupport/dtRezProvCache/myfaces.apache.org_trinidad/skinning/images/tab3-end-join-deselected-to-deselected.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.jsf.apache.trinidad.tagsupport/dtRezProvCache/myfaces.apache.org_trinidad/skinning/images/tab3-end-join-selected-to-deselected.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.jsf.apache.trinidad.tagsupport/dtRezProvCache/myfaces.apache.org_trinidad/skinning/images/tab3-end-selected.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.jsf.apache.trinidad.tagsupport/dtRezProvCache/myfaces.apache.org_trinidad/skinning/images/tab3-mid-deselected.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.jsf.apache.trinidad.tagsupport/dtRezProvCache/myfaces.apache.org_trinidad/skinning/images/tab3-mid-selected.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.jsf.apache.trinidad.tagsupport/dtRezProvCache/myfaces.apache.org_trinidad/skinning/images/tab3-start-deselected.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.jsf.apache.trinidad.tagsupport/dtRezProvCache/myfaces.apache.org_trinidad/skinning/images/tab3-start-join-deselected-to-deselected.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.jsf.apache.trinidad.tagsupport/dtRezProvCache/myfaces.apache.org_trinidad/skinning/images/tab3-start-join-selected-to-deselected.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.jsf.apache.trinidad.tagsupport/dtRezProvCache/myfaces.apache.org_trinidad/skinning/images/tab3-start-join-selected.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.jsf.apache.trinidad.tagsupport/dtRezProvCache/myfaces.apache.org_trinidad/skinning/images/tab3-start-selected.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/AuctionSystem/_12.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/AuctionSystem/_12.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/AuctionSystem/_12.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/AuctionSystem/_12.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/AuctionSystem/_12.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/AuctionSystem/_12.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/AuctionSystem/_12.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/AuctionSystem/_12.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/AuctionSystem/_13.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/AuctionSystem/_14.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/AuctionSystem/_15.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/AuctionSystem/_16.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/AuctionSystem/_17.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/AuctionSystem/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/AuctionSystem/segments_16" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6231_A2/_k.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6231_A2/_k.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6231_A2/_k.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6231_A2/_k.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6231_A2/_k.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6231_A2/_k.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6231_A2/_k.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6231_A2/_k.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6231_A2/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6231_A2/segments_m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6231_A3/_k.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6231_A3/_k.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6231_A3/_k.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6231_A3/_k.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6231_A3/_k.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6231_A3/_k.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6231_A3/_k.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6231_A3/_k.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6231_A3/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6231_A3/segments_m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/_a.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/_a.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/_a.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/_a.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/_a.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/_a.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/_a.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/_a.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/_b.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/_c.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/_d.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/_e.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/_f.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/_g.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/_g.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/_g.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/_g.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/_g.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/_g.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/_g.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/_g.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/_h.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6521_Project/segments_i" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/_s.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/_s.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/_s.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/_s.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/_s.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/_s.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/_s.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/_s.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/_t.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/_u.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/_v.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/_w.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/_x.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/_y.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/_y.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/_y.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/_y.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/_y.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/_y.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/_y.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/_y.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/_z.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/COMP6651_A1/segments_z" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/_a.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/_a.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/_a.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/_a.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/_a.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/_a.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/_a.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/_a.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/_b.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/_c.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/_d.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/_e.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/_f.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/_g.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/_g.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/_g.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/_g.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/_g.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/_g.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/_g.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/_g.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/_h.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/CORBA_Test/segments_i" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Comp6231_A1/_12.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Comp6231_A1/_12.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Comp6231_A1/_12.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Comp6231_A1/_12.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Comp6231_A1/_12.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Comp6231_A1/_12.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Comp6231_A1/_12.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Comp6231_A1/_12.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Comp6231_A1/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Comp6231_A1/segments_13" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/_a.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/_a.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/_a.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/_a.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/_a.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/_a.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/_a.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/_a.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/_b.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/_c.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/_d.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/_e.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/_f.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/_g.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/_g.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/_g.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/_g.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/_g.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/_g.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/_g.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/_g.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/_h.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/DB_Index_Proj/segments_i" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/HelloSpring/_28.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/HelloSpring/_28.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/HelloSpring/_28.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/HelloSpring/_28.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/HelloSpring/_28.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/HelloSpring/_28.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/HelloSpring/_28.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/HelloSpring/_28.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/HelloSpring/_29.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/HelloSpring/_2a.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/HelloSpring/_2b.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/HelloSpring/_2c.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/HelloSpring/_2d.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/HelloSpring/_2e.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/HelloSpring/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/HelloSpring/segments_28" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/_a.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/_a.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/_a.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/_a.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/_a.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/_a.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/_a.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/_a.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/_b.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/_c.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/_d.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/_e.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/_f.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/_g.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/_g.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/_g.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/_g.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/_g.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/_g.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/_g.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/_g.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/_h.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/Just4Test/segments_i" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/_a.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/_a.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/_a.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/_a.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/_a.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/_a.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/_a.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/_a.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/_b.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/_c.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/_d.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/_e.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/_f.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/_g.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/_g.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/_g.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/_g.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/_g.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/_g.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/_g.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/_g.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/_h.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OA_PA3/segments_i" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/_a.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/_a.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/_a.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/_a.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/_a.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/_a.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/_a.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/_a.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/_b.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/_c.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/_d.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/_e.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/_f.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/_g.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/_g.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/_g.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/_g.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/_g.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/_g.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/_g.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/_g.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/_h.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/OS_PA2/segments_i" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/SOEN6441_Project/_k.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/SOEN6441_Project/_k.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/SOEN6441_Project/_k.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/SOEN6441_Project/_k.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/SOEN6441_Project/_k.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/SOEN6441_Project/_k.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/SOEN6441_Project/_k.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/SOEN6441_Project/_k.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/SOEN6441_Project/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/SOEN6441_Project/segments_m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/StoreServer/_14.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/StoreServer/_14.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/StoreServer/_14.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/StoreServer/_14.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/StoreServer/_14.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/StoreServer/_14.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/StoreServer/_14.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/StoreServer/_14.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/StoreServer/_15.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/StoreServer/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/StoreServer/segments_14" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/_a.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/_a.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/_a.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/_a.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/_a.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/_a.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/_a.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/_a.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/_b.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/_c.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/_d.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/_e.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/_f.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/_g.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/_g.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/_g.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/_g.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/_g.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/_g.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/_g.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/_g.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/_h.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/UDPClient/segments_i" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/_a.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/_a.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/_a.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/_a.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/_a.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/_a.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/_a.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/_a.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/_b.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/_c.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/_d.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/_e.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/_f.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/_g.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/_g.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/_g.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/_g.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/_g.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/_g.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/_g.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/_g.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/_h.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/comp6231_tutorial2/segments_i" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/_a.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/_a.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/_a.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/_a.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/_a.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/_a.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/_a.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/_a.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/_b.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/_c.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/_d.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/_e.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/_f.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/_g.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/_g.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/_g.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/_g.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/_g.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/_g.prx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/_g.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/_g.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/_h.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.recommenders.types.rcp/indexes/tmpTest/segments_i" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.jsdt.core/externalLibsTimeStamps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.jsdt.core/variablesAndContainers.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/publish/publish0.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/publish/publish1.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/AuctionSys_Web/WEB-INF/classes/AuctionServer$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/AuctionSys_Web/WEB-INF/classes/AuctionServer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/AuctionSys_Web/WEB-INF/classes/ClientInfo.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/AuctionSys_Web/WEB-INF/classes/ItemForSale.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/AuctionSys_Web/WEB-INF/classes/MultiServerThread.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/AuctionSys_Web/WEB-INF/lib/axis.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/AuctionSys_Web/WEB-INF/lib/commons-discovery-0.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/AuctionSys_Web/WEB-INF/lib/commons-logging.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/AuctionSys_Web/WEB-INF/lib/jaxrpc.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/AuctionSys_Web/WEB-INF/lib/saaj.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/AuctionSys_Web/WEB-INF/lib/tmpTest.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/AuctionSys_Web/WEB-INF/lib/wsdl4j.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/StoreServer/WEB-INF/classes/MyStoreServer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/StoreServer/WEB-INF/lib/axis.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/StoreServer/WEB-INF/lib/commons-discovery-0.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/StoreServer/WEB-INF/lib/commons-logging.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/StoreServer/WEB-INF/lib/jaxrpc.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/StoreServer/WEB-INF/lib/saaj.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/StoreServer/WEB-INF/lib/wsdl4j.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/classes/ClinicServers/AnsCounts.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/classes/ClinicServers/ClinicDatabase.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/classes/ClinicServers/ClinicServer$docFields.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/classes/ClinicServers/ClinicServer$nurseFields.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/classes/ClinicServers/ClinicServer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/classes/ClinicServers/ClinicServerInterface.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/classes/ClinicServers/DDOServer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/classes/ClinicServers/LavalServer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/classes/ClinicServers/Location.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/classes/ClinicServers/MTLServer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/classes/ClinicServers/Publish.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/classes/ClinicServers/ReqCounts.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/classes/ClinicServers/Semaphore.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/classes/ClinicServers/ServerLog.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/lib/aopalliance-repackaged-2.4.0-b34.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/lib/asm-debug-all-5.0.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/lib/hk2-api-2.4.0-b34.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/lib/hk2-locator-2.4.0-b34.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/lib/hk2-utils-2.4.0-b34.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/lib/javassist-3.18.1-GA.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/lib/javax.annotation-api-1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/lib/javax.inject-2.4.0-b34.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/lib/javax.servlet-api-3.0.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/lib/javax.ws.rs-api-2.0.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/lib/jaxb-api-2.2.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/lib/jersey-client.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/lib/jersey-common.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/lib/jersey-container-servlet-core.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/lib/jersey-container-servlet.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/lib/jersey-guava-2.23.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/lib/jersey-media-jaxb.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/lib/jersey-server.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/lib/org.osgi.core-4.2.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/lib/osgi-resource-locator-1.0.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/lib/persistence-api-1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/lib/validation-api-1.1.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.validation/dep.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments_2w" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CourseaSwift.playground/Resources/owl.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.bak_0.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.bak_1.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.bak_2.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.bak_3.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.bak_4.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/net.genady.rmi/dialog_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/0/00f4067443d800161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1/70d2e15fbbd700161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1/80f9a2193bd800161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/13/2062b0d61aef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/16/60f5302fbcd700161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/18/00646eed13ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1b/201f5020ae2d00161270f600460807cf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1c/003636d147ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1c/60bc0529ae2d00161270f600460807cf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1c/80bc6721bcdb001611a1f7bacaff5adb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1d/b061e2e60cef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1d/f0f559e447ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/27/d06ccb6911ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/2c/80da0b2e55ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/2c/900a9864b8db001611a1f7bacaff5adb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/33/b00aae1a48ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/39/708abd5b3ad800161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/3b/10c7fc0919ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/3d/10857d8f51ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/3d/80532a00bbdb001611a1f7bacaff5adb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/3f/405b6d20bcd700161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/3f/a01f0a08badb001611a1f7bacaff5adb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/40/600a095204ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/41/d05ff88cbcd700161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/44/00d5d9df08ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/47/103a81ac15ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4a/10c5da19bcd700161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4e/303b9054b9db001611a1f7bacaff5adb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4f/109964f2ad2d00161270f600460807cf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4f/10dfec5657ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4f/604a089815ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/5/a0a9e3e247ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/52/f0f674db39d800161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/5a/000d7dc7eddc00161ca3f6a32c694a37" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/5b/30dcc1e61eef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/5e/90efcdee48ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/5f/5007bd31ae2d00161270f600460807cf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/60/30f030724eed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/61/c06aaf960def00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/61/e06086ec06ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/62/40aee9a0ad2d00161270f600460807cf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/64/60d3061dbcdb001611a1f7bacaff5adb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/67/c0d34102b9db001611a1f7bacaff5adb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/6a/2030feb0b9db001611a1f7bacaff5adb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/6b/4089677a39d800161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/6d/80cc236409ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/6e/707bd90e0fef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/6f/7014dbd7ad2d00161270f600460807cf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7/c09f07163ad800161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/72/10eab6c115ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/72/e0363af104ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/75/101041dc56ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/76/407eb71c14ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/77/901c871d0fef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/79/d09714b006ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/79/f04f62b951ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7b/003bf0ed0fef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7b/e0a81b8d15ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/81/a0e9abe753ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/82/802a35150cef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/82/e010a8e8b9db001611a1f7bacaff5adb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/82/e0282de947ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/83/c0b9d82b48ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/86/a0bd2c900eef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/87/e0813ed3ad2d00161270f600460807cf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/89/00e598a906ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/95/60258652bed700161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/98/c04cf90504ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/9a/60bb112eeedc00161ca3f6a32c694a37" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/9c/608b8176eddc00161ca3f6a32c694a37" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/9e/404539c3bdd700161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a0/d0f5676e05ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a4/404c028b48ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a4/609cb9db1eef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a4/e0c9085c4eed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a5/700a9ad153ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a5/e0a44eab51ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a9/808b1facb9db001611a1f7bacaff5adb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b/b01a7ea508ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b/b045c0a70cef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b4/b0664b5055ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b6/3018ab5d0fef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b8/40efe14948ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b8/f0454048ae2d00161270f600460807cf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ba/90644b6704ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ba/90f6cb43bdd700161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c4/70d3125c79dc00161ca3f6a32c694a37" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c7/20ef3f9706ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/cb/8040a0f740d800161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/cc/3064a8c442d800161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ce/708221a60fef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d/a04336afad2d00161270f600460807cf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d0/d0a37e0f09ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d1/70836c4b43d800161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d2/50bd0ceb52ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d4/c0410a2748ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d4/e065c7f30eef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/d7/8023fdfb47ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/da/b072a87c04ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/da/d01408f613ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/db/409f1ed1bbd700161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/de/90a886e81cef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/de/b0dbfaae0cef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/df/9051302b05ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e0/00a0bee248ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ea/108cf16909ef00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ec/20ac2e9f54ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ed/5031176555ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/f1/b008b136ae2d00161270f600460807cf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/f5/c0102fb453ed00151211e1d62d2c4d38" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/f6/9016902443d800161f49fce9091ff221" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/StoreClient/org.eclipse.jst.common.frameworks/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/bootstrap/org.eclipse.egit.core/GitProjectData.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/net.genady.rmi.73" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.dltk.core.index.sql.h2.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.ui.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.epp.mpc.ui.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jst.j2ee.webservice.ui.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jst.server.tomcat.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.pde.api.tools.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.php.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.php.debug.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.php.server.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.search.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.team.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.views.log.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.command.env.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.jsdt.ui.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.server.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.server.discovery.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.validation.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.ws.service.policy.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/AttendeeManagement.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/AuctionClient.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/BehaviorClient.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/BehaviorServer.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/BlockManager.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/ComputeTimesOfPainting.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/DDOServer (1).launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/DDOServer (2).launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/DDOServer.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/Demo (1).launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/Demo.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/Demo1.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/DiningPhilosophers.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/Game (1).launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/Game (2).launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/IDL Compiler.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/LavalServer (1).launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/LavalServer.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/MTLServer (1).launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/MTLServer (2).launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/MTLServer (3).launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/MTLServer.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/MainApp (1).launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/MainApp (2).launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/MainApp (3).launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/MainApp (4).launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/MainApp (5).launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/MainApp (6).launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/MainApp.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/MainTest.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/ManagerClient (1).launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/ManagerClient (2).launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/ManagerClient (3).launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/ManagerClient.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/ModelTestTDMap.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/New_configuration.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/Publish (1).launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/Publish.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/RunClient.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/RunServer.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/ServerImpl.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/Start ORBD.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/TestCycle.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/TestSum.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/Test_BufferedRead.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/TextScramblerClient.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/TextScramblerServer.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/Tomcat v7.0 Server at localhost (2).launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/Tomcat v7.0 Server at localhost.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/UDPClient.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/UnitTest (1).launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/UnitTest.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/Unscrambler.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/ViewSuite.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/ViewTestGameControlPanel.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/ViewTestMapControlPanel.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/_WEB-INF_classes_ClinicServers_MTLServer.java (1).launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/_WEB-INF_classes_ClinicServers_MTLServer.java.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/concurrencyTest (1).launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/concurrencyTest.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/mailTest.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.core/.launches/test_new.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.dltk.ui/OpenTypeHistoryorg_eclipse_php_core_PHPNature.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.ui.workbench.swt/dialog_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.egit.ui/dialog_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.j2ee.ui/dialog_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.jsf.apache.trinidad.tagsupport/dtRezProvCache/myfaces.apache.org_trinidad/skinning/minimal.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.jsf.apache.trinidad.tagsupport/dtRezProvCache/myfaces.apache.org_trinidad/skinning/simple.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.ws.axis.creation.ui/dialog_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jst.ws.consumption.ui/dialog_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/.workspace/2016/12/50/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/.workspace/2016/12/50/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/.workspace/2016/2/9/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/.workspace/2016/2/9/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/.workspace/2016/7/30/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/.workspace/2016/7/30/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/AuctionSys_Web/2016/12/50/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/AuctionSys_Web/2016/12/50/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/AuctionSystem/2016/10/44/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/AuctionSystem/2016/10/44/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/AuctionSystem/2016/11/45/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/AuctionSystem/2016/11/45/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/AuctionSystem/2016/12/50/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/AuctionSystem/2016/12/50/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6231-A2/2016/7/27/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6231-A2/2016/7/27/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6231-A2/2016/7/28/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6231-A2/2016/7/28/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6231-A2/2016/7/29/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6231-A2/2016/7/29/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6231-A3/2016/7/29/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6231-A3/2016/7/29/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6231-A3/2016/7/30/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6231-A3/2016/7/30/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6521-PROJ/2016/2/9/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6521-PROJ/2016/2/9/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6521_Project/2016/2/10/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6521_Project/2016/2/10/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6521_Project/2016/2/9/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6521_Project/2016/2/9/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6521_Project/2016/3/10/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6521_Project/2016/3/10/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6521_Project/2016/3/11/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6521_Project/2016/3/11/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6651-A1/2016/11/45/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6651-A1/2016/11/45/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6651-A1/2016/9/40/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/COMP6651-A1/2016/9/40/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/CORBA_Test/2016/7/27/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/CORBA_Test/2016/7/27/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/Comp6231-A1/2016/5/22/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/Comp6231-A1/2016/5/22/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/Comp6231-A1/2016/5/23/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/Comp6231-A1/2016/5/23/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/Comp6231-A1/2016/7/27/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/Comp6231-A1/2016/7/27/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/DB_Index_Proj/2016/3/10/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/DB_Index_Proj/2016/3/10/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/DB_Index_Proj/2016/3/11/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/DB_Index_Proj/2016/3/11/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/HelloSpring/2017/1/1/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/HelloSpring/2017/1/1/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/HelloSpring/2017/1/2/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/HelloSpring/2017/1/2/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/HelloSpring/2017/1/3/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/HelloSpring/2017/1/3/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/OA-PA3/2016/3/12/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/OA-PA3/2016/3/12/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/OA-PA3/2016/3/13/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/OA-PA3/2016/3/13/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/OS-PA2/2016/2/8/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/OS-PA2/2016/2/8/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/SOEN6441-Project/2016/3/12/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/SOEN6441-Project/2016/3/12/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/SOEN6441-Project/2016/4/14/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/SOEN6441-Project/2016/4/14/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/SOEN6441-Project/2016/4/15/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/SOEN6441-Project/2016/4/15/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/StoreServer/2016/7/30/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/StoreServer/2016/7/30/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.views.log/dialog_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.internet.cache/-1540910950.cache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.internet.cache/-2133082468.cache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.internet.cache/1521828677.cache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes/savedIndexNames.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.jsdt.core/libraries/baseBrowserLibrary.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.jsdt.core/libraries/browserWindow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.jsdt.core/libraries/dom5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.jsdt.core/libraries/system.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.jsdt.core/libraries/xhr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.jsdt.ui/OpenTypeHistory.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.jsdt.ui/QualifiedTypeNameHistory.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/monitors.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/publish.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/servers.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp-data.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/conf/catalina.policy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/conf/catalina.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/conf/context.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/conf/server.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/conf/tomcat-users.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/conf/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/logs/localhost_access_log.2016-07-18.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/logs/localhost_access_log.2016-12-06.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/publish.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/AuctionSys_Web/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/AuctionSys_Web/WEB-INF/HelloService/jax_test/deploy.wsdd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/AuctionSys_Web/WEB-INF/HelloService/jax_test/deploy.wsdd.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/AuctionSys_Web/WEB-INF/HelloService/jax_test/undeploy.wsdd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/AuctionSys_Web/WEB-INF/MultiServerThreadService/DefaultNamespace/deploy.wsdd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/AuctionSys_Web/WEB-INF/MultiServerThreadService/DefaultNamespace/deploy.wsdd.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/AuctionSys_Web/WEB-INF/MultiServerThreadService/DefaultNamespace/undeploy.wsdd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/AuctionSys_Web/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/AuctionSys_Web/wsdl/Hello.wsdl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/AuctionSys_Web/wsdl/MultiServerThread.wsdl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/ROOT/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/StoreServer/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/StoreServer/WEB-INF/MyStoreServerService/DefaultNamespace/deploy.wsdd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/StoreServer/WEB-INF/MyStoreServerService/DefaultNamespace/deploy.wsdd.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/StoreServer/WEB-INF/MyStoreServerService/DefaultNamespace/undeploy.wsdd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/StoreServer/WEB-INF/server-config.wsdd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/StoreServer/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/StoreServer/wsdl/MyStoreServer.wsdl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/conf/catalina.policy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/conf/catalina.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/conf/context.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/conf/server.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/conf/tomcat-users.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/conf/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/logs/localhost_access_log.2016-07-18.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/COMP6231-A3-REST/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/ROOT/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.ws.ui/dialog_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Artist_Swing_backup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scanner/FirstNFollow.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scanner/Parser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test/ParserTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CourseaSwift.playground/Sources/RGBAImage.swift" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SOEN6441-Project/_classpath" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1b/6046767e90d300151d52e6b8bc944784" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/1f/c0fbc41c89d300151d52e6b8bc944784" afterPath="" />
@@ -30,7 +1008,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/6d/500aa65797d300151d52e6b8bc944784" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/70/4090216395d300151d52e6b8bc944784" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/72/60d45ba181d300151d52e6b8bc944784" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7c/506ad73889d300151d52e6b8bc944784" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7e/e09fa19cfed300151c18d6b24e2b5d0e" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7e/f0479e7094d300151d52e6b8bc944784" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/8c/f0f7f479d8d40015130fede8ab38b54f" afterPath="" />
@@ -38,7 +1015,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/92/506ff84498d300151d52e6b8bc944784" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/96/c0f8846998d300151d52e6b8bc944784" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/9d/50eac31c89d300151d52e6b8bc944784" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a7/c053f9b081d300151d52e6b8bc944784" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a9/a0d59b9cd1d400151d34f5d15bc6b9c9" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/ac/802d6664fed300151c18d6b24e2b5d0e" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b2/f0c9d54489d300151d52e6b8bc944784" afterPath="" />
@@ -67,7 +1043,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/22.tree" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/22.snap" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/segments_1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/write.lock" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_5.fdt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_5.fdx" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_5.fnm" afterPath="" />
@@ -77,18 +1052,24 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_5.tii" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/_5.tis" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/remote-index/segments_6" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/4172885057.index" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.tis" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments_8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/STT_Alpha.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/COMP6421/Output.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/COMP6421/file.txt" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7c/506ad73889d300151d52e6b8bc944784" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/26/e04694dcbbd700161f49fce9091ff221" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a7/c053f9b081d300151d52e6b8bc944784" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/2d/d0923f1c3ad800161f49fce9091ff221" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/write.lock" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7a/d0ab22f339d800161f49fce9091ff221" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/4172885057.index" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/110265345.index" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.fdt" afterPath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_2v.fdt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.fdx" afterPath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_2v.fdx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.fnm" afterPath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_2v.fnm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.frq" afterPath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_2v.frq" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.nrm" afterPath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_2v.nrm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.prx" afterPath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_2v.prx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.tii" afterPath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_2v.tii" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.tis" afterPath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_2v.tis" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.mylyn/repositories.xml.zip" afterPath="$PROJECT_DIR$/../.metadata/.mylyn/repositories.xml.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/SOEN6441-Project/.indexes/properties.index" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/SOEN6441-Project/.indexes/properties.index" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" />
@@ -101,6 +1082,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments.gen" afterPath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments.gen" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/COMP6421/Scanner/Main.class" afterPath="$PROJECT_DIR$/out/production/COMP6421/Scanner/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.log" afterPath="$PROJECT_DIR$/../.metadata/.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.core.prefs" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.core.prefs" />
@@ -137,6 +1119,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.xml.core/system_catalog.xml" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.xml.core/system_catalog.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/version.ini" afterPath="$PROJECT_DIR$/../.metadata/version.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/COMP6421/.idea/vcs.xml" afterPath="$PROJECT_DIR$/out/production/COMP6421/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/COMP6421/.idea/workspace.xml" afterPath="$PROJECT_DIR$/out/production/COMP6421/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Scanner/LexicalAnalyzer.java" afterPath="$PROJECT_DIR$/src/Scanner/LexicalAnalyzer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Scanner/Main.java" afterPath="$PROJECT_DIR$/src/Scanner/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -160,20 +1148,8 @@
       <file leaf-file-name="LexicalAnalyzer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Scanner/LexicalAnalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="89" column="68" lean-forward="false" selection-start-line="89" selection-start-column="68" selection-end-line="89" selection-end-column="68" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LexicalAnalyzerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test/LexicalAnalyzerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="351">
+              <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -182,9 +1158,21 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Scanner/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="540">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Scanner/Parser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="53" column="9" lean-forward="false" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -194,25 +1182,47 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>comm</find>
-      <find>inlinecomment</find>
-      <find>' '</find>
-      <find>comment</find>
-      <find>inline</find>
-      <find>@</find>
-      <find>//</find>
-      <find>unk</find>
+      <find>T16-</find>
+      <find>T3-</find>
+      <find>T17-</find>
+      <find>T14-</find>
+      <find>T2-</find>
+      <find>System.out.println</find>
+      <find>T8</find>
+      <find>T9</find>
+      <find>T10</find>
+      <find>T11</find>
+      <find>T12</find>
+      <find>T13</find>
+      <find>T14</find>
+      <find>T15</find>
+      <find>T16</find>
+      <find>T17</find>
+      <find>T18</find>
+      <find>T19</find>
+      <find>T20</find>
+      <find>T21</find>
+      <find>F2</find>
+      <find>F3</find>
+      <find>F1</find>
+      <find>T1</find>
+      <find>T2</find>
+      <find>T3</find>
+      <find>T4</find>
+      <find>T5</find>
+      <find>T6</find>
+      <find>T7</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -231,7 +1241,12 @@
         <option value="$PROJECT_DIR$/src/Scanner/LexicalAnalyzerTest.java" />
         <option value="$PROJECT_DIR$/src/Test/Scanner/LexicalAnalyzerTest.java" />
         <option value="$PROJECT_DIR$/src/Test/LexicalAnalyzerTest.java" />
+        <option value="$PROJECT_DIR$/src/Scanner/FollowSets.java" />
+        <option value="$PROJECT_DIR$/src/Scanner/FirstSets.java" />
+        <option value="$PROJECT_DIR$/src/Scanner/FirstNFollow.java" />
+        <option value="$PROJECT_DIR$/src/Test/ParserTest.java" />
         <option value="$PROJECT_DIR$/src/Scanner/LexicalAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/Scanner/Parser.java" />
         <option value="$PROJECT_DIR$/src/Scanner/Main.java" />
       </list>
     </option>
@@ -243,8 +1258,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="width" value="2560" />
+    <option name="height" value="1440" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -262,9 +1277,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -866,6 +1881,11 @@
       <workItem from="1485718654876" duration="25660000" />
       <workItem from="1485812768285" duration="5123000" />
       <workItem from="1485822385902" duration="684000" />
+      <workItem from="1487720570741" duration="12000" />
+      <workItem from="1487720638000" duration="644000" />
+      <workItem from="1487993602096" duration="56516000" />
+      <workItem from="1488216397490" duration="18129000" />
+      <workItem from="1488246337441" duration="8118000" />
     </task>
     <servers />
   </component>
@@ -902,10 +1922,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51927000" />
+    <option name="totallyTimeSpent" value="135346000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -917,27 +1937,27 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21912351" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4113424" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.225" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1953125" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950467" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39985642" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4608234" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -947,7 +1967,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="690" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -957,11 +1982,175 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Scanner/LexicalAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="89" column="68" lean-forward="false" selection-start-line="89" selection-start-column="68" selection-end-line="89" selection-end-column="68" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15495">
+          <caret line="1033" column="22" lean-forward="false" selection-start-line="1033" selection-start-column="22" selection-end-line="1033" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/ParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/LexicalAnalyzerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="43" column="35" lean-forward="false" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner/FirstNFollow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner/LexicalAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="51" column="13" lean-forward="false" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner/FirstNFollow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="79" column="20" lean-forward="false" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner/LexicalAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="89" column="68" lean-forward="false" selection-start-line="89" selection-start-column="68" selection-end-line="89" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/LexicalAnalyzerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner/LexicalAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="89" column="68" lean-forward="false" selection-start-line="89" selection-start-column="68" selection-end-line="89" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/LexicalAnalyzerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner/LexicalAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="89" column="68" lean-forward="false" selection-start-line="89" selection-start-column="68" selection-end-line="89" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/LexicalAnalyzerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner/LexicalAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="89" column="68" lean-forward="false" selection-start-line="89" selection-start-column="68" selection-end-line="89" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -985,9 +2174,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1011,9 +2198,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
           <caret line="50" column="107" lean-forward="false" selection-start-line="50" selection-start-column="107" selection-end-line="50" selection-end-column="107" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1030,18 +2215,51 @@
     <entry file="file://$PROJECT_DIR$/src/Scanner/LexicalAnalyzerTest.java" />
     <entry file="file://$PROJECT_DIR$/src/Test/ScannerTest.java" />
     <entry file="file://$PROJECT_DIR$/src/Test/Scanner/LexicalAnalyzerTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/Scanner/FollowSets.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="58" column="19" lean-forward="false" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner/FirstNFollow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Test/LexicalAnalyzerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="525">
+          <caret line="43" column="35" lean-forward="false" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/ParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scanner/LexicalAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="89" column="68" lean-forward="false" selection-start-line="89" selection-start-column="68" selection-end-line="89" selection-end-column="68" />
+        <state relative-caret-position="351">
+          <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="53" column="9" lean-forward="false" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1050,8 +2268,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scanner/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="540">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>

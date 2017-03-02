@@ -1,0 +1,493 @@
+class:class
+id:A
+{:{
+int:int
+id:id
+type-> int | float | id
+[:[
+integer:1
+]:]
+[:[
+arraySize-> [ integer ]
+integer:2
+]:]
+;:;
+arraySize-> [ integer ]
+arraySize*-> #
+arraySize*-> arraySize arraySize*
+arraySize*-> arraySize arraySize*
+float:float
+varDecl-> type id arraySize*;
+id:B
+type-> int | float | id
+;:;
+arraySize*-> #
+int:int
+varDecl-> type id arraySize*;
+id:C
+type-> int | float | id
+(:(
+varDecl*-> varDecl varDecl*
+varDecl*-> varDecl varDecl*
+varDecl*-> varDecl varDecl*
+int:int
+id:dd
+type-> int | float | id
+[:[
+integer:3
+]:]
+):)
+arraySize-> [ integer ]
+arraySize*-> #
+arraySize*-> arraySize arraySize*
+fParamsTail*-> #
+fParams-> type id arraySize* fParamsTail
+{:{
+funcHead-> type id(fParams)
+int:int
+id:D
+type-> int | float | id
+;:;
+arraySize*-> #
+int:int
+varDecl-> type id arraySize*;
+id:E
+type-> int | float | id
+;:;
+arraySize*-> #
+id:D
+varDecl-> type id arraySize*;
+=:=
+id:E
+varDecl*-> varDecl varDecl*
+varDecl*-> varDecl varDecl*
+varDecl*-> varDecl varDecl*
+[:[
+integer:4
+]:]
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+;:;
+indice-> [arithExpr]
+indice*-> #
+indice*-> indice indice*
+factor-> id indice*
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+expr-> arithExpr | relExpr
+assignStat-> variable=expr
+for:for
+statement-> assignStat;
+(:(
+int:int
+id:i1
+type-> int | float | id
+=:=
+integer:5
+;:;
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+expr-> arithExpr | relExpr
+id:i1
+<>:<>
+indice*-> #
+factor-> id indice*
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+integer:10
+relOp-> == | <= | >= | < | > | <>
+;:;
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+relExpr-> arithExpr relOp arithExpr
+id:i1
+=:=
+indice*-> #
+factor-> id indice*
+id:i2
+):)
+indice*-> #
+factor-> id indice*
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+expr-> arithExpr | relExpr
+assignStat-> variable=expr
+{:{
+if:if
+(:(
+id:D
+[:[
+id:id
+]:]
+indice*-> #
+factor-> id indice*
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+<:<
+indice-> [arithExpr]
+indice*-> #
+indice*-> indice indice*
+factor-> id indice*
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+id:E
+relOp-> == | <= | >= | < | > | <>
+):)
+indice*-> #
+factor-> id indice*
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+then:then
+{:{
+id:F
+=:=
+indice*-> #
+factor-> id indice*
+id:TT
+[:[
+id:T2
+]:]
+indice*-> #
+factor-> id indice*
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+;:;
+indice-> [arithExpr]
+indice*-> #
+indice*-> indice indice*
+factor-> id indice*
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+expr-> arithExpr | relExpr
+assignStat-> variable=expr
+}:}
+statement-> assignStat;
+statement*-> #
+statement*-> statement statement*
+else:else
+statBlock-> {statement*} | statement 
+{:{
+}:}
+statement*-> #
+;:;
+statBlock-> {statement*} | statement 
+}:}
+statement-> if(expr)then statBlock else statBlock; | for(type id=expr;relExpr;assignStat)statBlock;
+statement*-> #
+statement*-> statement statement*
+;:;
+statBlock-> {statement*} | statement 
+}:}
+statement-> if(expr)then statBlock else statBlock; | for(type id=expr;relExpr;assignStat)statBlock;
+statement*-> #
+statement*-> statement statement*
+statement*-> statement statement*
+;:;
+funcBody-> {varDecl*statement*}
+}:}
+funcDef-> funcHead funcBody
+funcDef*-> #
+funcDef*-> funcDef funcDef*
+;:;
+program:program
+classDecl-> class id {varDecl*funcDef*};
+classDecl-> #
+classDecl*-> classDecl classDecl*
+{:{
+int:int
+id:G
+type-> int | float | id
+[:[
+integer:5
+]:]
+;:;
+arraySize-> [ integer ]
+arraySize*-> #
+arraySize*-> arraySize arraySize*
+int:int
+varDecl-> type id arraySize*;
+id:max
+type-> int | float | id
+;:;
+arraySize*-> #
+int:int
+varDecl-> type id arraySize*;
+id:min
+type-> int | float | id
+;:;
+arraySize*-> #
+id:E
+varDecl-> type id arraySize*;
+id:find
+[:[
+integer:11
+]:]
+[:[
+arraySize-> [ integer ]
+integer:12
+]:]
+;:;
+arraySize-> [ integer ]
+arraySize*-> #
+arraySize*-> arraySize arraySize*
+arraySize*-> arraySize arraySize*
+for:for
+varDecl-> type id arraySize*;
+varDecl*-> #
+varDecl*-> varDecl varDecl*
+varDecl*-> varDecl varDecl*
+varDecl*-> varDecl varDecl*
+varDecl*-> varDecl varDecl*
+(:(
+int:int
+id:i2
+type-> int | float | id
+=:=
+integer:0
+;:;
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+expr-> arithExpr | relExpr
+id:i2
+<=:<=
+indice*-> #
+factor-> id indice*
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+integer:122
+relOp-> == | <= | >= | < | > | <>
+;:;
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+relExpr-> arithExpr relOp arithExpr
+id:i2
+=:=
+indice*-> #
+factor-> id indice*
+id:i2
++:+
+indice*-> #
+factor-> id indice*
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+integer:1
+):)
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr*-> +term arithExpr* | -term arithExpr* | or term arithExpr*
+arithExpr-> term arithExpr*
+expr-> arithExpr | relExpr
+assignStat-> variable=expr
+{:{
+get:get
+(:(
+id:F
+[:[
+id:min
+]:]
+indice*-> #
+factor-> id indice*
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+):)
+indice-> [arithExpr]
+indice*-> #
+indice*-> indice indice*
+factor-> id indice*
+;:;
+}:}
+statement-> if(expr)then statBlock else statBlock; | for(type id=expr;relExpr;assignStat)statBlock;
+statement*-> #
+statement*-> statement statement*
+;:;
+statBlock-> {statement*} | statement 
+id:Tr
+statement-> if(expr)then statBlock else statBlock; | for(type id=expr;relExpr;assignStat)statBlock;
+=:=
+indice*-> #
+factor-> id indice*
+id:find
+.:.
+indice*-> #
+id:F
+(:(
+id:C
+):)
+indice*-> #
+factor-> id indice*
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+expr-> arithExpr | relExpr
+aParamsTail*-> #
+aParams-> expr aParamsTail*
+;:;
+factor-> idnest*id(aParams)
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+expr-> arithExpr | relExpr
+assignStat-> variable=expr
+put:put
+statement-> assignStat;
+(:(
+id:Q
+):)
+indice*-> #
+factor-> id indice*
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+expr-> arithExpr | relExpr
+;:;
+}:}
+statement-> if(expr)then statBlock else statBlock; | for(type id=expr;relExpr;assignStat)statBlock;
+statement*-> #
+statement*-> statement statement*
+statement*-> statement statement*
+statement*-> statement statement*
+;:;
+float:float
+id:w
+type-> int | float | id
+(:(
+):)
+fParams-> #
+{:{
+funcHead-> type id(T12)
+float:float
+id:we
+type-> int | float | id
+;:;
+arraySize*-> #
+id:we
+varDecl-> type id arraySize*;
+=:=
+nfloat:1.5
+varDecl*-> varDecl varDecl*
+varDecl*-> varDecl varDecl*
++:+
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+(:(
+(:(
+nfloat:0.5
+*:*
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+nfloat:1.2
+):)
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+arithExpr*-> *factor term* | /facotr term* | and factor term*
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+-:-
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+integer:3
+):)
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr*-> +term arithExpr* | -term arithExpr* | or term arithExpr*
+arithExpr-> term arithExpr*
++:+
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+nfloat:2.2
+;:;
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr*-> +term arithExpr* | -term arithExpr* | or term arithExpr*
+arithExpr*-> +term arithExpr* | -term arithExpr* | or term arithExpr*
+arithExpr-> term arithExpr*
+expr-> arithExpr | relExpr
+assignStat-> variable=expr
+return:return
+statement-> assignStat;
+(:(
+id:H
+):)
+indice*-> #
+factor-> id indice*
+factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+expr-> arithExpr | relExpr
+;:;
+}:}
+statement-> if(expr)then statBlock else statBlock; | for(type id=expr;relExpr;assignStat)statBlock;
+statement*-> #
+statement*-> statement statement*
+statement*-> statement statement*
+;:;
+funcBody-> {varDecl*statement*}
+$
+funcDef-> funcHead funcBody
+funcDef*-> #
+funcDef*-> funcDef funcDef*
+progBody-> program{varDecl*statement*};funcDef*
+E-> classDecl* progBody
