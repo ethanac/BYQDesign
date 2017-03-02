@@ -1,0 +1,168 @@
+operator_lessThan: <     at line 3
+operator_lessThan: <     at line 3
+operator_lessThan: <     at line 3
+operator_lessThan: <     at line 3
+operator_lessThan: <     at line 3
+operator_lessThan: <     at line 3
+operator_lessThan: <     at line 3
+operator_greaterThan: >     at line 4
+operator_greaterThan: >     at line 4
+operator_greaterThan: >     at line 4
+operator_greaterThan: >     at line 4
+operator_greaterThan: >     at line 4
+operator_greaterThan: >     at line 4
+operator_greaterThan: >     at line 4
+openCurlyBracket: {     at line 5
+openCurlyBracket: {     at line 5
+openCurlyBracket: {     at line 5
+openCurlyBracket: {     at line 5
+openSquareBracket: [     at line 6
+openSquareBracket: [     at line 6
+openSquareBracket: [     at line 6
+inlineComment: /////////     at line 7
+closeSquareBracket: ]     at line 8
+closeSquareBracket: ]     at line 8
+closeSquareBracket: ]     at line 8
+closeCurlyBracket: }     at line 9
+closeCurlyBracket: }     at line 9
+closeCurlyBracket: }     at line 9
+closeCurlyBracket: }     at line 9
+underline: _     at line 10
+operator_equal: ==     at line 10
+angleBrackets: <>     at line 10
+operator_greaterThan: >     at line 10
+operator_lessThan: <     at line 10
+operator_lessEqual: <=     at line 10
+operator_greaterEqual: >=     at line 10
+semicolon: ;     at line 10
+comma: ,     at line 10
+dot: .     at line 10
+plus: +     at line 10
+minus: -     at line 10
+star: *     at line 10
+slash: /     at line 10
+assign: =     at line 10
+rw_and: and     at line 10
+rw_not: not     at line 10
+rw_or: or     at line 10
+openPar: (     at line 10
+closePar: )     at line 10
+openCurlyBracket: {     at line 10
+closeCurlyBracket: }     at line 10
+openSquareBracket: [     at line 10
+closeSquareBracket: ]     at line 10
+comment: /**/     at line 10
+inlineComment: //     at line 10
+rw_if: if     at line 11
+rw_then: then     at line 11
+rw_else: else     at line 11
+rw_for: for     at line 11
+rw_class: class     at line 11
+rw_int: int     at line 11
+rw_float: float     at line 11
+rw_get: get     at line 11
+rw_put: put     at line 11
+rw_return: return     at line 11
+rw_program: program     at line 11
+num_integer: 124     at line 12
+dot: .     at line 12
+id: abc     at line 12
+inlineComment: // inline inline /*sds*/     at line 12
+num_float: 10.0000     at line 16
+dot: .     at line 16
+num_integer: 111     at line 16
+------: /*//2344     at line 17
+------: /*  a2     at line 19
+------: */     at line 20
+------:         2323     at line 21
+comment: */     at line 22
+------: /*   abc //aa     at line 23
+------: sds/*     at line 24
+comment: 2*/*/     at line 25
+star: *     at line 26
+slash: /     at line 26
+Unknown token: ~     at line 27
+Unknown token: `     at line 27
+Unknown token: !     at line 27
+Unknown token: @     at line 27
+Unknown token: #     at line 27
+Unknown token: $     at line 27
+Unknown token: %     at line 27
+Unknown token: ^     at line 27
+Unknown token: &     at line 27
+Unknown token: \     at line 27
+Unknown token: |     at line 27
+Unknown token: ?     at line 27
+Unknown token: "     at line 27
+Unknown token: '     at line 27
+id: ifnot     at line 28
+id: class2     at line 29
+id: elsee     at line 30
+num_integer: 2     at line 31
+rw_and: and     at line 31
+num_float: 2.0     at line 32
+id: or0000222     at line 32
+num_integer: 0     at line 33
+num_integer: 0     at line 33
+num_float: 222.500     at line 33
+num_float: 5.000     at line 34
+rw_put: put     at line 34
+num_integer: 6     at line 35
+id: programreturn     at line 35
+num_integer: 7     at line 36
+rw_return: return     at line 36
+num_integer: 0     at line 37
+num_integer: 0     at line 37
+num_integer: 0     at line 37
+num_float: 0.999222     at line 37
+num_integer: 2     at line 38
+assign: =     at line 38
+num_integer: 3     at line 38
+comma: ,     at line 38
+num_integer: 3     at line 38
+operator_equal: ==     at line 38
+num_float: 0.55     at line 38
+dot: .     at line 39
+num_integer: 55     at line 39
+id: a2not3if4class5int     at line 40
+inlineComment: ///*then     at line 41
+rw_get: get     at line 42
+star: *     at line 42
+slash: /     at line 42
+rw_int: int     at line 43
+id: a1     at line 43
+assign: =     at line 43
+num_integer: 5     at line 43
+semicolon: ;     at line 43
+rw_float: float     at line 44
+id: a2     at line 44
+assign: =     at line 44
+num_float: 0.5     at line 44
+semicolon: ;     at line 44
+underline: _     at line 45
+underline: _     at line 45
+underline: _     at line 45
+underline: _     at line 45
+minus: -     at line 45
+minus: -     at line 45
+minus: -     at line 45
+minus: -     at line 45
+underline: _     at line 45
+underline: _     at line 45
+underline: _     at line 45
+id: AND     at line 45
+comma: ,     at line 45
+id: OR     at line 45
+comma: ,     at line 45
+id: THEN     at line 45
+comma: ,     at line 45
+id: Put     at line 45
+comma: ,     at line 45
+id: proGram     at line 45
+comma: ,     at line 45
+id: inT     at line 45
+closeCurlyBracket: }     at line 46
+inlineComment: //I dun care     at line 47
+------: /*aa     at line 48
+------: bbcc     at line 49
+Error: 1 "*/" is missing.
