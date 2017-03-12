@@ -18,14 +18,16 @@ public class Parser {
     boolean isFuncBody = false;
     boolean T17to19 = false;
     boolean isFactor = false;
+    boolean isIdnest = false;
+    boolean var2factor = false;
     int lineNum = 0;
     public boolean toFile = false;
     PrintWriter out = null;
 
     public Parser(){
-        la = new LexicalAnalyzer();
-        la.writeToFile = true;
-        la.extractTokens();
+//        la = new LexicalAnalyzer();
+//        la.writeToFile = true;
+//        la.extractTokens();
         try{
             br = new BufferedReader(new FileReader(fileName));
         }
@@ -70,7 +72,7 @@ public class Parser {
         try {
             line = br.readLine();
             lineNum++;
-            while(line!= null && line.equals("comment")) {
+            while(line!= null && line.contains("comment:")) {
                 line = br.readLine();
                 lineNum++;
             }
@@ -85,7 +87,7 @@ public class Parser {
         return line;
     }
 
-    //Output
+    // Method for Output
     private void writer(String s){
         if(toFile) {
             out.println(s);
@@ -94,7 +96,9 @@ public class Parser {
             System.out.println(s);
         }
     }
-    //E-> T21'T20
+
+    // start symbol
+    // E-> T21'T20
     private boolean startSymbol(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("E")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("E")];
@@ -103,7 +107,6 @@ public class Parser {
                 if(T21p() && T20()){
                     String o = "E-> classDecl* progBody";
                     writer(o);
-//                    lookAhead = nextToken();
                     return true;
                 }
                 else {
@@ -115,7 +118,8 @@ public class Parser {
         return false;
     }
 
-    //T21'-> # | T21T21'
+    // classDecl*
+    // T21'-> # | T21T21'
     private boolean T21p(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T21p")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T21p")];
@@ -123,7 +127,6 @@ public class Parser {
             if (lookAhead.equals(s)){
                 if(T21() && T21p()){
                     writer("classDecl*-> classDecl classDecl*");
-                    //lookAhead = nextToken();
                     return true;
                 }
                 else {
@@ -140,7 +143,8 @@ public class Parser {
         return false;
     }
 
-    //T20-> program{T17'T16'};T19'
+    // progBody
+    // T20-> program{T17'T16'};T19'
     private boolean T20(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T20")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T20")];
@@ -149,7 +153,6 @@ public class Parser {
                 if(match("program") && match("{") && T17p() && T16p() && match("}")
                         && match(";") && T19p()){
                     writer("progBody-> program{varDecl*statement*};funcDef*");
-                    //lookAhead = nextToken();
                     return true;
                 }
                 else {
@@ -160,7 +163,8 @@ public class Parser {
         return false;
     }
 
-    //T21-> class id {T17'T19'};
+    // classDecl
+    // T21-> class id {T17'T19'};
     private boolean T21(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T21")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T21")];
@@ -170,7 +174,6 @@ public class Parser {
                 if(match("class") && match("id") && match("{")
                         && T17p() && T19p() && match("}") && match(";")){
                     writer("classDecl-> class id {varDecl*funcDef*};");
-                    //lookAhead = nextToken();
                     isClass = false;
                     return true;
                 }
@@ -183,7 +186,8 @@ public class Parser {
         return false;
     }
 
-    //T17'-> # | T17T17'
+    // varDecl*
+    // T17'-> # | T17T17'
     private boolean T17p(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T17p")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T17p")];
@@ -196,8 +200,8 @@ public class Parser {
         for(String s : first) {
             if (lookAhead.equals(s)){
                 if(T17() && T17p()){
-                    writer("varDecl*-> varDecl varDecl*");
-                    //lookAhead = nextToken();
+                    if(!isFuncBody)
+                        writer("varDecl*-> varDecl varDecl*");
                     return true;
                 }
                 else {
@@ -214,7 +218,8 @@ public class Parser {
         return false;
     }
 
-    //T16'-> # | T16T16'
+    // statement*
+    // T16'-> # | T16T16'
     private boolean T16p(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T16p")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T16p")];
@@ -222,7 +227,6 @@ public class Parser {
             if (lookAhead.equals(s) || isFuncBody){
                 if(T16() && T16p()){
                     writer("statement*-> statement statement*");
-//                    lookAhead = nextToken();
                     return true;
                 }
                 else {
@@ -240,7 +244,8 @@ public class Parser {
         return false;
     }
 
-    //T19'-> # | T19T19'
+    // funcDef*
+    // T19'-> # | T19T19'
     private boolean T19p(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T19p")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T19p")];
@@ -248,7 +253,6 @@ public class Parser {
             if (lookAhead.equals(s) || T17to19){
                 if(T19() && T19p()){
                     writer("funcDef*-> funcDef funcDef*");
-                    //lookAhead = nextToken();
                     return true;
                 }
                 else {
@@ -262,52 +266,55 @@ public class Parser {
                 return true;
             }
         }
-
         return false;
     }
 
-    //T17-> F2idF3';
+    // varDecl
+    // T17-> F2idF3';
     private boolean T17(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T17")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T17")];
         for(String s : first) {
             if (lookAhead.equals(s)){
                 if(match("id")) {
-                    if (match("=")) {
+                    if (lookAhead.equals("=")) {
+                        match("=");
                         isFuncBody = true;
                         return true;
                     }
                     else if (match("id")){
-                        if(isClass && lookAhead.equals("(")){
-                            T17to19 = true;
+                        if(ifSwitchTo19())
                             return true;
-                        }
-                        else if(F3p() && match(";")) {
-                            writer("varDecl-> type id arraySize*;");
-                            return true;
-                        }
                     }
                 }
                 else if(F2() && match("id")){
-                    if(isClass && lookAhead.equals("(")){
-                        T17to19 = true;
+                    if(ifSwitchTo19())
                         return true;
-                    }
-                    else if(F3p() && match(";")) {
-                        writer("varDecl-> type id arraySize*;");
-                        return true;
-                    }
                 }
                 else{
                     return false;
                 }
             }
         }
-
         return false;
     }
 
-    //F3'-> # | F3F3';
+    private boolean ifSwitchTo19() {
+        if(isClass && lookAhead.equals("(")){
+            T17to19 = true;
+            return true;
+        }
+        else if(F3p() && match(";")) {
+            writer("varDecl-> type id arraySize*;");
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    // arraySize*
+    // F3'-> # | F3F3';
     private boolean F3p(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("F3p")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("F3p")];
@@ -332,7 +339,8 @@ public class Parser {
         return false;
     }
 
-    //F2-> int | float | id
+    // Type
+    // F2-> int | float | id
     private boolean F2(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("F2")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("F2")];
@@ -351,7 +359,8 @@ public class Parser {
         return false;
     }
 
-    //F3-> [ integer ]
+    // arraySize
+    // F3-> [ integer ]
     private boolean F3(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("F3")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("F3")];
@@ -370,7 +379,8 @@ public class Parser {
         return false;
     }
 
-    //T19-> T11T18;
+    // funcDef
+    // T19-> T11T18;
     private boolean T19(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T19")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T19")];
@@ -390,7 +400,8 @@ public class Parser {
         return false;
     }
 
-    //T11-> F2id(T12)
+    // funcHead
+    // T11-> F2id(T12)
     private boolean T11(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T11")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T11")];
@@ -398,8 +409,7 @@ public class Parser {
             if (lookAhead.equals(s)) {
                 if (F2() && match("id") && match("(")
                         && T12() && match(")")) {
-                    writer("funcHead-> type id(T12)");
-                    //lookAhead = nextToken();
+                    writer("funcHead-> type id(fParams)");
                     return true;
                 } else {
                     return false;
@@ -420,7 +430,8 @@ public class Parser {
         return false;
     }
 
-    //T12-> F2idF3'T13' | #
+    // fParams
+    // T12-> F2idF3'T13' | #
     private boolean T12(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T12")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T12")];
@@ -428,7 +439,6 @@ public class Parser {
             if (lookAhead.equals(s)){
                 if(F2() && match("id") && F3p() && T13p()){
                     writer("fParams-> type id arraySize* fParamsTail");
-                    //lookAhead = nextToken();
                     return true;
                 }
                 else {
@@ -446,7 +456,8 @@ public class Parser {
         return false;
     }
 
-    //T13'-> # | T13T13'
+    // fParamsTail*
+    // T13'-> # | T13T13'
     private boolean T13p(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T13p")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T13p")];
@@ -454,7 +465,6 @@ public class Parser {
             if (lookAhead.equals(s)){
                 if(T13() && T13p()){
                     writer("fParamsTail*-> fParamsTail fParamsTail*");
-                    //lookAhead = nextToken();
                     return true;
                 }
                 else {
@@ -472,7 +482,8 @@ public class Parser {
         return false;
     }
 
-    //T13-> ,F2idF3'
+    // fParamsTail
+    // T13-> ,F2idF3'
     private boolean T13(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T13")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T13")];
@@ -480,7 +491,6 @@ public class Parser {
             if (lookAhead.equals(s)){
                 if(match(",") && F2() && match("id") && F3p()){
                     writer("fParamsTail-> ,type id arraySize*");
-                    //lookAhead = nextToken();
                     return true;
                 }
                 else {
@@ -492,77 +502,208 @@ public class Parser {
         return false;
     }
 
-    //T18-> {T17'T16'}
+    // funcBody
+    // T18-> {T17'T16'}
     private boolean T18(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T18")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T18")];
         for(String s : first) {
             if (lookAhead.equals(s)){
-                if(match("{") && T17p() && T16p() && match("}")){
-                    writer("funcBody-> {varDecl*statement*}");
-//                    lookAhead = nextToken();
-                    return true;
-                }
-                else {
-                    return false;
+                if(match("{")) {
+                    if(T17p() && T16p()) {
+                        if(match("}")){
+                            writer("funcBody-> {varDecl* statement*}");
+                            return true;
+                        }
+                        else {
+                            writer("Error: missing '}' at line " + lineNum);
+                        }
+                    }
+                    else {
+                        return false;
+                    }
                 }
             }
         }
-
+        writer("Error: missing funcBody at line " + lineNum);
         return false;
     }
 
-    //T16-> T15 | if(T7)thenT10elseT10; | for(F2id=T7;T9;T15)T10;
+    // statement
+    // T16-> T15 | if(T7)thenT10elseT10; | for(F2id=T7;T9;T15)T10;
     private boolean T16(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T16")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T16")];
         for(String s : first) {
             if (lookAhead.equals(s) || isFuncBody){
-                if(lookAhead.equals("id")){
+                if(lookAhead.equals("id") || isFuncBody){
                     if(T15() && match(";")){
                         writer("statement-> assignStat;");
                         return true;
                     }
                 }
-                else if(isFuncBody){
-                    if(T15() && match(";")){
-                        writer("statement-> assignStat;");
-                        return true;
+//                else if(isFuncBody){
+//                    if(T15() && match(";")){
+//                        writer("statement-> assignStat;");
+//                        return true;
+//                    }
+//                }
+                else if(lookAhead.equals("if")) {
+                    if(match("if") && match("(")) {
+                        if(T14() && F1() && T14()) {
+                            if(match(")")) {
+                                if (match("then")) {
+                                    if (T10()) {
+                                        if (match("else")) {
+                                            if (T10()) {
+                                                if (match(";")) {
+                                                    writer("statement-> if(expr)then statBlock else statBlock;");
+                                                    return true;
+                                                }
+                                            }
+                                        } else {
+                                            writer("Error: missing 'else' at line " + lineNum);
+                                        }
+                                    }
+                                } else {
+                                    writer("Error: missing 'then' at line " + lineNum);
+                                }
+                            }
+                            else {
+                                writer("Error: missing ')' at line " + lineNum);
+                            }
+                        }
+                    }
+                    else{
+                        writer("Error: missing '(' at line " + lineNum);
                     }
                 }
-                if((match("if") && match("(") && T14() && F1() && T14() && match(")")
-                                && match("then") && T10() && match("else")
-                                && T10() && match(";")) ||
-                        (match("for") && match("(") && F2() && match("id")
-                                && match("=") && T7() && match(";")
-                                && T9() && match(";") && T15() && match(")")
-                                && T10() && match(";")) ||
-                        (match("get") && match("(") && T3() && match(")") && match(";")) ||
-                        (match("put") && match("(") && T7() && match(")") && match(";")) ||
-                        (match("return") && match("(") && T7() && match(")") && match(";"))
-                        ){
-                    writer("statement-> if(expr)then statBlock else statBlock; | for(type id=expr;relExpr;assignStat)statBlock;");
-                    //lookAhead = nextToken();
-                    return true;
+                else if(lookAhead.equals("for")) {
+                    if (match("for") && match("(")) {
+                        if (F2()) {
+                            if (match("id")) {
+                                if (match("=")) {
+                                    if (T7()) {
+                                        if (match(";")) {
+                                            if (T9()) {
+                                                if (match(";")) {
+                                                    if (T15()) {
+                                                        if (match(")")) {
+                                                            if (T10()) {
+                                                                if (match(";")) {
+                                                                    writer("statement-> for(type id=expr;relExpr;assignStat)statBlock;");
+                                                                    return true;
+                                                                } else {
+                                                                    writer("Error: missing ';' at line " + lineNum);
+                                                                }
+                                                            }
+                                                        } else {
+                                                            writer("Error: missing ')' at line " + lineNum);
+                                                        }
+                                                    }
+                                                } else {
+                                                    writer("Error: missing ';' at line " + lineNum);
+                                                }
+                                            }
+                                        } else {
+                                            writer("Error: missing ';' at line " + lineNum);
+                                        }
+                                    }
+                                } else {
+                                    writer("Error: missing '=' at line " + lineNum);
+                                }
+                            } else {
+                                writer("Error: missing id at line " + lineNum);
+                            }
+                        } else {
+                            writer("Error: missing '(' at line " + lineNum);
+                        }
+                    }
                 }
-                else {
+                else if(lookAhead.equals("get")) {
+                    if(match("get") && match("(")) {
+                        if(T3()) {
+                            if(match(")")) {
+                                if(match(";")) {
+                                    writer("statement-> get(T3);");
+                                    return true;
+                                }
+                                else {
+                                    writer("Error: missing ';' at line " + lineNum);
+                                }
+                            }
+                            else {
+                                writer("Error: missing ')' at line " + lineNum);
+                            }
+                        }
+                    }
+                    else {
+                        writer("Error: missing '(' at line " + lineNum);
+                    }
+                }
+                else if(lookAhead.equals("put")) {
+                    if(match("put") && match("(")) {
+                        if(T7()) {
+                            if (match(")")) {
+                                if(match(";")) {
+                                    writer("statement-> put(expr);");
+                                    return true;
+                                }
+                                else {
+                                    writer("Error: missing ';' at line " + lineNum);
+                                }
+                            }
+                            else {
+                                writer("Error: missing ')' at line " + lineNum);
+                            }
+                        }
+                    }
+                    else {
+                        writer("Error: missing '(' at line " + lineNum);
+                    }
+                }
+                else if(lookAhead.equals("return")) {
+                    if (match("return") && match("(")) {
+                        if (T7()) {
+                            if (match(")")) {
+                                if (match(";")) {
+                                    writer("statement-> return(expr);");
+                                    return true;
+                                } else {
+                                    writer("Error: missing ';' at line " + lineNum);
+                                }
+                            } else {
+                                writer("Error: missing ')' at line " + lineNum);
+                            }
+                        } else {
+                            writer("Error: missing '(' at line " + lineNum);
+                        }
+                    }
+                }
+                else{
                     return false;
                 }
             }
         }
-
+        writer("Error: missing statements at line " + lineNum);
         return false;
     }
 
-    //T10-> {T15'} | T15 | #
+    // statBlock
+    // T10-> {T15'} | T15 | #
     private boolean T10(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T10")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T10")];
         for(String s : first) {
             if (lookAhead.equals(s)){
-                if((match("{") && T16p() && match("}")) || T16()){
-                    writer("statBlock-> {statement*} | statement ");
-//                    lookAhead = nextToken();
+                if(lookAhead.equals("{")){
+                    if(match("{") && T16p() && match("}")){
+                        writer("statBlock-> {statement*}");
+                        return true;
+                    }
+                }
+                else if(T16()){
+                    writer("statBlock-> statement ");
                     return true;
                 }
                 else {
@@ -576,11 +717,12 @@ public class Parser {
                 return true;
             }
         }
-
+        writer("Error: missing statBlock at line " + lineNum);
         return false;
     }
 
-    //T15'-> # | T15T15'
+    // assignStat*
+    // T15'-> # | T15T15'
     private boolean T15p(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T15p")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T15p")];
@@ -588,7 +730,6 @@ public class Parser {
             if (lookAhead.equals(s)){
                 if(T15() && T15p() ){
                     writer("assignStat*-> assignStat assignStat*");
-//                    lookAhead = nextToken();
                     return true;
                 }
                 else {
@@ -596,17 +737,17 @@ public class Parser {
                 }
             }
         }
-        for(String s : follow){
-            if(lookAhead.equals(s)){
+        for(String s : follow) {
+            if (lookAhead.equals(s)) {
                 writer("assignStat*-> #");
                 return true;
             }
         }
-
         return false;
     }
 
-    //T15-> T3=T7
+    // assignStat
+    // T15-> T3=T7
     private boolean T15(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T15")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T15")];
@@ -619,69 +760,74 @@ public class Parser {
                 }
                 else{
                     isFuncBody = false;
-                }
-            }
-            else if (lookAhead.equals(s)){
-                if(T3() && match("=") && T7()){
-                    writer("assignStat-> variable=expr");
-//                    lookAhead = nextToken();
-                    return true;
-                }
-                else {
                     return false;
                 }
             }
+            else if (lookAhead.equals(s)){
+                if(T3()){
+                    if(match("=")) {
+                        if (T7()) {
+                            writer("assignStat-> variable=expr");
+                            return true;
+                        }
+                    }
+                    else {
+                        writer("Error: missing '=' at line " + lineNum);
+                    }
+                }
+                return false;
+            }
         }
-
+        writer("Error: missing assignStat at line " + lineNum);
         return false;
     }
 
-    //T3-> T4'idT6'
+    // variable
+    // T3-> T4'idT6'
     private boolean T3(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T3")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T3")];
         for(String s : first) {
             if (lookAhead.equals(s)){
-                if(match("id") && T6p()){
-                    if(match(".")){
-                        isFactor = true;
-                        if(match("id")){
-                            if(match("(") && T5() && match(")")) {
-                                writer("factor-> idnest*id(aParams)");
-                                return true;
-                            }
-                            else if(T6p()) {
-                                writer("factor-> idnest*id indice*");
-                                return true;
-                            }
-                        }
-                    }
-                    else {
-                        writer("factor-> id indice*");
-//                    lookAhead = nextToken();
-                        return true;
-                    }
+                if(T4p()) {
+//                    if(match("id")){
+//                        if(T6p()){
+                            writer("variable-> idnest* id indice*");
+                            return true;
+//                        }
+//                    }
+//                    else {
+//                        writer("Error: missing id at line " + lineNum);
+//                    }
                 }
                 else {
+                    if(isIdnest && var2factor) {
+                        isFactor = false;
+                        isIdnest = false;
+                    }
                     return false;
                 }
             }
         }
-
+        if(!isFactor)
+            writer("Error: missing variable at line " + lineNum);
         return false;
     }
 
-    //T4'-> # | T4T4'
+    // idnest*
+    // T4'-> # | T4T4'
     private boolean T4p() {
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T4p")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T4p")];
+        if(var2factor)
+            return false;
         for (String s : first) {
             if (lookAhead.equals(s)) {
                 if (T4() && T4p()) {
                     writer("idnest*-> idnest idnest*");
-//                    lookAhead = nextToken();
                     return true;
-                } else {
+                }
+                else {
                     return false;
                 }
             }
@@ -692,23 +838,29 @@ public class Parser {
                 return true;
             }
         }
-
         return false;
     }
 
-    //T6'-> # | T6T6'
+    // indice*
+    // T6'-> # | T6T6'
     private boolean T6p() {
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T6p")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T6p")];
+        if(var2factor)
+            return false;
         for (String s : first) {
             if (lookAhead.equals(s)) {
                 if (T6() && T6p()) {
                     writer("indice*-> indice indice*");
-//                    lookAhead = nextToken();
                     return true;
-                } else {
+                }
+                else {
                     return false;
                 }
+            }
+            else if(lookAhead.equals("(")){
+                var2factor = true;
+                return false;
             }
         }
         for (String s : follow) {
@@ -721,27 +873,37 @@ public class Parser {
         return false;
     }
 
-    //T7-> T14 | T9
+    // expr
+    // T7-> T14 | T9
+    // replace T9 with T14 F1 T14
     private boolean T7(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T7")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T7")];
         for(String s : first) {
-            if (lookAhead.equals(s)){
-                if(T14() || T9()){
-                    writer("expr-> arithExpr | relExpr");
-//                    lookAhead = nextToken();
-                    return true;
+            if (lookAhead.equals(s)) {
+                if (T14()) {
+                    if (F1()) {
+                        if(T14()) {
+                            writer("expr-> relExpr");
+                            return true;
+                        }
+                    }
+                    else {
+                        writer("expr-> arithExpr");
+                        return true;
+                    }
                 }
                 else {
                     return false;
                 }
             }
         }
-
+        writer("Error: missing expr at line " + lineNum);
         return false;
     }
 
-    //T9-> T14F1T14
+    // relExpr
+    // T9-> T14F1T14
     private boolean T9(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T9")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T9")];
@@ -749,7 +911,6 @@ public class Parser {
             if (lookAhead.equals(s)){
                 if(T14() && F1() && T14()){
                     writer("relExpr-> arithExpr relOp arithExpr");
-//                    lookAhead = nextToken();
                     return true;
                 }
                 else {
@@ -761,7 +922,8 @@ public class Parser {
         return false;
     }
 
-    //T14-> T1T14'
+    // arithExpr
+    // T14-> T1T14'
     private boolean T14(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T14")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T14")];
@@ -769,7 +931,6 @@ public class Parser {
             if (lookAhead.equals(s)){
                 if(T1() && T14p()){
                     writer("arithExpr-> term arithExpr*");
-//                    lookAhead = nextToken();
                     return true;
                 }
                 else {
@@ -777,11 +938,11 @@ public class Parser {
                 }
             }
         }
-
         return false;
     }
 
-    //T14'-> # | +T1T14' | -T1T14' | orT1T14'
+    // arithExpr*
+    // T14'-> # | +T1T14' | -T1T14' | orT1T14'
     private boolean T14p() {
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T14p")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T14p")];
@@ -791,7 +952,6 @@ public class Parser {
                         (match("-") && T1() && T14p()) ||
                         (match("or") && T1() && T14p())) {
                     writer("arithExpr*-> +term arithExpr* | -term arithExpr* | or term arithExpr*");
-//                    lookAhead = nextToken();
                     return true;
                 } else {
                     return false;
@@ -808,7 +968,8 @@ public class Parser {
         return false;
     }
 
-    //T1-> T2T1'
+    // term
+    // T1-> T2T1'
     private boolean T1(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T1")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T1")];
@@ -816,7 +977,6 @@ public class Parser {
             if (lookAhead.equals(s)){
                 if(T2() && T1p()){
                     writer("term-> factor term*");
-//                    lookAhead = nextToken();
                     return true;
                 }
                 else {
@@ -828,7 +988,8 @@ public class Parser {
         return false;
     }
 
-    //T1'-> # | xT2T1' | /T2T1' | andT2T1'
+    // term*
+    // T1'-> # | xT2T1' | /T2T1' | andT2T1'
     private boolean T1p() {
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T1p")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T1p")];
@@ -837,8 +998,7 @@ public class Parser {
                 if ((match("*") && T2() && T1p()) ||
                         (match("/") && T2() && T1p()) ||
                         (match("and") && T2() && T1p())) {
-                    writer("arithExpr*-> *factor term* | /facotr term* | and factor term*");
-//                    lookAhead = nextToken();
+                    writer("term*-> *factor term* | /facotr term* | and factor term*");
                     return true;
                 } else {
                     return false;
@@ -855,72 +1015,141 @@ public class Parser {
         return false;
     }
 
-    //T2-> T3 | T4'id(T5) | num | (T14) | notT2 | +T2 | -T2
+    // factor
+    // T2-> T3 | T4'id(T5) | num | (T14) | notT2 | +T2 | -T2
     private boolean T2(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T2")];
         for(String s : first) {
             if (lookAhead.equals(s)){
-                if(T3() ||
-                        (T4p() && match("id") && match("(")
-                                && T5() && match(")")) ||
-                        match("integer") || match("nfloat") ||
-                        (match("(") && T14() && match(")")) ||
-                        (match("not") && T2()) ||
-                        (match("+") && T2()) ||
-                        ( match("-") && T1p())){
-                    writer("factor-> variable | idnest'id(aParams) | num | (arithExpr) | notfacot | +factor | -factor");
-//                    lookAhead = nextToken();
+                isFactor = true;
+                if(T3()) {
+                    writer("factor-> variable");
                     return true;
                 }
-                else {
-                    return false;
+                else if(var2factor || T4p()) {
+                    if(var2factor || match("id")) {
+                        if(var2factor)
+                            var2factor = false;
+                        if(match("(")) {
+                            if(T5()) {
+                                if(match(")")){
+                                    writer("factor-> idnest* id(aParams)");
+                                    return true;
+                                }
+                                else {
+                                    writer("Error: missing ')' at line " + lineNum);
+                                }
+                            }
+                        }
+                        else {
+                            writer("Error: missing '(' at line " + lineNum);
+                        }
+                    }
+                    else {
+                        writer("Error: missing id at line " + lineNum);
+                    }
                 }
+                else if(match("integer") || match("nfloat")) {
+                    writer("factor-> number");
+                    return true;
+                }
+                else if(match("(")) {
+                    if(T14()) {
+                        if(match(")")) {
+                            writer("factor-> (arithExpr)");
+                            return true;
+                        }
+                        else {
+                            writer("Error: missing ')' at line " + lineNum);
+                        }
+                    }
+                }
+                else if(match("not") && T2()) {
+                    writer("factor-> not factor");
+                    return true;
+                }
+                else if(match("+") && T2()) {
+                    writer("factor-> +factor");
+                    return true;
+                }
+                else if( match("-") && T1p()){
+                    writer("factor-> -factor");
+                    return true;
+                }
+                return false;
+
             }
         }
+        writer("Error: missing factor at line " + lineNum);
         return false;
     }
 
-    //T4-> idT6'.
+    // idnest
+    // T4-> idT6'.
     private boolean T4(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T4")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T4")];
         for(String s : first) {
             if (lookAhead.equals(s)){
-                if(match("id") && T6p()){
-                    writer("idnest-> id indice*");
-//                    lookAhead = nextToken();
-                    return true;
+                if(match("id")) {
+                    if(T6p()){
+                        if(match(".")) {
+                            writer("idnest-> id indice* .");
+                            return true;
+                        }
+                        else {
+                            writer("idnest-> idnest* id indice*");
+                            return true;
+                        }
+                    }
+                    else {
+                        if(var2factor)
+                            return true;
+                        else
+                            return false;
+                    }
                 }
                 else {
+                    writer("Error: missing id at line " + lineNum);
                     return false;
                 }
             }
         }
-
+        writer("Error: missing idnest at line " + lineNum);
         return false;
     }
 
-    //T6-> [T14]
+    // indice
+    // T6-> [T14]
     private boolean T6(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T6")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T6")];
         for(String s : first) {
+            if(lookAhead.equals("(") && isIdnest){
+                var2factor = true;
+                return true;
+            }
             if (lookAhead.equals(s)){
-                if(match("[") && T14() && match("]")){
-                    writer("indice-> [arithExpr]");
-//                    lookAhead = nextToken();
-                    return true;
+                if(match("[")) {
+                    if(T14()) {
+                        if(match("]")){
+                            writer("indice-> [arithExpr]");
+                            return true;
+                        }
+                        else {
+                            writer("Error: missing ']' at line " + lineNum);
+                        }
+                    }
                 }
-                else {
-                    return false;
-                }
+                return false;
             }
         }
-
+        writer("Error: missing indice at line " + lineNum);
         return false;
     }
 
-    //T5-> T7T8' | #
+    // aParams
+    // T5-> T7T8' | #
     private boolean T5() {
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T5")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T5")];
@@ -928,7 +1157,6 @@ public class Parser {
             if (lookAhead.equals(s)) {
                 if ((T7() && T8p())) {
                     writer("aParams-> expr aParamsTail*");
-//                    lookAhead = nextToken();
                     return true;
                 } else {
                     return false;
@@ -945,7 +1173,8 @@ public class Parser {
         return false;
     }
 
-    //T8'-> # | T8T8'
+    // aParamsTail*
+    // T8'-> # | T8T8'
     private boolean T8p() {
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T8")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T8")];
@@ -953,7 +1182,6 @@ public class Parser {
             if (lookAhead.equals(s)) {
                 if ((T8() && T8p())) {
                     writer("aParamsTail*-> aParamsTail aParamsTail*");
-//                    lookAhead = nextToken();
                     return true;
                 } else {
                     return false;
@@ -969,7 +1197,8 @@ public class Parser {
         return false;
     }
 
-    //T8-> ,T7
+    // aParamsTail
+    // T8-> ,T7
     private boolean T8(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T8")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T8")];
@@ -977,7 +1206,6 @@ public class Parser {
             if (lookAhead.equals(s)){
                 if(match(",") && T7()){
                     writer("aParamsTail-> ,expr");
-//                    lookAhead = nextToken();
                     return true;
                 }
                 else {
@@ -988,7 +1216,8 @@ public class Parser {
         return false;
     }
 
-    //F1: == | <= | >= | < | > |<>
+    // relOp
+    // F1: == | <= | >= | < | > |<>
     private boolean F1(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("F1")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("F1")];
@@ -998,7 +1227,6 @@ public class Parser {
                         || match(">=") || match("<")
                         || match(">") || match("<>")){
                     writer("relOp-> == | <= | >= | < | > | <>");
-//                    lookAhead = nextToken();
                     return true;
                 }
                 else {
