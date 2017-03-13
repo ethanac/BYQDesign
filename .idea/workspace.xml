@@ -1062,8 +1062,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/1.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments_8" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/STT_Alpha copy 2.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/COMP6421/STT_Alpha copy 2.csv" afterPath="" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7c/506ad73889d300151d52e6b8bc944784" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/26/e04694dcbbd700161f49fce9091ff221" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a7/c053f9b081d300151d52e6b8bc944784" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/2d/d0923f1c3ad800161f49fce9091ff221" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/write.lock" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/7a/d0ab22f339d800161f49fce9091ff221" />
@@ -1088,6 +1086,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments.gen" afterPath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments.gen" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/COMP6421/Scanner/LexicalAnalyzer.class" afterPath="$PROJECT_DIR$/out/production/COMP6421/Scanner/LexicalAnalyzer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/COMP6421/Scanner/Main.class" afterPath="$PROJECT_DIR$/out/production/COMP6421/Scanner/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/COMP6421/Scanner/Parser.class" afterPath="$PROJECT_DIR$/out/production/COMP6421/Scanner/Parser.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.log" afterPath="$PROJECT_DIR$/../.metadata/.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.core.prefs" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.core.prefs" />
@@ -1125,10 +1126,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.xml.core/system_catalog.xml" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.xml.core/system_catalog.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/version.ini" afterPath="$PROJECT_DIR$/../.metadata/version.ini" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Output.txt" afterPath="$PROJECT_DIR$/Output.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/file.txt" afterPath="$PROJECT_DIR$/file.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/COMP6421/.idea/workspace.xml" afterPath="$PROJECT_DIR$/out/production/COMP6421/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Scanner/FirstNFollow.java" afterPath="$PROJECT_DIR$/src/Scanner/FirstNFollow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Scanner/LexicalAnalyzer.java" afterPath="$PROJECT_DIR$/src/Scanner/LexicalAnalyzer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Scanner/Main.java" afterPath="$PROJECT_DIR$/src/Scanner/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Scanner/Parser.java" afterPath="$PROJECT_DIR$/src/Scanner/Parser.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -1153,8 +1153,8 @@
       <file leaf-file-name="LexicalAnalyzer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Scanner/LexicalAnalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1545">
-              <caret line="104" column="28" lean-forward="true" selection-start-line="104" selection-start-column="28" selection-end-line="104" selection-end-column="28" />
+            <state relative-caret-position="345">
+              <caret line="70" column="55" lean-forward="false" selection-start-line="70" selection-start-column="55" selection-end-line="70" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -1163,8 +1163,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Scanner/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="480">
+              <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -1173,8 +1173,8 @@
       <file leaf-file-name="Parser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Scanner/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3330">
-              <caret line="839" column="9" lean-forward="true" selection-start-line="839" selection-start-column="9" selection-end-line="839" selection-end-column="9" />
+            <state relative-caret-position="435">
+              <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1185,7 +1185,7 @@
       <file leaf-file-name="FirstNFollow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Scanner/FirstNFollow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="-180">
               <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
               <folding />
             </state>
@@ -1204,12 +1204,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>T14</find>
-      <find>T15</find>
-      <find>T16</find>
-      <find>T17</find>
-      <find>T18</find>
-      <find>T19</find>
       <find>T20</find>
       <find>T21</find>
       <find>F2</find>
@@ -1231,9 +1225,15 @@
       <find>isIdnest</find>
       <find>isFactor</find>
       <find>T4</find>
-      <find>missing '('</find>
-      <find>Error</find>
       <find>value</find>
+      <find>missing '('</find>
+      <find>&quot;sp&quot;</find>
+      <find>lineNum</find>
+      <find>lineNum =</find>
+      <find>return false</find>
+      <find>||</find>
+      <find>Error</find>
+      <find>unknown</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -1259,9 +1259,9 @@
         <option value="$PROJECT_DIR$/src/Scanner/FollowSets.java" />
         <option value="$PROJECT_DIR$/src/Scanner/FirstSets.java" />
         <option value="$PROJECT_DIR$/src/Test/ParserTest.java" />
+        <option value="$PROJECT_DIR$/src/Scanner/FirstNFollow.java" />
         <option value="$PROJECT_DIR$/src/Scanner/LexicalAnalyzer.java" />
         <option value="$PROJECT_DIR$/src/Scanner/Main.java" />
-        <option value="$PROJECT_DIR$/src/Scanner/FirstNFollow.java" />
         <option value="$PROJECT_DIR$/src/Scanner/Parser.java" />
       </list>
     </option>
@@ -1902,7 +1902,7 @@
       <workItem from="1488216397490" duration="18129000" />
       <workItem from="1488246337441" duration="8118000" />
       <workItem from="1489191381750" duration="182000" />
-      <workItem from="1489211344739" duration="29255000" />
+      <workItem from="1489211344739" duration="39156000" />
     </task>
     <servers />
   </component>
@@ -1939,11 +1939,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164783000" />
+    <option name="totallyTimeSpent" value="174684000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1954,7 +1954,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4113424" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4113424" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1985,282 +1985,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1155</line>
-          <properties />
-          <option name="timeStamp" value="712" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1055</line>
-          <properties />
-          <option name="timeStamp" value="713" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1056</line>
-          <properties />
-          <option name="timeStamp" value="714" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1057</line>
-          <properties />
-          <option name="timeStamp" value="715" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>929</line>
-          <properties />
-          <option name="timeStamp" value="716" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>930</line>
-          <properties />
-          <option name="timeStamp" value="717" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>931</line>
-          <properties />
-          <option name="timeStamp" value="718" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>932</line>
-          <properties />
-          <option name="timeStamp" value="719" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>975</line>
-          <properties />
-          <option name="timeStamp" value="720" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>976</line>
-          <properties />
-          <option name="timeStamp" value="721" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>977</line>
-          <properties />
-          <option name="timeStamp" value="722" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>978</line>
-          <properties />
-          <option name="timeStamp" value="723" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1024</line>
-          <properties />
-          <option name="timeStamp" value="724" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1025</line>
-          <properties />
-          <option name="timeStamp" value="725" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1091</line>
-          <properties />
-          <option name="timeStamp" value="735" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1092</line>
-          <properties />
-          <option name="timeStamp" value="736" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1093</line>
-          <properties />
-          <option name="timeStamp" value="737" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1094</line>
-          <properties />
-          <option name="timeStamp" value="738" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1095</line>
-          <properties />
-          <option name="timeStamp" value="741" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1100</line>
-          <properties />
-          <option name="timeStamp" value="743" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1105</line>
-          <properties />
-          <option name="timeStamp" value="745" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1106</line>
-          <properties />
-          <option name="timeStamp" value="746" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1126</line>
-          <properties />
-          <option name="timeStamp" value="753" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1128</line>
-          <properties />
-          <option name="timeStamp" value="754" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1127</line>
-          <properties />
-          <option name="timeStamp" value="755" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1131</line>
-          <properties />
-          <option name="timeStamp" value="756" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1132</line>
-          <properties />
-          <option name="timeStamp" value="757" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1133</line>
-          <properties />
-          <option name="timeStamp" value="758" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1135</line>
-          <properties />
-          <option name="timeStamp" value="759" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1134</line>
-          <properties />
-          <option name="timeStamp" value="760" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1021</line>
-          <properties />
-          <option name="timeStamp" value="761" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1022</line>
-          <properties />
-          <option name="timeStamp" value="762" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1028</line>
-          <properties />
-          <option name="timeStamp" value="763" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1029</line>
-          <properties />
-          <option name="timeStamp" value="764" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1030</line>
-          <properties />
-          <option name="timeStamp" value="765" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1032</line>
-          <properties />
-          <option name="timeStamp" value="767" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1033</line>
-          <properties />
-          <option name="timeStamp" value="768" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>995</line>
-          <properties />
-          <option name="timeStamp" value="778" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>996</line>
-          <properties />
-          <option name="timeStamp" value="779" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>997</line>
-          <properties />
-          <option name="timeStamp" value="780" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>999</line>
-          <properties />
-          <option name="timeStamp" value="781" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1007</line>
-          <properties />
-          <option name="timeStamp" value="782" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1008</line>
-          <properties />
-          <option name="timeStamp" value="783" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1009</line>
-          <properties />
-          <option name="timeStamp" value="784" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Scanner/Parser.java</url>
-          <line>1139</line>
-          <properties />
-          <option name="timeStamp" value="785" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="787" />
+      <option name="time" value="788" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2572,23 +2300,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scanner/LexicalAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1545">
-          <caret line="104" column="28" lean-forward="true" selection-start-line="104" selection-start-column="28" selection-end-line="104" selection-end-column="28" />
+        <state relative-caret-position="345">
+          <caret line="70" column="55" lean-forward="false" selection-start-line="70" selection-start-column="55" selection-end-line="70" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scanner/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="480">
+          <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scanner/FirstNFollow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="-180">
           <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
           <folding />
         </state>
@@ -2596,8 +2324,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scanner/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3330">
-          <caret line="839" column="9" lean-forward="true" selection-start-line="839" selection-start-column="9" selection-end-line="839" selection-end-column="9" />
+        <state relative-caret-position="435">
+          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

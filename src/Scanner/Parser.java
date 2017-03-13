@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * Created by Ethan on 2017-02-21.
+ * Created by Hao on 2017-02-21.
  */
 public class Parser {
     String lookAhead = "";
@@ -25,9 +25,8 @@ public class Parser {
     PrintWriter out = null;
 
     public Parser(){
-//        la = new LexicalAnalyzer();
-//        la.writeToFile = true;
-//        la.extractTokens();
+        la = new LexicalAnalyzer();
+
         try{
             br = new BufferedReader(new FileReader(fileName));
         }
@@ -69,22 +68,23 @@ public class Parser {
 
     public String nextToken(){
         String line = "$";
+        String token = null;
         try {
-            line = br.readLine();
-            lineNum++;
-            while(line!= null && line.contains("comment:")) {
-                line = br.readLine();
-                lineNum++;
+            line = la.getToken();
+            while(line != null && (line.contains("comment:") || line.contains("::"))) {
+                line = la.getToken();
             }
-            if(line!=null) {
+            if(line != null) {
                 writer(line);
-                line = line.split(":")[0];
+                token = line.split(":")[0];
+                if(!line.equals("$"))
+                    lineNum = Integer.parseInt(line.split(":")[2]);
             }
         }
         catch (Exception e){
             e.printStackTrace();
         }
-        return line;
+        return token;
     }
 
     // Method for Output
@@ -150,16 +150,36 @@ public class Parser {
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T20")];
         for(String s : first) {
             if (lookAhead.equals(s)){
-                if(match("program") && match("{") && T17p() && T16p() && match("}")
-                        && match(";") && T19p()){
-                    writer("progBody-> program{varDecl*statement*};funcDef*");
-                    return true;
+                if(match("program")) {
+                    if(match("{")) {
+                        if(T17p() && T16p()) {
+                            if(match("}")) {
+                                if(match(";")) {
+                                    if(T19p()) {
+                                        writer("progBody-> program{varDecl*statement*};funcDef*");
+                                        return true;
+                                    }
+                                }
+                                else {
+                                    writer("Error: missing ';' at line " + lineNum);
+                                }
+                            }
+                            else {
+                                writer("Error: missing '}' at line " + lineNum);
+                            }
+                        }
+                    }
+                    else {
+                        writer("Error: missing '{' at line " + lineNum);
+                    }
                 }
                 else {
-                    return false;
+                    writer("Error: missing 'program' at line " + lineNum);
                 }
+                return false;
             }
         }
+        writer("Error: missing progBody at line " + lineNum);
         return false;
     }
 
@@ -171,18 +191,41 @@ public class Parser {
         for(String s : first) {
             if (lookAhead.equals(s)){
                 isClass = true;
-                if(match("class") && match("id") && match("{")
-                        && T17p() && T19p() && match("}") && match(";")){
-                    writer("classDecl-> class id {varDecl*funcDef*};");
-                    isClass = false;
-                    return true;
+                if(match("class")) {
+                    if(match("id")) {
+                        if(match("{")) {
+                            if(T17p() && T19p()) {
+                                if(match("}")) {
+                                    if(match(";")) {
+                                        writer("classDecl-> class id {varDecl*funcDef*};");
+                                        isClass = false;
+                                        return true;
+                                    }
+                                    else {
+                                        writer("Error: missing ';' at line " + lineNum);
+                                    }
+                                }
+                                else {
+                                    writer("Error: missing '}' at line " + lineNum);
+                                }
+                            }
+                        }
+                        else {
+                            writer("Error: missing '{' at line " + lineNum);
+                        }
+                    }
+                    else {
+                        writer("Error: missing id at line " + lineNum);
+                    }
                 }
                 else {
-                    isClass = false;
-                    return false;
+                    writer("Error: missing 'class' at line " + lineNum);
                 }
+                isClass = false;
+                return false;
             }
         }
+        writer("Error: missing classDecl at line " + lineNum);
         return false;
     }
 
@@ -240,7 +283,6 @@ public class Parser {
                 return true;
             }
         }
-
         return false;
     }
 
@@ -292,10 +334,12 @@ public class Parser {
                         return true;
                 }
                 else{
+                    writer("Error: unknown type or id at line " + lineNum);
                     return false;
                 }
             }
         }
+        writer("Error: missing varDecl at line " + lineNum);
         return false;
     }
 
@@ -335,7 +379,6 @@ public class Parser {
                 return true;
             }
         }
-
         return false;
     }
 
@@ -355,7 +398,6 @@ public class Parser {
                 }
             }
         }
-
         return false;
     }
 
@@ -375,7 +417,6 @@ public class Parser {
                 }
             }
         }
-
         return false;
     }
 
@@ -386,17 +427,19 @@ public class Parser {
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T19")];
         for(String s : first) {
             if (lookAhead.equals(s) || T17to19){
-                if(T11() && T18() && match(";")){
-                    writer("funcDef-> funcHead funcBody");
-                    //lookAhead = nextToken();
-                    return true;
+                if(T11() && T18()) {
+                    if(match(";")){
+                        writer("funcDef-> funcHead funcBody");
+                        return true;
+                    }
+                    else {
+                        writer("Error: missing ';' at line " + lineNum);
+                    }
                 }
-                else {
-                    return false;
-                }
+                return false;
             }
         }
-
+        writer("Error: missing funcDef at line " + lineNum);
         return false;
     }
 
@@ -407,13 +450,27 @@ public class Parser {
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T11")];
         for(String s : first) {
             if (lookAhead.equals(s)) {
-                if (F2() && match("id") && match("(")
-                        && T12() && match(")")) {
-                    writer("funcHead-> type id(fParams)");
-                    return true;
-                } else {
-                    return false;
+                if (F2()) {
+                    if(match("id")) {
+                        if(match("(")) {
+                            if (T12()) {
+                                if (match(")")) {
+                                    writer("funcHead-> type id(fParams)");
+                                    return true;
+                                } else {
+                                    writer("Error: missing ')' at line " + lineNum);
+                                }
+                            }
+                        }
+                        else {
+                            writer("Error: missing '(' at line " + lineNum);
+                        }
+                    }
+                    else {
+                        writer("Error: missing 'id' at line " + lineNum);
+                    }
                 }
+                return false;
             }
             else if(T17to19 && lookAhead.equals("(")){
                 if(match("(") && T12() && match(")")){
@@ -426,7 +483,7 @@ public class Parser {
                 }
             }
         }
-
+        writer("Error: missing funcHead at line " + lineNum);
         return false;
     }
 
@@ -437,13 +494,18 @@ public class Parser {
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T12")];
         for(String s : first) {
             if (lookAhead.equals(s)){
-                if(F2() && match("id") && F3p() && T13p()){
-                    writer("fParams-> type id arraySize* fParamsTail");
-                    return true;
+                if(F2()) {
+                    if(match("id")) {
+                        if(F3p() && T13p()){
+                            writer("fParams-> type id arraySize* fParamsTail");
+                            return true;
+                        }
+                    }
+                    else {
+                        writer("Error: missing id at line " + lineNum);
+                    }
                 }
-                else {
-                    return false;
-                }
+                return false;
             }
         }
         for(String s : follow){
@@ -452,7 +514,6 @@ public class Parser {
                 return true;
             }
         }
-
         return false;
     }
 
@@ -478,7 +539,6 @@ public class Parser {
                 return true;
             }
         }
-
         return false;
     }
 
@@ -489,16 +549,25 @@ public class Parser {
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T13")];
         for(String s : first) {
             if (lookAhead.equals(s)){
-                if(match(",") && F2() && match("id") && F3p()){
-                    writer("fParamsTail-> ,type id arraySize*");
-                    return true;
+                if(match(",")) {
+                    if(F2()) {
+                        if(match("id")) {
+                            if(F3p()){
+                                writer("fParamsTail-> ,type id arraySize*");
+                                return true;
+                            }
+                        }
+                        else {
+                            writer("Error: missing id at line " + lineNum);
+                        }
+                    }
                 }
                 else {
-                    return false;
+                    writer("Error: missing ',' at line " + lineNum);
                 }
+                return false;
             }
         }
-
         return false;
     }
 
@@ -542,12 +611,6 @@ public class Parser {
                         return true;
                     }
                 }
-//                else if(isFuncBody){
-//                    if(T15() && match(";")){
-//                        writer("statement-> assignStat;");
-//                        return true;
-//                    }
-//                }
                 else if(lookAhead.equals("if")) {
                     if(match("if") && match("(")) {
                         if(T14() && F1() && T14()) {
@@ -680,9 +743,8 @@ public class Parser {
                         }
                     }
                 }
-                else{
-                    return false;
-                }
+                writer("Error: unknown statement at line " + lineNum);
+                return false;
             }
         }
         writer("Error: missing statements at line " + lineNum);
@@ -697,18 +759,21 @@ public class Parser {
         for(String s : first) {
             if (lookAhead.equals(s)){
                 if(lookAhead.equals("{")){
-                    if(match("{") && T16p() && match("}")){
-                        writer("statBlock-> {statement*}");
-                        return true;
+                    if(match("{") && T16p()) {
+                        if(match("}")){
+                            writer("statBlock-> {statement*}");
+                            return true;
+                        }
+                        else {
+                            writer("Error: missing '}' at line " + lineNum);
+                        }
                     }
                 }
                 else if(T16()){
                     writer("statBlock-> statement ");
                     return true;
                 }
-                else {
-                    return false;
-                }
+                return false;
             }
         }
         for(String s : follow){
@@ -790,15 +855,8 @@ public class Parser {
         for(String s : first) {
             if (lookAhead.equals(s)){
                 if(T4p()) {
-//                    if(match("id")){
-//                        if(T6p()){
-                            writer("variable-> idnest* id indice*");
-                            return true;
-//                        }
-//                    }
-//                    else {
-//                        writer("Error: missing id at line " + lineNum);
-//                    }
+                    writer("variable-> idnest* id indice*");
+                    return true;
                 }
                 else {
                     if(isIdnest && var2factor) {
@@ -869,7 +927,6 @@ public class Parser {
                 return true;
             }
         }
-
         return false;
     }
 
@@ -948,14 +1005,20 @@ public class Parser {
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T14p")];
         for (String s : first) {
             if (lookAhead.equals(s)) {
-                if ((match("+") && T1() && T14p()) ||
-                        (match("-") && T1() && T14p()) ||
-                        (match("or") && T1() && T14p())) {
-                    writer("arithExpr*-> +term arithExpr* | -term arithExpr* | or term arithExpr*");
-                    return true;
-                } else {
-                    return false;
+                String addOp = "";
+                if(lookAhead.equals("+"))
+                    addOp = "+";
+                else if(lookAhead.equals("-"))
+                    addOp = "-";
+                else if(lookAhead.equals("or"))
+                    addOp = "or";
+                if (match("+")  || match("-")  || match("or")) {
+                    if(T1() && T14p()) {
+                        writer("arithExpr*-> " + addOp + "term arithExpr*");
+                        return true;
+                    }
                 }
+                return false;
             }
         }
         for (String s : follow) {
@@ -964,7 +1027,6 @@ public class Parser {
                 return true;
             }
         }
-
         return false;
     }
 
@@ -984,7 +1046,6 @@ public class Parser {
                 }
             }
         }
-
         return false;
     }
 
@@ -995,12 +1056,21 @@ public class Parser {
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T1p")];
         for (String s : first) {
             if (lookAhead.equals(s)) {
-                if ((match("*") && T2() && T1p()) ||
-                        (match("/") && T2() && T1p()) ||
-                        (match("and") && T2() && T1p())) {
-                    writer("term*-> *factor term* | /facotr term* | and factor term*");
-                    return true;
-                } else {
+                String multOp = "";
+                if(lookAhead.equals("*"))
+                    multOp = "*";
+                else if(lookAhead.equals("/"))
+                    multOp = "/";
+                else if(lookAhead.equals("and"))
+                    multOp = "and";
+                if (match("*") || match("/")  || match("and")) {
+                    if(T2() && T1p()) {
+                        writer("term*-> " + multOp + "factor term*");
+                        return true;
+                    }
+                }
+                else {
+                    writer("Error: unknown term at line " + lineNum);
                     return false;
                 }
             }
@@ -1011,7 +1081,6 @@ public class Parser {
                 return true;
             }
         }
-
         return false;
     }
 
@@ -1076,6 +1145,7 @@ public class Parser {
                     writer("factor-> -factor");
                     return true;
                 }
+                writer("Error: unknown term at line " + lineNum);
                 return false;
 
             }
@@ -1169,7 +1239,6 @@ public class Parser {
                 return true;
             }
         }
-
         return false;
     }
 
@@ -1204,13 +1273,16 @@ public class Parser {
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T8")];
         for(String s : first) {
             if (lookAhead.equals(s)){
-                if(match(",") && T7()){
-                    writer("aParamsTail-> ,expr");
-                    return true;
+                if(match(",")) {
+                    if(T7()){
+                        writer("aParamsTail-> ,expr");
+                        return true;
+                    }
                 }
                 else {
-                    return false;
+                    writer("Error: missing ',' at line " + lineNum);
                 }
+                return false;
             }
         }
         return false;

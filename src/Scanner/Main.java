@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args){
-//        LexicalAnalyzer la = new LexicalAnalyzer();
+        //LexicalAnalyzer la = new LexicalAnalyzer();
         Parser parser = new Parser();
 
         Scanner sc =new Scanner(System.in);
@@ -24,8 +24,16 @@ public class Main {
                 break;
             }
         }
-//        la.extractTokens();
 
+//        la.extractTokens();
+//        String t = "!";
+//        try {
+//            while (!t.equals("$"))
+//                System.out.println(t = la.getToken());
+//        }
+//        catch (Exception e){
+//            e.printStackTrace();
+//        }
 //        System.out.println("Scanning is finished.");
 
         parser.parse();

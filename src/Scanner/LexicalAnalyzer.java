@@ -23,6 +23,8 @@ public class LexicalAnalyzer {
     BufferedReader br = null;
     public boolean writeToFile = false;
     PrintWriter out = null;
+    boolean startSymbol = true;
+    String rawLine = null;
 
     String[] tokens = {
             "id", "num_integer", "num_float", "operator_equal", "operator_lessThan", "operator_greaterThan",
@@ -36,6 +38,56 @@ public class LexicalAnalyzer {
     public LexicalAnalyzer(){
         importStateTransitionTable();
         setColumnNumber();
+        try{
+            br = new BufferedReader(new FileReader(fileName));
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    public String getToken() throws IOException{
+        String result = "$";
+        if(startSymbol) {
+            startSymbol = false;
+            rawLine = br.readLine();
+        }
+        if(rawLine != null) {
+            if (nextPosition < rawLine.length()) {
+            }
+            else {
+                currentPosition = 0;
+                nextPosition = 0;
+                try {
+                    rawLine = br.readLine();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                if(rawLine == null)
+                    return result;
+                numOfLine++;
+            }
+            String token = nextToken(rawLine);
+            while (token != null && token.equals("sp"))
+                token = nextToken(rawLine);
+            if (token == null && cmtCounter > 0) {
+                result = "comment:comment" + numOfLine;
+            }
+            else {
+                if (token.toLowerCase().contains("comment"))
+                    token = "comment";
+                else if (token.toLowerCase().contains("num_integer"))
+                    token = "integer";
+                else if (token.toLowerCase().contains("num_float"))
+                    token = "nfloat";
+                else if (!token.equals("id"))
+                    token = rawLine.substring(currentPosition, nextPosition);
+                result = token + ":" + rawLine.substring(currentPosition, nextPosition) + ":" + numOfLine;
+                currentPosition = nextPosition;
+            }
+            //return result;
+        }
+        return result;
     }
 
     public void extractTokens(){
@@ -60,9 +112,9 @@ public class LexicalAnalyzer {
                 String token = nextToken(line);
                 if (token == null && cmtCounter > 0) {
                     if(writeToFile)
-                        out.println("comment," + numOfLine);
+                        out.println("comment:" + numOfLine);
                     else
-                        System.out.println("comment," + numOfLine);
+                        System.out.println("comment:" + numOfLine);
                 }
                 else if(!token.equals("sp")) {
                     if(writeToFile) {

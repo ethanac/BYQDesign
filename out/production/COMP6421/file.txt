@@ -6,6 +6,7 @@ class Utility
     {
         int maxValue;
         int idx;
+        float job;
         maxValue = array[100];
         for( int idx = 99; idx > 0; idx = idx - 1 )
         {
