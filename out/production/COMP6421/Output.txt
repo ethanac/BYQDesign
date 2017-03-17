@@ -239,7 +239,6 @@ id:t
 ]:]
 ):)
 ;:;
-comment://sample[t] = (sample[t] * randomize());
 id:sample
 [:[
 id:t

@@ -9,6 +9,7 @@ public class Main {
     public static void main(String[] args){
         //LexicalAnalyzer la = new LexicalAnalyzer();
         Parser parser = new Parser();
+        parser.toFile = true;
 
         Scanner sc =new Scanner(System.in);
         System.out.println("------Welcome to Parser!------");
@@ -16,11 +17,11 @@ public class Main {
             System.out.println("Please select how to output(enter 1 or 2):\n 1. Print to screen.\n 2. Output to a file.");
             int userChoice = sc.nextInt();
             if (userChoice == 1) {
-                parser.toFile = false;
+                parser.stg.toFile = false;
                 break;
             }
             else if (userChoice == 2) {
-                parser.toFile = true;
+                parser.stg.toFile = true;
                 break;
             }
         }
@@ -38,6 +39,10 @@ public class Main {
 
         parser.parse();
         parser.out.close();
+        for(String s : parser.stg.tables.keySet()) {
+            parser.stg.printTable(s);
+        }
+        parser.stg.out.close();
         sc.close();
     }
 

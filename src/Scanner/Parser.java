@@ -3,13 +3,15 @@ package Scanner;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Stack;
 
 /**
  * Created by Hao on 2017-02-21.
  */
 public class Parser {
     String lookAhead = "";
-    LexicalAnalyzer la = null;
+    LexicalAnalyzer la;
+    public SymbolTableGenerator stg;
     String fileName = "Output.txt";
     BufferedReader br = null;
     HashMap<String, ArrayList<String>> firstSets = null;
@@ -21,12 +23,25 @@ public class Parser {
     boolean isIdnest = false;
     boolean var2factor = false;
     int lineNum = 0;
-    public boolean toFile = false;
+    public boolean toFile = true;
+    boolean ifRecord = false;
+    boolean isIndice = false;
+    public String record = "";
+    String tokenString = "";
     PrintWriter out = null;
+    boolean funcParams = false;
+    boolean isArraySize = false;
+    boolean isFuncStart = false;
+    String tmpFuncHead = "";
+    String typeDim = "";
+    String arraySize = "";
+    String vType = "";
+    String vName = "";
+    Stack<String> scope;
 
     public Parser(){
         la = new LexicalAnalyzer();
-
+        stg = new SymbolTableGenerator();
         try{
             br = new BufferedReader(new FileReader(fileName));
         }
@@ -40,6 +55,7 @@ public class Parser {
         }
 
         new FirstNFollow();
+        scope = new Stack<String>();
     }
 
     public boolean parse(){
@@ -77,8 +93,18 @@ public class Parser {
             if(line != null) {
                 writer(line);
                 token = line.split(":")[0];
-                if(!line.equals("$"))
+                if(!line.equals("$")) {
+                    tokenString = line.split(":")[1];
                     lineNum = Integer.parseInt(line.split(":")[2]);
+                }
+                if(funcParams) {
+                    typeDim += tokenString + "!";
+                }
+                if(isArraySize) {
+                    if(token.equals("int") || token.equals("float") || token.equals("id"));
+                    else
+                        arraySize += tokenString;
+                }
             }
         }
         catch (Exception e){
@@ -97,16 +123,31 @@ public class Parser {
         }
     }
 
-    // start symbol
+    private ArrayList<String> createRecord(String type, String kind, String link){
+        ArrayList<String> rec = new ArrayList<>(3);
+        rec.add(type);
+        rec.add(kind);
+        rec.add(link);
+        return rec;
+    }
+
+    // start symbol / prog
     // E-> T21'T20
     private boolean startSymbol(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("E")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("E")];
         for(String s : first) {
             if (lookAhead.equals(s)){
+                if(!stg.create("Global")) {
+                    System.out.println(" at line " + lineNum);
+                    return false;
+                }
+                System.out.println("Table: Global created.");
+                System.out.println("class push: " + scope.push("Global"));
                 if(T21p() && T20()){
                     String o = "E-> classDecl* progBody";
                     writer(o);
+                    System.out.println("global pop: " + scope.pop());
                     return true;
                 }
                 else {
@@ -140,6 +181,7 @@ public class Parser {
                 return true;
             }
         }
+        writer("Error: incorrect classDecl at line " + lineNum);
         return false;
     }
 
@@ -151,10 +193,24 @@ public class Parser {
         for(String s : first) {
             if (lookAhead.equals(s)){
                 if(match("program")) {
+                    if(!stg.create("program")) {
+                        System.out.println(" at line " + lineNum);
+                        return false;
+                    }
+                    ArrayList<String> rec = createRecord("function", "NA", "program");
+                    System.out.println(scope.peek());
+                    if(!stg.insert(scope.peek(), "program", rec)) {
+                        System.out.println(" at line " + lineNum);
+                        return false;
+                    }
+                    System.out.println("Table: program function created.");
+                    System.out.println("program push: " + scope.push("program"));
+
                     if(match("{")) {
                         if(T17p() && T16p()) {
                             if(match("}")) {
                                 if(match(";")) {
+                                    System.out.println("program pop: " + scope.pop());    // pop program table
                                     if(T19p()) {
                                         writer("progBody-> program{varDecl*statement*};funcDef*");
                                         return true;
@@ -179,7 +235,7 @@ public class Parser {
                 return false;
             }
         }
-        writer("Error: missing progBody at line " + lineNum);
+        writer("Error: incorrect progBody at line " + lineNum);
         return false;
     }
 
@@ -192,6 +248,17 @@ public class Parser {
             if (lookAhead.equals(s)){
                 isClass = true;
                 if(match("class")) {
+                    ArrayList<String> rec = createRecord("class", "NA", tokenString);
+                    if(!stg.create(tokenString)) {
+                        System.out.println(" at line " + lineNum);
+                        return false;
+                    }
+                    if(!stg.insert(scope.peek(), tokenString, rec)) {
+                        System.out.println(" at line " + lineNum);
+                        return false;
+                    }
+                    System.out.println("Table: class " + tokenString + " created.");
+                    System.out.println("class push: " + scope.push(tokenString));    // push class table
                     if(match("id")) {
                         if(match("{")) {
                             if(T17p() && T19p()) {
@@ -199,6 +266,7 @@ public class Parser {
                                     if(match(";")) {
                                         writer("classDecl-> class id {varDecl*funcDef*};");
                                         isClass = false;
+                                        System.out.println("class pop: " + scope.pop());     // pop class table
                                         return true;
                                     }
                                     else {
@@ -225,7 +293,7 @@ public class Parser {
                 return false;
             }
         }
-        writer("Error: missing classDecl at line " + lineNum);
+        writer("Error: incorrect classDecl at line " + lineNum);
         return false;
     }
 
@@ -258,6 +326,7 @@ public class Parser {
                 return true;
             }
         }
+        writer("Error: incorrect varDecl at line " + lineNum);
         return false;
     }
 
@@ -283,6 +352,7 @@ public class Parser {
                 return true;
             }
         }
+        writer("Error: incorrect statement at line " + lineNum);
         return false;
     }
 
@@ -308,6 +378,7 @@ public class Parser {
                 return true;
             }
         }
+        writer("Error: incorrect funcDef at line " + lineNum);
         return false;
     }
 
@@ -317,21 +388,39 @@ public class Parser {
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("T17")];
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T17")];
         for(String s : first) {
-            if (lookAhead.equals(s)){
-                if(match("id")) {
-                    if (lookAhead.equals("=")) {
-                        match("=");
-                        isFuncBody = true;
-                        return true;
-                    }
-                    else if (match("id")){
-                        if(ifSwitchTo19())
-                            return true;
+            if (lookAhead.equals(s)) {
+                if (lookAhead.equals("id")) {
+                    vType = tokenString;
+                    tmpFuncHead = tokenString;
+                    if(match("id")) {
+                            if (lookAhead.equals("=")) {
+                                match("=");
+                                isFuncBody = true;
+                                return true;
+                            }
+                            else if(lookAhead.equals("id")) {
+                                vName = tokenString;
+                                tmpFuncHead += " " + tokenString;
+                                if(match("id")) {
+                                    if (ifSwitchTo19(vType + " " + vName))
+                                        return true;
+                                }
+                            }
                     }
                 }
-                else if(F2() && match("id")){
-                    if(ifSwitchTo19())
-                        return true;
+                else if(lookAhead.equals("int") || lookAhead.equals("float")){
+                    tmpFuncHead = tokenString;
+                    vType = tokenString;
+                    if(F2()){
+                        if(lookAhead.equals("id")) {
+                            vName = tokenString;
+                            tmpFuncHead += " " + tokenString;
+                            if (match("id")) {
+                                if (ifSwitchTo19(vType + " " + vName))
+                                    return true;
+                            }
+                        }
+                    }
                 }
                 else{
                     writer("Error: unknown type or id at line " + lineNum);
@@ -339,22 +428,37 @@ public class Parser {
                 }
             }
         }
-        writer("Error: missing varDecl at line " + lineNum);
+        writer("Error: incorrect varDecl at line " + lineNum);
         return false;
     }
 
-    private boolean ifSwitchTo19() {
+    private boolean ifSwitchTo19(String var) {
         if(isClass && lookAhead.equals("(")){
             T17to19 = true;
             return true;
         }
-        else if(F3p() && match(";")) {
-            writer("varDecl-> type id arraySize*;");
-            return true;
-        }
         else {
-            return false;
+            isArraySize = true;
+            if (F3p() && match(";")) {
+                arraySize = arraySize.split(";")[0];
+                if(arraySize.contains("]"))
+                    arraySize = "[" + arraySize;
+
+                String p = var.split(" ")[0] + arraySize;
+                ArrayList<String> rec = createRecord("variable", p, "NA");
+                if(!stg.insert(scope.peek(), var.split(" ")[1], rec)) {
+                    System.out.println(" at line " + lineNum);
+                    return false;
+                }
+
+                System.out.println("Variable " + var + arraySize + " inserted.");
+                isArraySize = false;
+                arraySize = "";
+                writer("varDecl-> type id arraySize*;");
+                return true;
+            }
         }
+        return false;
     }
 
     // arraySize*
@@ -379,6 +483,7 @@ public class Parser {
                 return true;
             }
         }
+        writer("Error: incorrect arraySize at line " + lineNum);
         return false;
     }
 
@@ -389,8 +494,18 @@ public class Parser {
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("F2")];
         for(String s : first) {
             if (lookAhead.equals(s)){
+                String varType = "";
+                if(lookAhead.equals("int")) {
+                    varType = "int";
+                }
+                else if(lookAhead.equals("float")) {
+                    varType = "float";
+                }
+                else if(lookAhead.equals("id")) {
+                    varType = tokenString;
+                }
                 if(match("int") || match("float") || match("id")){
-                    writer("type-> int | float | id");
+                    writer("type-> " + varType);
                     return true;
                 }
                 else {
@@ -398,6 +513,7 @@ public class Parser {
                 }
             }
         }
+        writer("Error: unknown type at line " + lineNum);
         return false;
     }
 
@@ -417,6 +533,7 @@ public class Parser {
                 }
             }
         }
+        writer("Error: incorrect arraySize at line " + lineNum);
         return false;
     }
 
@@ -439,7 +556,7 @@ public class Parser {
                 return false;
             }
         }
-        writer("Error: missing funcDef at line " + lineNum);
+        writer("Error: incorrect funcDef at line " + lineNum);
         return false;
     }
 
@@ -450,12 +567,34 @@ public class Parser {
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T11")];
         for(String s : first) {
             if (lookAhead.equals(s)) {
+                isFuncStart = true;
+                String fType = tokenString;
                 if (F2()) {
+                    String fName = tokenString;
                     if(match("id")) {
+                        funcParams = true;
                         if(match("(")) {
                             if (T12()) {
+                                funcParams = false;
                                 if (match(")")) {
+                                    typeDim = trimParams(typeDim);
+
+                                    String p = extractParamType(typeDim);
+                                    ArrayList<String> rec = createRecord("function", fType+":"+p, scope.peek() + "." + fName);
+                                    if(!stg.create(scope.peek() + "." + fName)) {
+                                        System.out.println(" at line " + lineNum);
+                                        return false;
+                                    }
+                                    if(!stg.insert(scope.peek(), fName, rec)) {
+                                        System.out.println(" at line " + lineNum);
+                                        return false;
+                                    }
+
+                                    System.out.println("Table: function " + scope.peek() + "." + fName + " " + fType + ":" + typeDim + " created.");
+                                    typeDim = "";
                                     writer("funcHead-> type id(fParams)");
+                                    isFuncStart = false;
+                                    System.out.println("function push: " + scope.push(scope.peek() + "." + fName));   // push function table
                                     return true;
                                 } else {
                                     writer("Error: missing ')' at line " + lineNum);
@@ -472,19 +611,88 @@ public class Parser {
                 }
                 return false;
             }
-            else if(T17to19 && lookAhead.equals("(")){
-                if(match("(") && T12() && match(")")){
-                    writer("funcHead-> type id(fParams)");
-                    T17to19 = false;
-                    return true;
+            else if(T17to19) {
+                if(lookAhead.equals("(")){
+                    funcParams = true;
+                    if(match("(") && T12()) {
+                        funcParams = false;
+                        if(match(")")) {
+                            typeDim = trimParams(typeDim);
+
+                            String p = extractParamType(typeDim);
+                            ArrayList<String> rec = createRecord("function", tmpFuncHead.split(" ")[0] +":"+p, scope.peek() + "." + tmpFuncHead.split(" ")[1]);
+                            if(!stg.create(scope.peek() + "." + tmpFuncHead.split(" ")[1])) {
+                                System.out.println(" at line " + lineNum);
+                                return false;
+                            }
+                            if(!stg.insert(scope.peek(), tmpFuncHead.split(" ")[1], rec)) {
+                                System.out.println(" at line " + lineNum);
+                                return false;
+                            }
+
+                            System.out.println("Table: function " + tmpFuncHead + ":" + typeDim + " created.");
+                            typeDim = "";
+                            writer("funcHead-> type id(fParams)");
+                            T17to19 = false;
+                            isFuncStart = false;
+                            System.out.println("function push: " + scope.push(scope.peek() + "." + tmpFuncHead.split(" ")[1]));
+                            return true;
+                        }
+                    }
                 }else {
                     T17to19 = false;
+                    isFuncStart = false;
                     return false;
                 }
             }
         }
-        writer("Error: missing funcHead at line " + lineNum);
+        writer("Error: incorrect funcHead at line " + lineNum);
         return false;
+    }
+
+    private String extractParamType(String params) {
+        String[] sp = params.split(",");
+        String result = "";
+        boolean start = false;
+        for(int j = 0; j < sp.length; j++) {
+            if(!sp[j].equals("")) {
+                result += sp[j].split(" ")[0];
+                String d = sp[j].split(" ")[1];
+                for(int i = 0; i < d.length(); i++) {
+                    if(!start && d.charAt(i) == '[') {
+                        start = true;
+                    }
+                    if(start){
+                        result += d.charAt(i);
+                    }
+                }
+            }
+            start = false;
+            if(j < sp.length - 1)
+                result += ",";
+        }
+        return result;
+    }
+
+    private String trimParams(String params){
+        String result = "";
+        int startNum = 0;
+        params = params.replace(")", "");
+        String[] sp = params.split(",");
+        for(String s : sp) {
+            String[] param;
+            param = s.split("!");
+            if(param.length > 0) {
+                if (param[0].equals("")) {
+                    startNum = 1;
+                }
+                String dimension = "";
+                for (int i = startNum + 1; i < param.length; i++)
+                    dimension += param[i];
+                result += param[startNum] + " " + dimension + ",";
+            }
+        }
+        return result;
     }
 
     // fParams
@@ -514,6 +722,7 @@ public class Parser {
                 return true;
             }
         }
+        writer("Error: incorrect fParams at line " + lineNum);
         return false;
     }
 
@@ -539,6 +748,7 @@ public class Parser {
                 return true;
             }
         }
+        writer("Error: incorrect fParamsTail at line " + lineNum);
         return false;
     }
 
@@ -568,6 +778,7 @@ public class Parser {
                 return false;
             }
         }
+        writer("Error: incorrect fParamsTail at line " + lineNum);
         return false;
     }
 
@@ -582,6 +793,7 @@ public class Parser {
                     if(T17p() && T16p()) {
                         if(match("}")){
                             writer("funcBody-> {varDecl* statement*}");
+                            System.out.println("function pop: " + scope.pop());    // pop function table
                             return true;
                         }
                         else {
@@ -594,7 +806,7 @@ public class Parser {
                 }
             }
         }
-        writer("Error: missing funcBody at line " + lineNum);
+        writer("Error: incorrect funcBody at line " + lineNum);
         return false;
     }
 
@@ -743,11 +955,11 @@ public class Parser {
                         }
                     }
                 }
-                writer("Error: unknown statement at line " + lineNum);
+                writer("Error: incorrect statement at line " + lineNum);
                 return false;
             }
         }
-        writer("Error: missing statements at line " + lineNum);
+        writer("Error: incorrect statements at line " + lineNum);
         return false;
     }
 
@@ -782,7 +994,7 @@ public class Parser {
                 return true;
             }
         }
-        writer("Error: missing statBlock at line " + lineNum);
+        writer("Error: incorrect statBlock at line " + lineNum);
         return false;
     }
 
@@ -808,6 +1020,7 @@ public class Parser {
                 return true;
             }
         }
+        writer("Error: incorrect assignStat at line " + lineNum);
         return false;
     }
 
@@ -843,7 +1056,7 @@ public class Parser {
                 return false;
             }
         }
-        writer("Error: missing assignStat at line " + lineNum);
+        writer("Error: incorrect assignStat at line " + lineNum);
         return false;
     }
 
@@ -868,7 +1081,7 @@ public class Parser {
             }
         }
         if(!isFactor)
-            writer("Error: missing variable at line " + lineNum);
+            writer("Error: incorrect variable at line " + lineNum);
         return false;
     }
 
@@ -896,6 +1109,7 @@ public class Parser {
                 return true;
             }
         }
+//        writer("Error: incorrect Idnest at line " + lineNum);
         return false;
     }
 
@@ -927,6 +1141,7 @@ public class Parser {
                 return true;
             }
         }
+        writer("Error: incorrect indice at line " + lineNum);
         return false;
     }
 
@@ -955,7 +1170,7 @@ public class Parser {
                 }
             }
         }
-        writer("Error: missing expr at line " + lineNum);
+        writer("Error: incorrect expr at line " + lineNum);
         return false;
     }
 
@@ -975,7 +1190,7 @@ public class Parser {
                 }
             }
         }
-
+        writer("Error: incorrect relExpr at line " + lineNum);
         return false;
     }
 
@@ -995,6 +1210,7 @@ public class Parser {
                 }
             }
         }
+        writer("Error: incorrect arithExpr at line " + lineNum);
         return false;
     }
 
@@ -1027,6 +1243,7 @@ public class Parser {
                 return true;
             }
         }
+        writer("Error: incorrect arithExpr at line " + lineNum);
         return false;
     }
 
@@ -1046,6 +1263,7 @@ public class Parser {
                 }
             }
         }
+        writer("Error: incorrect term at line " + lineNum);
         return false;
     }
 
@@ -1070,7 +1288,7 @@ public class Parser {
                     }
                 }
                 else {
-                    writer("Error: unknown term at line " + lineNum);
+                    writer("Error: incorrect term at line " + lineNum);
                     return false;
                 }
             }
@@ -1081,6 +1299,7 @@ public class Parser {
                 return true;
             }
         }
+        writer("Error: incorrect terms at line " + lineNum);
         return false;
     }
 
@@ -1145,12 +1364,12 @@ public class Parser {
                     writer("factor-> -factor");
                     return true;
                 }
-                writer("Error: unknown term at line " + lineNum);
+                writer("Error: incorrect term at line " + lineNum);
                 return false;
 
             }
         }
-        writer("Error: missing factor at line " + lineNum);
+        writer("Error: incorrect factor at line " + lineNum);
         return false;
     }
 
@@ -1185,7 +1404,7 @@ public class Parser {
                 }
             }
         }
-        writer("Error: missing idnest at line " + lineNum);
+        writer("Error: incorrect idnest at line " + lineNum);
         return false;
     }
 
@@ -1214,7 +1433,7 @@ public class Parser {
                 return false;
             }
         }
-        writer("Error: missing indice at line " + lineNum);
+        writer("Error: incorrect indice at line " + lineNum);
         return false;
     }
 
@@ -1239,6 +1458,7 @@ public class Parser {
                 return true;
             }
         }
+        writer("Error: incorrect aParams at line " + lineNum);
         return false;
     }
 
@@ -1263,6 +1483,7 @@ public class Parser {
                 return true;
             }
         }
+        writer("Error: incorrect aParamsTails at line " + lineNum);
         return false;
     }
 
@@ -1285,6 +1506,7 @@ public class Parser {
                 return false;
             }
         }
+        writer("Error: incorrect aParamsTail at line " + lineNum);
         return false;
     }
 
@@ -1306,6 +1528,7 @@ public class Parser {
                 }
             }
         }
+//        writer("Error: incorrect relOp at line " + lineNum);
         return false;
     }
 

@@ -27,7 +27,22 @@ class Utility
             }else{}; 
         };
         return (minValue);
-    }; 
+    };
+    int run()
+    {
+    };
+};
+class c2
+{
+    float var3[1];
+    int cost;
+    int payment;
+    int run()
+    {
+        float rate;
+        payment = cost * rate;
+        var3[1] = payment + 0.0;
+    };
 };
 
 program {
@@ -55,4 +70,9 @@ float randomize()
     value = 100 * (2 + 3.0 / 7.0006);
     value = 1.05 + ((2.04 * 2.47)  - 3.0) + 7.0006 ;
     return (value);
+};
+int calculateProfit(int cost, float product[2], int gain[3][1])
+{
+    int profit;
+    profit = gain[3][1] - cost;
 };
