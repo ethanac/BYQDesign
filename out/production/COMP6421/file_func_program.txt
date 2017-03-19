@@ -64,7 +64,11 @@ program {
     put(maxValue);
     put(minValue);
 };
-
+// Function named program
+int program() {
+    int run;
+    float walk;
+}
 float randomize()
 {
     float value;

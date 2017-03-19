@@ -28,7 +28,7 @@ class Utility
         };
         return (minValue);
     };
-    int run()
+    float run()
     {
     };
 };
@@ -64,6 +64,7 @@ program {
     put(maxValue);
     put(minValue);
 };
+
 float randomize()
 {
     float value;

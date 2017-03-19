@@ -447,7 +447,7 @@ public class Parser {
                 String p = var.split(" ")[0] + arraySize;
                 ArrayList<String> rec = createRecord("variable", p, "NA");
                 if(!stg.insert(scope.peek(), var.split(" ")[1], rec)) {
-                    System.out.println(" at line " + lineNum);
+                    System.out.println(" at line " + (lineNum-1));
                     return false;
                 }
 
@@ -582,11 +582,11 @@ public class Parser {
                                     String p = extractParamType(typeDim);
                                     ArrayList<String> rec = createRecord("function", fType+":"+p, scope.peek() + "." + fName);
                                     if(!stg.create(scope.peek() + "." + fName)) {
-                                        System.out.println(" at line " + lineNum);
+                                        System.out.println(" at line " + (lineNum-1));
                                         return false;
                                     }
                                     if(!stg.insert(scope.peek(), fName, rec)) {
-                                        System.out.println(" at line " + lineNum);
+                                        System.out.println(" at line " + (lineNum-1));
                                         return false;
                                     }
 
@@ -622,11 +622,11 @@ public class Parser {
                             String p = extractParamType(typeDim);
                             ArrayList<String> rec = createRecord("function", tmpFuncHead.split(" ")[0] +":"+p, scope.peek() + "." + tmpFuncHead.split(" ")[1]);
                             if(!stg.create(scope.peek() + "." + tmpFuncHead.split(" ")[1])) {
-                                System.out.println(" at line " + lineNum);
+                                System.out.println(" at line " + (lineNum-1));
                                 return false;
                             }
                             if(!stg.insert(scope.peek(), tmpFuncHead.split(" ")[1], rec)) {
-                                System.out.println(" at line " + lineNum);
+                                System.out.println(" at line " + (lineNum-1));
                                 return false;
                             }
 

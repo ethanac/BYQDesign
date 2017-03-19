@@ -31,6 +31,10 @@ class Utility
     float run()
     {
     };
+    // duplicated fuction names in a class
+    int run()
+    {
+    };
 };
 class c2
 {
@@ -64,7 +68,6 @@ program {
     put(maxValue);
     put(minValue);
 };
-
 float randomize()
 {
     float value;

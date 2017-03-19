@@ -5,6 +5,8 @@ class Utility
     int findMax(int array[100])
     {
         int maxValue;
+        // Duplicated variable name.
+        float maxValue;
         int idx;
         float job;
         maxValue = array[100];
@@ -64,7 +66,6 @@ program {
     put(maxValue);
     put(minValue);
 };
-
 float randomize()
 {
     float value;

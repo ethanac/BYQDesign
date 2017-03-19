@@ -44,6 +44,12 @@ class c2
         var3[1] = payment + 0.0;
     };
 };
+// Duplicated class name
+class c2
+{
+    int food;
+    int water;
+}
 
 program {
     int sample[100];
@@ -64,7 +70,6 @@ program {
     put(maxValue);
     put(minValue);
 };
-
 float randomize()
 {
     float value;
