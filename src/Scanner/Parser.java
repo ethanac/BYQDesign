@@ -140,7 +140,6 @@ public class Parser {
             if (lookAhead.equals(s)){
                 if(!stg.create("Global")) {
                     System.out.println(" at line " + lineNum);
-                    return false;
                 }
                 System.out.println("Table: Global created.");
                 System.out.println("class push: " + scope.push("Global"));
@@ -195,17 +194,16 @@ public class Parser {
                 if(match("program")) {
                     if(!stg.create("program")) {
                         System.out.println(" at line " + lineNum);
-                        return false;
                     }
-                    ArrayList<String> rec = createRecord("function", "NA", "program");
-                    System.out.println(scope.peek());
-                    if(!stg.insert(scope.peek(), "program", rec)) {
-                        System.out.println(" at line " + lineNum);
-                        return false;
+                    else {
+                        ArrayList<String> rec = createRecord("function", "NA", "program");
+                        System.out.println(scope.peek());
+                        if (!stg.insert(scope.peek(), "program", rec)) {
+                            System.out.println(" at line " + lineNum);
+                        }
+                        System.out.println("Table: program function created.");
+                        System.out.println("program push: " + scope.push("program"));
                     }
-                    System.out.println("Table: program function created.");
-                    System.out.println("program push: " + scope.push("program"));
-
                     if(match("{")) {
                         if(T17p() && T16p()) {
                             if(match("}")) {
@@ -251,14 +249,16 @@ public class Parser {
                     ArrayList<String> rec = createRecord("class", "NA", tokenString);
                     if(!stg.create(tokenString)) {
                         System.out.println(" at line " + lineNum);
-                        return false;
                     }
-                    if(!stg.insert(scope.peek(), tokenString, rec)) {
-                        System.out.println(" at line " + lineNum);
-                        return false;
+                    else {
+                        if (!stg.insert(scope.peek(), tokenString, rec)) {
+                            System.out.println(" at line " + lineNum);
+                        }
+                        else {
+                            System.out.println("Table: class " + tokenString + " created.");
+                            System.out.println("class push: " + scope.push(tokenString));    // push class table
+                        }
                     }
-                    System.out.println("Table: class " + tokenString + " created.");
-                    System.out.println("class push: " + scope.push(tokenString));    // push class table
                     if(match("id")) {
                         if(match("{")) {
                             if(T17p() && T19p()) {
@@ -448,10 +448,10 @@ public class Parser {
                 ArrayList<String> rec = createRecord("variable", p, "NA");
                 if(!stg.insert(scope.peek(), var.split(" ")[1], rec)) {
                     System.out.println(" at line " + (lineNum-1));
-                    return false;
                 }
-
-                System.out.println("Variable " + var + arraySize + " inserted.");
+                else {
+                    System.out.println("Variable " + var + arraySize + " inserted.");
+                }
                 isArraySize = false;
                 arraySize = "";
                 writer("varDecl-> type id arraySize*;");
@@ -583,14 +583,14 @@ public class Parser {
                                     ArrayList<String> rec = createRecord("function", fType+":"+p, scope.peek() + "." + fName);
                                     if(!stg.create(scope.peek() + "." + fName)) {
                                         System.out.println(" at line " + (lineNum-1));
-                                        return false;
                                     }
-                                    if(!stg.insert(scope.peek(), fName, rec)) {
-                                        System.out.println(" at line " + (lineNum-1));
-                                        return false;
+                                    else {
+                                        if (!stg.insert(scope.peek(), fName, rec)) {
+                                            System.out.println(" at line " + (lineNum - 1));
+                                        } else {
+                                            System.out.println("Table: function " + scope.peek() + "." + fName + " " + fType + ":" + typeDim + " created.");
+                                        }
                                     }
-
-                                    System.out.println("Table: function " + scope.peek() + "." + fName + " " + fType + ":" + typeDim + " created.");
                                     typeDim = "";
                                     writer("funcHead-> type id(fParams)");
                                     isFuncStart = false;
@@ -623,14 +623,15 @@ public class Parser {
                             ArrayList<String> rec = createRecord("function", tmpFuncHead.split(" ")[0] +":"+p, scope.peek() + "." + tmpFuncHead.split(" ")[1]);
                             if(!stg.create(scope.peek() + "." + tmpFuncHead.split(" ")[1])) {
                                 System.out.println(" at line " + (lineNum-1));
-                                return false;
                             }
-                            if(!stg.insert(scope.peek(), tmpFuncHead.split(" ")[1], rec)) {
-                                System.out.println(" at line " + (lineNum-1));
-                                return false;
+                            else {
+                                if (!stg.insert(scope.peek(), tmpFuncHead.split(" ")[1], rec)) {
+                                    System.out.println(" at line " + (lineNum - 1));
+                                }
+                                else {
+                                    System.out.println("Table: function " + tmpFuncHead + ":" + typeDim + " created.");
+                                }
                             }
-
-                            System.out.println("Table: function " + tmpFuncHead + ":" + typeDim + " created.");
                             typeDim = "";
                             writer("funcHead-> type id(fParams)");
                             T17to19 = false;

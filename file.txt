@@ -6,6 +6,7 @@ class Utility
     {
         int maxValue;
         int idx;
+        float idx;
         float job;
         maxValue = array[100];
         for( int idx = 99; idx > 0; idx = idx - 1 )
@@ -30,6 +31,9 @@ class Utility
     };
     float run()
     {
+    };
+    int run()
+    {    
     };
 };
 class c2
@@ -72,6 +76,8 @@ float randomize()
     value = 1.05 + ((2.04 * 2.47)  - 3.0) + 7.0006 ;
     return (value);
 };
+float randomize()
+{};
 int calculateProfit(int cost, float product[2], int gain[3][1])
 {
     int profit;

@@ -928,6 +928,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/ROOT/WEB-INF/web.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.ws.ui/dialog_settings.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Artist_Swing_backup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scanner/LexicalAnalyzer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scanner/Main.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CourseaSwift.playground/Sources/RGBAImage.swift" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ImageZ/ImageZ/Assets.xcassets/4k_wallpaper_road.imageset/Contents.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ImageZ/ImageZ/Assets.xcassets/AppIcon.appiconset/Contents.json" />
@@ -1076,9 +1078,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/file.txt" afterPath="$PROJECT_DIR$/file.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/COMP6421/.idea/workspace.xml" afterPath="$PROJECT_DIR$/out/production/COMP6421/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/COMP6421/ParserOutput.txt" afterPath="$PROJECT_DIR$/out/production/COMP6421/ParserOutput.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/COMP6421/SymbolTable.txt" afterPath="$PROJECT_DIR$/out/production/COMP6421/SymbolTable.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/COMP6421/file.txt" afterPath="$PROJECT_DIR$/out/production/COMP6421/file.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Scanner/Main.java" afterPath="$PROJECT_DIR$/src/Scanner/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Scanner/Parser.java" afterPath="$PROJECT_DIR$/src/Scanner/Parser.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -1113,8 +1112,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Scanner/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="48" column="1" lean-forward="false" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+            <state relative-caret-position="371">
+              <caret line="32" column="51" lean-forward="false" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -1123,8 +1122,8 @@
       <file leaf-file-name="Parser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Scanner/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="727">
-              <caret line="608" column="73" lean-forward="true" selection-start-line="608" selection-start-column="73" selection-end-line="608" selection-end-column="73" />
+            <state relative-caret-position="139">
+              <caret line="632" column="33" lean-forward="false" selection-start-line="632" selection-start-column="33" selection-end-line="632" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1135,20 +1134,8 @@
       <file leaf-file-name="SymbolTableGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Scanner/SymbolTableGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-708">
+            <state relative-caret-position="90">
               <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SymbolTableGeneratorTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test/SymbolTableGeneratorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="261" column="37" lean-forward="true" selection-start-line="261" selection-start-column="37" selection-end-line="261" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1178,8 +1165,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>findMin</find>
-      <find>isFuncStart</find>
       <find>Uti</find>
       <find>samp</find>
       <find>funcPar</find>
@@ -1204,10 +1189,12 @@
       <find>Id</find>
       <find>table</find>
       <find>stg.</find>
-      <find>Error</find>
       <find>&quot; at line</find>
       <find>Err</find>
       <find>function</find>
+      <find>!stg</find>
+      <find>at line</find>
+      <find>Error</find>
     </findStrings>
     <replaceStrings>
       <replace>incorrect</replace>
@@ -1239,9 +1226,9 @@
         <option value="$PROJECT_DIR$/src/Scanner/LexicalAnalyzer.java" />
         <option value="$PROJECT_DIR$/src/Scanner/FirstNFollow.java" />
         <option value="$PROJECT_DIR$/src/Scanner/SymbolTableGenerator.java" />
-        <option value="$PROJECT_DIR$/src/Scanner/Parser.java" />
         <option value="$PROJECT_DIR$/src/Test/SymbolTableGeneratorTest.java" />
         <option value="$PROJECT_DIR$/src/Scanner/Main.java" />
+        <option value="$PROJECT_DIR$/src/Scanner/Parser.java" />
       </list>
     </option>
   </component>
@@ -1252,8 +1239,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="2560" />
-    <option name="height" value="1440" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -1271,6 +1258,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -1322,7 +1310,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -1887,6 +1874,7 @@
       <workItem from="1489698375889" duration="1147000" />
       <workItem from="1489717768218" duration="8670000" />
       <workItem from="1489793727720" duration="2733000" />
+      <workItem from="1490052624797" duration="801000" />
     </task>
     <servers />
   </component>
@@ -1923,10 +1911,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219580000" />
+    <option name="totallyTimeSpent" value="220381000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1938,20 +1926,20 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34027278" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5059761" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12539062" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.125" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46015793" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46015793" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2325,10 +2313,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scanner/Parser.java">
+    <entry file="file://$PROJECT_DIR$/src/Test/SymbolTableGeneratorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="608" column="73" lean-forward="true" selection-start-line="608" selection-start-column="73" selection-end-line="608" selection-end-column="73" />
+        <state relative-caret-position="477">
+          <caret line="261" column="37" lean-forward="false" selection-start-line="261" selection-start-column="37" selection-end-line="261" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2337,7 +2325,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scanner/SymbolTableGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-708">
+        <state relative-caret-position="90">
           <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -2345,10 +2333,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test/SymbolTableGeneratorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Scanner/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="261" column="37" lean-forward="true" selection-start-line="261" selection-start-column="37" selection-end-line="261" selection-end-column="37" />
+        <state relative-caret-position="139">
+          <caret line="632" column="33" lean-forward="false" selection-start-line="632" selection-start-column="33" selection-end-line="632" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2357,8 +2345,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scanner/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="1" lean-forward="false" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+        <state relative-caret-position="371">
+          <caret line="32" column="51" lean-forward="false" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
           <folding />
         </state>
       </provider>
