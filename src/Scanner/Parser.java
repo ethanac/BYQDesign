@@ -36,8 +36,8 @@ public class Parser {
     String typeDim = "";
     String arraySize = "";
     String vType = "";
-    String vName = "";
-    Stack<String> scope;
+    private String vName = "";
+    private Stack<String> scope;
 
     public Parser(){
         la = new LexicalAnalyzer();
