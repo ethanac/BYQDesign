@@ -38,6 +38,8 @@ public class Parser {
     String vType = "";
     private String vName = "";
     private Stack<String> scope;
+    private String semRecord = "";
+    private boolean startRec = false;
 
     public Parser(){
         la = new LexicalAnalyzer();
@@ -104,6 +106,9 @@ public class Parser {
                     if(token.equals("int") || token.equals("float") || token.equals("id"));
                     else
                         arraySize += tokenString;
+                }
+                if(startRec) {
+                    semRecord += tokenString;
                 }
             }
         }
@@ -390,6 +395,7 @@ public class Parser {
         for(String s : first) {
             if (lookAhead.equals(s)) {
                 if (lookAhead.equals("id")) {
+                    System.out.println(tokenString + ", id at " + lineNum);
                     vType = tokenString;
                     tmpFuncHead = tokenString;
                     if(match("id")) {
@@ -826,6 +832,9 @@ public class Parser {
                 }
                 else if(lookAhead.equals("if")) {
                     if(match("if") && match("(")) {
+                        if(lookAhead.equals("id")) {
+                            System.out.println(tokenString + ", id at " + lineNum);
+                        }
                         if(T14() && F1() && T14()) {
                             if(match(")")) {
                                 if (match("then")) {
@@ -857,6 +866,7 @@ public class Parser {
                 else if(lookAhead.equals("for")) {
                     if (match("for") && match("(")) {
                         if (F2()) {
+                            System.out.println(tokenString + ", at " + lineNum);
                             if (match("id")) {
                                 if (match("=")) {
                                     if (T7()) {
@@ -1068,8 +1078,12 @@ public class Parser {
         String[] follow = FirstNFollow.FOLLOW[FirstNFollow.ORDER.get("T3")];
         for(String s : first) {
             if (lookAhead.equals(s)){
+                semRecord = tokenString;
+                startRec = true;
                 if(T4p()) {
                     writer("variable-> idnest* id indice*");
+                    startRec = false;
+                    System.out.println(semRecord + ", var at " + lineNum);
                     return true;
                 }
                 else {
@@ -1077,6 +1091,7 @@ public class Parser {
                         isFactor = false;
                         isIdnest = false;
                     }
+                    startRec = false;
                     return false;
                 }
             }
@@ -1316,6 +1331,9 @@ public class Parser {
                     return true;
                 }
                 else if(var2factor || T4p()) {
+                    if (lookAhead.equals("id")) {
+                        System.out.println(tokenString + ", at " + lineNum);
+                    }
                     if(var2factor || match("id")) {
                         if(var2factor)
                             var2factor = false;

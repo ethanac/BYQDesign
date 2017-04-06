@@ -29,11 +29,8 @@ class Utility
         };
         return (minValue);
     };
-    float run()
-    {
-    };
     int run()
-    {    
+    {
     };
 };
 class c2
