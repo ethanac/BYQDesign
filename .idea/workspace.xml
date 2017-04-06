@@ -928,7 +928,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.server.core/tmp2/wtpwebapps/ROOT/WEB-INF/web.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.ws.ui/dialog_settings.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Artist_Swing_backup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scanner/SemanticRecord.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CourseaSwift.playground/Sources/RGBAImage.swift" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ImageZ/ImageZ/Assets.xcassets/4k_wallpaper_road.imageset/Contents.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ImageZ/ImageZ/Assets.xcassets/AppIcon.appiconset/Contents.json" />
@@ -1034,7 +1033,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments.gen" afterPath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments.gen" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/COMP6421/Scanner/Parser.class" afterPath="$PROJECT_DIR$/out/production/COMP6421/Scanner/Parser.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.log" afterPath="$PROJECT_DIR$/../.metadata/.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.core.prefs" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.core.prefs" />
@@ -1071,13 +1069,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.xml.core/system_catalog.xml" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.xml.core/system_catalog.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/version.ini" afterPath="$PROJECT_DIR$/../.metadata/version.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParserOutput.txt" afterPath="$PROJECT_DIR$/ParserOutput.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SymbolTable.txt" afterPath="$PROJECT_DIR$/SymbolTable.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/file.txt" afterPath="$PROJECT_DIR$/file.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/COMP6421/.idea/workspace.xml" afterPath="$PROJECT_DIR$/out/production/COMP6421/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/COMP6421/ParserOutput.txt" afterPath="$PROJECT_DIR$/out/production/COMP6421/ParserOutput.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/COMP6421/SymbolTable.txt" afterPath="$PROJECT_DIR$/out/production/COMP6421/SymbolTable.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Scanner/Parser.java" afterPath="$PROJECT_DIR$/src/Scanner/Parser.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -1136,8 +1130,8 @@
       <file leaf-file-name="Parser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Scanner/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="618">
-              <caret line="878" column="18" lean-forward="false" selection-start-line="878" selection-start-column="18" selection-end-line="878" selection-end-column="18" />
+            <state relative-caret-position="538">
+              <caret line="839" column="52" lean-forward="true" selection-start-line="839" selection-start-column="52" selection-end-line="839" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -1192,19 +1186,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tmpFuncHead</find>
-      <find>pop</find>
-      <find>program p</find>
-      <find>insert</find>
-      <find>variable:</find>
-      <find>modified</find>
-      <find>Erro</find>
-      <find>rec</find>
-      <find>inserted</find>
-      <find>All</find>
-      <find>scope</find>
-      <find>push</find>
-      <find>Id</find>
       <find>table</find>
       <find>stg.</find>
       <find>&quot; at line</find>
@@ -1212,7 +1193,6 @@
       <find>function</find>
       <find>!stg</find>
       <find>at line</find>
-      <find>Error</find>
       <find>varia</find>
       <find>// T</find>
       <find>variab</find>
@@ -1222,6 +1202,20 @@
       <find>funcBod</find>
       <find>isFunc</find>
       <find>isFuncB</find>
+      <find>isfuncbody =</find>
+      <find>factor</find>
+      <find>startRec</find>
+      <find>isFuncbody</find>
+      <find>array</find>
+      <find>assignS</find>
+      <find>funcbody</find>
+      <find>if</find>
+      <find>isfuncbody</find>
+      <find>T17p</find>
+      <find>T17</find>
+      <find>Error</find>
+      <find>T16</find>
+      <find>99</find>
     </findStrings>
     <replaceStrings>
       <replace>incorrect</replace>
@@ -1925,7 +1919,7 @@
       <workItem from="1490052624797" duration="801000" />
       <workItem from="1491189934944" duration="16000" />
       <workItem from="1491190008116" duration="279000" />
-      <workItem from="1491190680152" duration="6459000" />
+      <workItem from="1491190680152" duration="14215000" />
     </task>
     <servers />
   </component>
@@ -1962,7 +1956,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227135000" />
+    <option name="totallyTimeSpent" value="234891000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2412,8 +2406,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scanner/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="878" column="18" lean-forward="false" selection-start-line="878" selection-start-column="18" selection-end-line="878" selection-end-column="18" />
+        <state relative-caret-position="538">
+          <caret line="839" column="52" lean-forward="true" selection-start-line="839" selection-start-column="52" selection-end-line="839" selection-end-column="52" />
           <folding />
         </state>
       </provider>
