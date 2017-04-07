@@ -9,10 +9,11 @@ public class SemanticRecord {
     private String varType;
     private int varValue;
 
-    public SemanticRecord(String name, String type, int value) {
+    public SemanticRecord(String name, String type) {
         varName = name;
         varType = type;
-        varValue = value;
+//        varValue = value;
+        varValue = 0;
     }
 
     public String getVarName(){
