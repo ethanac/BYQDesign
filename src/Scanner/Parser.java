@@ -138,10 +138,18 @@ public class Parser {
     }
 
     private void createSemanticRec(String rec) {
+        String[] foo;
+        if (rec.contains("factor:")) {
+            foo = rec.replace("factor:", "").split(",");
+        }
+        else {
+            foo = rec.split(",");
+        }
+
         
     }
 
-    // start symbol / prog
+    // start symbol : prog
     // E-> T21'T20
     private boolean startSymbol(){
         String[] first = FirstNFollow.FIRST[FirstNFollow.ORDER.get("E")];
@@ -408,7 +416,7 @@ public class Parser {
                     if(match("id")) {
                         if (lookAhead.equals("=")) {
                             startRec = false;
-                            System.out.println(semRecord + ", assign001 id at " + lineNum);
+                            System.out.println(semRecord + ", assign_left id at " + lineNum);
                             match("=");
                             isFuncBody = true;
                             return true;
@@ -836,7 +844,7 @@ public class Parser {
             if (lookAhead.equals(s) || isFuncBody){
                 if(lookAhead.equals("id") || isFuncBody){
                     if(isFuncBody)
-                        System.out.println(tokenString + ", Switched id at " + lineNum);
+                        System.out.println(tokenString + ", first_after_switched id at " + lineNum);
                     if(T15() && match(";")){
                         writer("statement-> assignStat;");
                         return true;
@@ -1354,7 +1362,7 @@ public class Parser {
                                 if(match(")")){
                                     writer("factor-> idnest* id(aParams)");
                                     startRec = false;
-                                    System.out.println("factor: " + semRecord + ", at line " + lineNum);
+                                    System.out.println("factor:" + semRecord + ", at line " + lineNum);
                                     return true;
                                 }
                                 else {
@@ -1373,7 +1381,7 @@ public class Parser {
                 else if(match("integer") || match("nfloat")) {
                     writer("factor-> number");
                     startRec = false;
-                    System.out.println("factor: " + semRecord + ", at line " + lineNum);
+                    System.out.println("factor:" + semRecord + ", at line " + lineNum);
                     return true;
                 }
                 else if(match("(")) {
@@ -1381,7 +1389,7 @@ public class Parser {
                         if(match(")")) {
                             writer("factor-> (arithExpr)");
                             startRec = false;
-                            System.out.println("factor: " + semRecord + ", at line " + lineNum);
+                            System.out.println("factor:" + semRecord + ", at line " + lineNum);
                             return true;
                         }
                         else {
@@ -1392,19 +1400,19 @@ public class Parser {
                 else if(match("not") && T2()) {
                     writer("factor-> not factor");
                     startRec = false;
-                    System.out.println("factor: " + semRecord + ", at line " + lineNum);
+                    System.out.println("factor:" + semRecord + ", at line " + lineNum);
                     return true;
                 }
                 else if(match("+") && T2()) {
                     writer("factor-> +factor");
                     startRec = false;
-                    System.out.println("factor: " + semRecord + ", at line " + lineNum);
+                    System.out.println("factor:" + semRecord + ", at line " + lineNum);
                     return true;
                 }
                 else if( match("-") && T1p()){
                     writer("factor-> -factor");
                     startRec = false;
-                    System.out.println("factor: " + semRecord + ", at line " + lineNum);
+                    System.out.println("factor:" + semRecord + ", at line " + lineNum);
                     return true;
                 }
                 writer("Error: incorrect term at line " + lineNum);
