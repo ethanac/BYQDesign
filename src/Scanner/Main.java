@@ -43,6 +43,7 @@ public class Main {
             parser.stg.printTable(s);
         }
         parser.stg.out.close();
+        parser.semanticCheck();
         sc.close();
     }
 

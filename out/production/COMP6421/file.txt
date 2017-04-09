@@ -1,11 +1,11 @@
 class Utility
 {
     int var2;
-    int findMax(int array[5][8])
+    int findMax(int array)
     {
         int maxValue;
         int idx;
-        maxValue = array[5][2];
+        maxValue = array;
         idx = 17;
         return (maxValue);
     };
@@ -20,9 +20,9 @@ program {
     maxValue = utility.findMax();
 };
 
-float randomize()
+int randomize()
 {
-    float value;
-    value = 100 + 2 * 5;
+    int value;
+    value = 100 + 2.5 * 5;
     return (value);
 };

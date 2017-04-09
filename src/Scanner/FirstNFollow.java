@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * Created by Ethan on 2017-02-25.
+ * Created by Hao on 2017-02-25.
  */
 public class FirstNFollow {
     public static String[][] FIRST= {

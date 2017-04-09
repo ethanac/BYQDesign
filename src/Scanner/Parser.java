@@ -40,7 +40,10 @@ public class Parser {
     private Stack<String> scope;
     private String semRecord = "";
     private boolean startRec = false;
-    private Stack<SemanticRecord> semStack = new Stack<>();
+    private Stack<String> semStack = new Stack<>();
+    private SemanticRecords sr = new SemanticRecords();
+    private String paraName = "";
+    private ArrayList<String> parentName = new ArrayList<>();
 
     public Parser(){
         la = new LexicalAnalyzer();
@@ -137,16 +140,83 @@ public class Parser {
         return rec;
     }
 
-    private void createSemanticRec(String rec) {
+    private String createSemanticRec(String rec) {
         String[] foo;
+        String semRec;
+        String[] previousRec;
+        boolean finished = false;
+        int flag = 0;
         if (rec.contains("factor:")) {
             foo = rec.replace("factor:", "").split(",");
+            flag = 1;
         }
         else {
             foo = rec.split(",");
         }
+        if("();".contains("" + foo[0].charAt(foo[0].length()-1))) {
+            foo[0] = foo[0].replace("" + foo[0].charAt(foo[0].length()-1), "");
+        }
+        // <>=+-*/
+        if("<>=+-*/".contains("" + foo[0].charAt(foo[0].length()-1))) {
+            semRec = flag + "," + foo[0].charAt(foo[0].length()-1) + "," + foo[foo.length-1];
+            System.out.println("Operator semantic record: " + semRec);
+            sr.addRecord(lineNum, semRec);
+            foo[0] = foo[0].replace("" + foo[0].charAt(foo[0].length()-1), "");
+        }
 
-        
+        if (foo[0].equals(""))
+            semRec = "";
+        else {
+            semRec = flag + "," + foo[0] + "," + foo[foo.length - 1];
+            if (!semStack.empty()) {
+                previousRec = semStack.peek().split(",");
+                String[] currentRec = semRec.split(",");
+                if (currentRec[2].equals(previousRec[2])) {
+                    if (currentRec[1].equals(previousRec[1])) {
+                        if (!currentRec[0].equals(previousRec[0])) {
+                            finished = true;
+                        }
+                    }
+                }
+            }
+        }
+        if (!semStack.empty()) {
+            semStack.pop();
+        }
+        semStack.push(semRec);
+
+        if (!finished && !semRec.equals("")) {
+            if("0123456789".contains(""+foo[0].charAt(0))) {
+                semRec = flag + "," + foo[0] + "," + foo[foo.length-1];
+                System.out.println("Final semantic record: " + semRec);
+                sr.addRecord(lineNum, semRec);
+            }
+            else {
+                if (!foo[0].contains(".")) {
+                    String p = "";
+                    for (String s : scope) {
+                        if (s.contains(".")) {
+                            s = s.split("\\.")[1];
+                        }
+                        p += s + ".";
+                    }
+                    foo[0] = p + foo[0];
+                    // System.out.println("parent name: " + foo[0]);
+                }
+                else {
+                    foo[0] = foo[0].replace(".", ":");
+                    // System.out.println("parent name: " + foo[0]);
+                }
+                semRec = flag + "," + foo[0] + "," + foo[foo.length - 1];
+                System.out.println("Final semantic record: " + semRec);
+                sr.addRecord(lineNum, semRec);
+            }
+        }
+        return semRec;
+    }
+
+    public void semanticCheck() {
+        sr.checkType(stg);
     }
 
     // start symbol : prog
@@ -416,7 +486,8 @@ public class Parser {
                     if(match("id")) {
                         if (lookAhead.equals("=")) {
                             startRec = false;
-                            System.out.println(semRecord + ", assign_left id at " + lineNum);
+                            System.out.println(semRecord + ", assign_left id at ," + lineNum);
+                            createSemanticRec(semRecord + ", assign_left id at ," + lineNum);
                             match("=");
                             isFuncBody = true;
                             return true;
@@ -613,6 +684,12 @@ public class Parser {
                                             System.out.println(" at line " + (lineNum - 1));
                                         } else {
                                             System.out.println("Table: function " + scope.peek() + "." + fName + " " + fType + ":" + typeDim + " created.");
+                                            ArrayList<String> paraRec = new ArrayList<>();
+                                            paraRec.add("variable");
+                                            paraRec.add(typeDim.replace(" " + paraName, ""));
+                                            paraRec.add("NA");
+                                            stg.insert(scope.peek()+"."+fName, paraName, paraRec);
+                                            System.out.println("Variable " + paraName + " inserted.");
                                         }
                                     }
                                     typeDim = "";
@@ -654,6 +731,12 @@ public class Parser {
                                 }
                                 else {
                                     System.out.println("Table: function " + tmpFuncHead + ":" + typeDim + " created.");
+                                    ArrayList<String> paraRec = new ArrayList<>();
+                                    paraRec.add("variable");
+                                    paraRec.add(typeDim.replace(" " + paraName, ""));
+                                    paraRec.add("NA");
+                                    stg.insert(scope.peek()+"."+ tmpFuncHead.split(" ")[1], paraName, paraRec);
+                                    System.out.println("Variable " + paraName + " inserted.");
                                 }
                             }
                             typeDim = "";
@@ -705,9 +788,12 @@ public class Parser {
         params = params.replace(")", "");
         String[] sp = params.split(",");
         for(String s : sp) {
+            // System.out.println("params: " + s);
             String[] param;
             param = s.split("!");
+
             if(param.length > 0) {
+                paraName = param[1];
                 if (param[0].equals("")) {
                     startNum = 1;
                 }
@@ -843,8 +929,11 @@ public class Parser {
         for(String s : first) {
             if (lookAhead.equals(s) || isFuncBody){
                 if(lookAhead.equals("id") || isFuncBody){
-                    if(isFuncBody)
-                        System.out.println(tokenString + ", first_after_switched id at " + lineNum);
+                    if(isFuncBody) {
+                        String ts = tokenString + ", first_after_switched id at ," + lineNum;
+                        System.out.println(tokenString + ", first_after_switched id at ," + lineNum);
+                        createSemanticRec(ts);
+                    }
                     if(T15() && match(";")){
                         writer("statement-> assignStat;");
                         return true;
@@ -852,7 +941,9 @@ public class Parser {
                 }
                 else if(lookAhead.equals("if")) {
                     if(match("if") && match("(")) {
-                        System.out.println(tokenString + ", if id at " + lineNum);
+                        String ts = tokenString + ", if id at ," + lineNum;
+                        System.out.println(tokenString + ", if id at ," + lineNum);
+                        createSemanticRec(ts);
                         if(T14() && F1() && T14()) {
                             if(match(")")) {
                                 if (match("then")) {
@@ -884,10 +975,12 @@ public class Parser {
                 else if(lookAhead.equals("for")) {
                     if (match("for") && match("(")) {
                         if (F2()) {
-                            System.out.println(tokenString + ", for loop id at " + lineNum);
+                            String ts = tokenString + ", for loop id at ," + lineNum;
+                            System.out.println(tokenString + ", for loop id at ," + lineNum);
+                            createSemanticRec(ts);
                             if (match("id")) {
                                 if (match("=")) {
-                                    // System.out.println(tokenString + ", value at " + lineNum);
+                                    // System.out.println(tokenString + ", value at ," + lineNum);
                                     if (T7()) {
                                         if (match(";")) {
                                             if (T9()) {
@@ -1102,7 +1195,9 @@ public class Parser {
                 if(T4p()) {
                     writer("variable-> idnest* id indice*");
                     startRec = false;
-                    System.out.println(semRecord + ", var in assign at " + lineNum);
+                    String ts = semRecord + ", var in assign at ," + lineNum;
+                    System.out.println(semRecord + ", var in assign at ," + lineNum);
+                    createSemanticRec(ts);
                     return true;
                 }
                 else {
@@ -1362,7 +1457,9 @@ public class Parser {
                                 if(match(")")){
                                     writer("factor-> idnest* id(aParams)");
                                     startRec = false;
-                                    System.out.println("factor:" + semRecord + ", at line " + lineNum);
+                                    String ts = "factor:" + semRecord + "," + lineNum;
+                                    System.out.println("factor:" + semRecord + "," + lineNum);
+                                    createSemanticRec(ts);
                                     return true;
                                 }
                                 else {
@@ -1381,7 +1478,9 @@ public class Parser {
                 else if(match("integer") || match("nfloat")) {
                     writer("factor-> number");
                     startRec = false;
-                    System.out.println("factor:" + semRecord + ", at line " + lineNum);
+                    String ts = "factor:" + semRecord + "," + lineNum;
+                    System.out.println("factor:" + semRecord + "," + lineNum);
+                    createSemanticRec(ts);
                     return true;
                 }
                 else if(match("(")) {
@@ -1389,7 +1488,9 @@ public class Parser {
                         if(match(")")) {
                             writer("factor-> (arithExpr)");
                             startRec = false;
-                            System.out.println("factor:" + semRecord + ", at line " + lineNum);
+                            String ts = "factor:" + semRecord + "," + lineNum;
+                            System.out.println("factor:" + semRecord + "," + lineNum);
+                            createSemanticRec(ts);
                             return true;
                         }
                         else {
@@ -1400,19 +1501,25 @@ public class Parser {
                 else if(match("not") && T2()) {
                     writer("factor-> not factor");
                     startRec = false;
-                    System.out.println("factor:" + semRecord + ", at line " + lineNum);
+                    String ts = "factor:" + semRecord + "," + lineNum;
+                    System.out.println("factor:" + semRecord + "," + lineNum);
+                    createSemanticRec(ts);
                     return true;
                 }
                 else if(match("+") && T2()) {
                     writer("factor-> +factor");
                     startRec = false;
-                    System.out.println("factor:" + semRecord + ", at line " + lineNum);
+                    String ts = "factor:" + semRecord + "," + lineNum;
+                    System.out.println("factor:" + semRecord + "," + lineNum);
+                    createSemanticRec(ts);
                     return true;
                 }
                 else if( match("-") && T1p()){
                     writer("factor-> -factor");
                     startRec = false;
-                    System.out.println("factor:" + semRecord + ", at line " + lineNum);
+                    String ts = "factor:" + semRecord + "," + lineNum;
+                    System.out.println("factor:" + semRecord + "," + lineNum);
+                    createSemanticRec(ts);
                     return true;
                 }
                 writer("Error: incorrect term at line " + lineNum);
