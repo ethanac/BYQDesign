@@ -9,7 +9,7 @@ import java.util.HashMap;
 public class LexicalAnalyzer {
 
     private String newLine;
-    private String fileName = "file.txt";
+    public String fileName = "file.txt";
     String tableFileName = "STT_Alpha.csv";
     private int rowNum = 120;
     private int colNum = 40;
@@ -21,7 +21,7 @@ public class LexicalAnalyzer {
     boolean inlineCmt = false;
     public int numOfLine = 1;
     BufferedReader br = null;
-    public boolean writeToFile = false;
+    public boolean writeToFile = true;
     PrintWriter out = null;
     boolean startSymbol = true;
     String rawLine = null;
@@ -35,7 +35,7 @@ public class LexicalAnalyzer {
             "rw_program"
     };
 
-    public LexicalAnalyzer(){
+    public LexicalAnalyzer(String fileName){
         importStateTransitionTable();
         setColumnNumber();
         try{
@@ -80,6 +80,8 @@ public class LexicalAnalyzer {
                     token = "integer";
                 else if (token.toLowerCase().contains("num_float"))
                     token = "nfloat";
+                else if (token.contains("---"))
+                    token = "---";
                 else if (!token.equals("id"))
                     token = rawLine.substring(currentPosition, nextPosition);
                 result = token + ":" + rawLine.substring(currentPosition, nextPosition) + ":" + numOfLine;
@@ -95,7 +97,9 @@ public class LexicalAnalyzer {
 
         if(writeToFile){
             try {
-                out = new PrintWriter(new BufferedWriter(new FileWriter("Output.txt", true)));
+                File f = new File("LexicalOutput.txt");
+                f.delete();
+                out = new PrintWriter(new BufferedWriter(new FileWriter("LexicalOutput.txt", true)));
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -124,9 +128,12 @@ public class LexicalAnalyzer {
                             token = "integer";
                         else if(token.toLowerCase().contains("num_float"))
                             token = "nfloat";
-                        else if(!token.equals("id"))
-                            token = line.substring(currentPosition, nextPosition);
-                        out.println(token + ":" + line.substring(currentPosition, nextPosition));// + "     at line " + numOfLine);
+                        else if(token.equals("id"))
+                            token = "id";
+                        else if("!@~`#$%^&_?|\\".contains(token))
+                            token = "Error: undefined token: ";
+                            //token = line.substring(currentPosition, nextPosition);
+                        out.println(token + ":" + line.substring(currentPosition, nextPosition) + "     at line " + numOfLine);
                     }
                     else
                         System.out.println(token + ": " + line.substring(currentPosition, nextPosition) + "     at line " + numOfLine);
@@ -144,7 +151,10 @@ public class LexicalAnalyzer {
             }
             numOfLine++;
         }
-        out.println("$");
+        if(writeToFile)
+            out.println("$");
+        else
+            System.out.println("$");
         if(cmtCounter > 0){
             if(writeToFile)
                 out.println("Error: " + cmtCounter + " \"*/\" is missing.");

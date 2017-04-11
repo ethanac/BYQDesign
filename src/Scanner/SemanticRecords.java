@@ -8,7 +8,7 @@ import java.util.HashMap;
  */
 public class SemanticRecords {
 
-    private HashMap<Integer, ArrayList<String>> recordMap;
+    public HashMap<Integer, ArrayList<String>> recordMap;
 
     public SemanticRecords() {
         recordMap = new HashMap<>();
@@ -39,10 +39,28 @@ public class SemanticRecords {
                 String fullName = s;
                 String sp = fullName.split(",")[1];
                 System.out.println("Rec: " + sp);
-                if("=+-*/]".contains("" + sp.charAt(sp.length()-1))){
+
+                if(sp.equals("(") || sp.equals(")")) {
                     continue;
                 }
-                if("0123456789".contains(sp.charAt(sp.length()-1)+"")) {
+                if(sp.contains("class ") || sp.contains("program ")){
+                    String[] arr = sp.split("\\.");
+                    sp = arr[arr.length-1];
+                    System.out.println("A class: " + sp + ", at " + fullName.split(",")[2]);
+                    continue;
+                }
+                if(sp.contains("for") || sp.contains("if") || sp.contains("get") || sp.contains("put")){
+                    System.out.println("A statement: " + sp + ", at " + fullName.split(",")[2]);
+                    continue;
+                }
+                if(sp.contains("function")){
+                    System.out.println("A function: " + sp + ", at " + fullName.split(",")[2]);
+                    continue;
+                }
+                if("=+-*/]<>".contains("" + sp.charAt(sp.length()-1))){
+                    continue;
+                }
+                if("0123456789".contains(sp.charAt(0)+"")) {
                     if (!varType.equals("")) {
                         if (sp.contains(".")) {
                             if (varType.equals("float")) {
@@ -70,6 +88,32 @@ public class SemanticRecords {
                         }
                     }
                 }
+                // System.out.println("full name: " + fullName);
+                if(fullName.split(",")[0].equals("11")){
+                    String name = fullName.split(",")[1];
+                    name = name.replace("Global.", "");
+                    String[] names = name.split("\\.");
+                    String pName = names[names.length-2];
+                    String vName = names[names.length-1];
+                    String ptName = "";
+                    String vtName = "";
+                    if(names.length == 2) {
+                        ptName = "Global";
+                        vtName = "Global." + names[0];
+                    }
+                    else if(names.length == 3) {
+                        ptName = names[0];
+                        vtName = names[0] + "." + names[1];
+                    }
+                    String tableType = stg.getRecord(ptName, pName).split(",")[1].split(":")[0];
+                    String vType = stg.getRecord(vtName, vName).split(",")[1];
+                    // System.out.println("t vs v: " + tableType + ", " + vType);
+                    if(tableType.equals(vType))
+                        System.out.println("OK. at " + fullName.split(",")[2]);
+                    else
+                        System.out.println("Semantic Error: incorrect type, at " + fullName.split(",")[2]);
+                    continue;
+                }
                 fullName = fullName.replace("Global.", "").split(",")[1];
                 if(fullName.contains(":")){
                     tableName = stg.getRecord("program", fullName.split(":")[0]).split(",")[1];
@@ -84,6 +128,7 @@ public class SemanticRecords {
                             tableName += name[i] + ".";
                     }
                     varName = name[name.length-1];
+                    // System.out.print(tableName + ": " + varName);
                     if (stg.tables.get("Global." + tableName) != null)
                         tableName = "Global." + tableName;
                 }
@@ -91,14 +136,17 @@ public class SemanticRecords {
                     tableName = "Global";
                     varName = fullName;
                 }
-                System.out.println("Table: " + tableName + " || var: " + varName);
+                // System.out.println("Table: " + tableName + " || var: " + varName);
 
-                System.out.println("Record is: " + stg.getRecord(tableName, varName));
+                // System.out.println("Record is: " + stg.getRecord(tableName, varName));
                 String result = stg.getRecord(tableName, varName);
                 if(result.equals("")){
                     result = stg.getRecord("Global", varName);
-                    if(result.equals(""))
-                        System.out.println("Semantic Error: variable or function is not defined, at " + lineNum);
+                    if(result.equals("")) {
+                        System.out.println("Semantic Error: variable or function is undefined, at " + lineNum);
+                        typeOK = false;
+                        continue;
+                    }
                     else {
                         if(varType.equals("")) {
                             varType = result.split(",")[1].replace(":", "");
@@ -107,6 +155,7 @@ public class SemanticRecords {
                     }
                 }
                 // System.out.println("Type is: " + varType + " || result is: " + result);
+
                 result = result.split(",")[1];
                 if(!varType.equals("")) {
                     if(result.contains(":"))
@@ -124,7 +173,7 @@ public class SemanticRecords {
             }
         }
         if(typeOK) {
-            System.out.println("Semantic checking is finished. Types are fine.");
+            System.out.println("Semantic checking is finished.");
         }
         System.out.println("------------------------------------");
         for(int k : recordMap.keySet()) {

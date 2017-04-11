@@ -1014,7 +1014,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/1.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments_8" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/COMP6421/Scanner/SemanticRecord.class" afterPath="" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/4172885057.index" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/110265345.index" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.fdt" afterPath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_2v.fdt" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.fdx" afterPath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_2v.fdx" />
@@ -1024,7 +1023,6 @@
       <change type="MOVED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.prx" afterPath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_2v.prx" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.tii" afterPath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_2v.tii" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.tis" afterPath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_2v.tis" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Scanner/SemanticRecord.java" afterPath="$PROJECT_DIR$/src/Scanner/SemanticRecords.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.mylyn/repositories.xml.zip" afterPath="$PROJECT_DIR$/../.metadata/.mylyn/repositories.xml.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/SOEN6441-Project/.indexes/properties.index" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/SOEN6441-Project/.indexes/properties.index" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" />
@@ -1037,9 +1035,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments.gen" afterPath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments.gen" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/COMP6421/Scanner/Main.class" afterPath="$PROJECT_DIR$/out/production/COMP6421/Scanner/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/COMP6421/Scanner/Parser.class" afterPath="$PROJECT_DIR$/out/production/COMP6421/Scanner/Parser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/COMP6421/Scanner/SymbolTableGenerator.class" afterPath="$PROJECT_DIR$/out/production/COMP6421/Scanner/SymbolTableGenerator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.log" afterPath="$PROJECT_DIR$/../.metadata/.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.core.prefs" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.core.prefs" />
@@ -1076,13 +1071,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.xml.core/system_catalog.xml" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.wst.xml.core/system_catalog.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.metadata/version.ini" afterPath="$PROJECT_DIR$/../.metadata/version.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParserOutput.txt" afterPath="$PROJECT_DIR$/ParserOutput.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/COMP6421/ParserOutput.txt" afterPath="$PROJECT_DIR$/out/production/COMP6421/ParserOutput.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Scanner/FirstNFollow.java" afterPath="$PROJECT_DIR$/src/Scanner/FirstNFollow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Scanner/Main.java" afterPath="$PROJECT_DIR$/src/Scanner/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Scanner/Parser.java" afterPath="$PROJECT_DIR$/src/Scanner/Parser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Scanner/SymbolTableGenerator.java" afterPath="$PROJECT_DIR$/src/Scanner/SymbolTableGenerator.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -1125,11 +1113,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Scanner/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+            <state relative-caret-position="585">
+              <caret line="39" column="23" lean-forward="false" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -1138,25 +1126,20 @@
       <file leaf-file-name="Parser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Scanner/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="164" column="8" lean-forward="false" selection-start-line="164" selection-start-column="8" selection-end-line="164" selection-end-column="8" />
-              <folding>
-                <element signature="e#6302#6303#0" expanded="true" />
-                <element signature="e#6335#6336#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="7470">
+              <caret line="503" column="17" lean-forward="false" selection-start-line="503" selection-start-column="17" selection-end-line="503" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SemanticRecords.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SemanticRecords.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Scanner/SemanticRecords.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="909">
+              <caret line="113" column="85" lean-forward="true" selection-start-line="113" selection-start-column="85" selection-end-line="113" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#235#236#0" expanded="true" />
-                <element signature="e#278#279#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1165,8 +1148,8 @@
       <file leaf-file-name="SymbolTableGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Scanner/SymbolTableGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="88" column="42" lean-forward="false" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
+            <state relative-caret-position="1215">
+              <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1194,14 +1177,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>isfuncbody</find>
-      <find>T17p</find>
-      <find>T17</find>
-      <find>Error</find>
-      <find>T16</find>
-      <find>99</find>
-      <find>&quot;, value at &quot;</find>
-      <find>, id at</find>
       <find>&quot;, id at &quot;</find>
       <find>T4p</find>
       <find>funcBod</find>
@@ -1224,6 +1199,14 @@
       <find>Dot</find>
       <find>parent na</find>
       <find>createSe</find>
+      <find>Old</find>
+      <find>Ol</find>
+      <find>Push</find>
+      <find>factor:</find>
+      <find>at ,</find>
+      <find>Error</find>
+      <find>Er</find>
+      <find>Erro</find>
     </findStrings>
     <replaceStrings>
       <replace>incorrect</replace>
@@ -1258,8 +1241,8 @@
         <option value="$PROJECT_DIR$/src/Scanner/SemanticRecord.java" />
         <option value="$PROJECT_DIR$/src/Scanner/FirstNFollow.java" />
         <option value="$PROJECT_DIR$/src/Scanner/Main.java" />
-        <option value="$PROJECT_DIR$/src/Scanner/SemanticRecords.java" />
         <option value="$PROJECT_DIR$/src/Scanner/Parser.java" />
+        <option value="$PROJECT_DIR$/src/Scanner/SemanticRecords.java" />
       </list>
     </option>
   </component>
@@ -1289,7 +1272,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1340,8 +1322,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1931,7 +1914,8 @@
       <workItem from="1491190680152" duration="14215000" />
       <workItem from="1491505217100" duration="8369000" />
       <workItem from="1491539472750" duration="23024000" />
-      <workItem from="1491709670994" duration="13000" />
+      <workItem from="1491709670994" duration="13845000" />
+      <workItem from="1491763849130" duration="242000" />
     </task>
     <servers />
   </component>
@@ -1968,7 +1952,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266297000" />
+    <option name="totallyTimeSpent" value="280371000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2055,10 +2039,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#6302#6303#0" expanded="true" />
-            <element signature="e#6335#6336#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2090,10 +2071,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15495">
           <caret line="1033" column="22" lean-forward="false" selection-start-line="1033" selection-start-column="22" selection-end-line="1033" selection-end-column="22" />
-          <folding>
-            <element signature="e#6302#6303#0" expanded="true" />
-            <element signature="e#6335#6336#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2142,10 +2120,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#6302#6303#0" expanded="true" />
-            <element signature="e#6335#6336#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2184,10 +2159,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#6302#6303#0" expanded="true" />
-            <element signature="e#6335#6336#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2319,14 +2291,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scanner/LexicalAnalyzer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="70" column="55" lean-forward="false" selection-start-line="70" selection-start-column="55" selection-end-line="70" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Test/ParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -2368,6 +2332,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner/LexicalAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="70" column="55" lean-forward="false" selection-start-line="70" selection-start-column="55" selection-end-line="70" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Scanner/FirstNFollow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -2376,42 +2348,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="23" lean-forward="false" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7470">
+          <caret line="503" column="17" lean-forward="false" selection-start-line="503" selection-start-column="17" selection-end-line="503" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Scanner/SymbolTableGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="88" column="42" lean-forward="false" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
+        <state relative-caret-position="1215">
+          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scanner/SemanticRecords.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="909">
+          <caret line="113" column="85" lean-forward="true" selection-start-line="113" selection-start-column="85" selection-end-line="113" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scanner/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="164" column="8" lean-forward="false" selection-start-line="164" selection-start-column="8" selection-end-line="164" selection-end-column="8" />
-          <folding>
-            <element signature="e#6302#6303#0" expanded="true" />
-            <element signature="e#6335#6336#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scanner/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>

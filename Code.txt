@@ -1,0 +1,110 @@
+Utility		res	2
+Global2randomize		res	2
+Utility2findMax		res	33
+			entry
+minValue		dw	0
+loan		dw	0
+maxValue		dw	0
+Utility		res	2
+Global2randomize		res	2
+Utility2findMax		res	33
+minValue		dw	0
+loan		dw	0
+maxValue		dw	0
+jobs		res	2
+utility     res 2
+class2Utility
+varA    dw 0
+function2Utility2findMax
+Utility2findMax2array      res 15
+Utility2findMax2maxValue        res 15
+Utility2findMax2idx     dw 0     
+Utility2findMax2decimal     res 2
+        lw r1,Utility2findMax2array(r0)
+        sw Utility2findMax2maxValue,r1
+        sub r1,r1,r1
+        addi r1,r1,17
+        sw Utility2findMax2idx(r0),r1
+ifbegin     lw r1,Utility2findMax2idx(r0)
+        clei r2,r1,5
+        bz r2,elsebegin
+        lw r1,Utility2findMax2idx(r0)
+        sub r2,r2,r2
+        addi r2,r2,1
+        add r3,r1,r2
+        sw Utility2findMax2idx(r0),r3
+        j ifend
+elsebegin
+ifend
+t3      dw 0
+        lw r1,Utility2findMax2idx(r0)
+        sw t3(r0),r1
+function2Global2randomize
+Global2randomize2debt       dw 0
+Global2randomize2value      dw 0
+Global2randomize2price      dw 0
+        lw r1,Global2randomize2value(r0)
+        sub r1,r1,r1
+        addi r1,r1,5
+        sub r2,r2,r2
+        addi r2,r2,3
+        add r3,r1,r2
+t4      dw 0
+        sw t5(r0),r3
+        sub r1,r1,r1
+        addi r1,r1,2
+        lw r2,t5(r0)
+        mul r3,r1,r2
+t5      dw 0
+        sw t6(r0),r3
+        sub r1,r1,r1
+        addi r1,r1,100
+        lw r2,t6(r0)
+        add r3,r1,r2
+        sw Global2randomize2value,r3
+        sub r1,r1,r1
+        addi r1,r1,0
+        sw Global2randomize2price(r0),r1        
+forbegin       lw r1,Global2randomize2price(r0)
+        clti r2,r1,3
+        bz r2,forend
+ifbegin     lw r1,Global2randomize2price(r0)
+        cgti r2,r1,0
+        bz r2,elsebegin
+        sub r1,r1,r1
+        addi r1,r1,10
+        sw Global2randomize2price(r0),r1
+        j ifend
+elsebegin
+ifend
+forend
+t6      dw 0
+        lw r1,Utility2findMax2idx(r0)
+        sw t6(r0),r1
+program
+        lw r1,loan(r0)
+        jl r15,function2Global2randomize
+        sw Global2randomize,r2
+        lw r1,t6(r0)
+        jr r15
+        jl r15,function2Utility2findMax
+        lw r1,t5(r0)
+        jr r15
+        getc r1
+        sw loan(r0),r1
+ifbegin     lw r1,minValue(r0)
+        ceqi r2,r1,10
+        bz r2,elsebegin
+        sub r1,r1,r1
+        addi r1,r1,5
+        sw minValue(r0),r1
+        j ifend
+elsebegin      lw r1,minValue(r0)
+        sub r2,r2,r2
+        addi r2,r2,10
+        add r3,r1,r2
+        sw minValue(r0),r3 
+ifend
+        lw r1,minValue(r0)
+        putc r1
+        hlt

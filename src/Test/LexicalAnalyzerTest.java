@@ -10,8 +10,8 @@ import static org.junit.Assert.assertEquals;
  * Created by Hao on 2017-01-29.
  */
 public class LexicalAnalyzerTest {
-
-    LexicalAnalyzer la = new LexicalAnalyzer();
+    String fileName = "file_correct.txt";
+    LexicalAnalyzer la = new LexicalAnalyzer(fileName);
 //    char[] chars = {'.','_','=','>','<',';',',','+','-','*','/','(',')','{','}','[',']','a','n','d',' ','t','h','e','n',
 //            ' ','i','f',' ','e','l','s','e',' ','f','o','r',' ','c','l','a','s','s',' ','o','r',' ','n','o','t',' ',
 //            'i','n','t',' ','i','n','t','e','g','e','r',' ','f','l','o','a','t',' ','g','e','t',' ','p','u','t',' ',

@@ -12,7 +12,8 @@ import static org.junit.Assert.assertEquals;
  * Created by Ethan on 2017-03-16.
  */
 public class SymbolTableGeneratorTest {
-    Parser parser = new Parser();
+    String fileName = "file_correct.txt";
+    Parser parser = new Parser(fileName);
 
     @Before
     public void Before(){

@@ -1,6 +1,7 @@
 package Scanner;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -17,6 +18,8 @@ public class SymbolTableGenerator {
 
     public SymbolTableGenerator() {
         try {
+            File f = new File("SymbolTable.txt");
+            f.delete();
             out = new PrintWriter(new BufferedWriter(new FileWriter("SymbolTable.txt", true)));
         }
         catch (Exception e) {
