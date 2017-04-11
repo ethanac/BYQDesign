@@ -1,9 +1,9 @@
 Utility		res	2
-Global2randomize		res	2
+Global2randomize		res	4
 Utility2findMax		res	33
 			entry
 minValue		dw	0
-loan		dw	0
+loan		res	2
 maxValue		dw	0
 Utility		res	2
 Global2randomize		res	2

@@ -1,0 +1,27 @@
+-------------------
+The table Utility and its properties are showed below:
+varA: variable int NA 
+findMax: function int:int[3][5] Utility.findMax 
+-------------------
+The table Global.randomize and its properties are showed below:
+price: variable int NA 
+debt: variable int, NA 
+value: variable int NA 
+key: variable float NA 
+-------------------
+The table Utility.findMax and its properties are showed below:
+array: variable int[3][5], NA 
+maxValue: variable int[3][5] NA 
+idx: variable int NA 
+decimal: variable float NA 
+-------------------
+The table program and its properties are showed below:
+minValue: variable int NA 
+loan: variable float NA 
+maxValue: variable int NA 
+utility: variable Utility NA 
+-------------------
+The table Global and its properties are showed below:
+Utility: class NA Utility 
+program: function NA program 
+randomize: function int:int Global.randomize 

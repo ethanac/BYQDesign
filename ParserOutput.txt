@@ -55,32 +55,38 @@ type-> int
 arraySize*-> #
 float:float:8
 varDecl-> type id arraySize*;
-id:decimal:8
+id:idx:8
 type-> float
 ;:;:8
 arraySize*-> #
-id:maxValue:9
+float:float:9
 varDecl-> type id arraySize*;
-=:=:9
-id:array:9
-[:[:9
-integer:3:9
-]:]:9
-factor-> number
-term*-> #
-term-> factor term*
-arithExpr*-> #
-arithExpr-> term arithExpr*
-[:[:9
-indice-> [arithExpr]
-integer:5:9
-]:]:9
-factor-> number
-term*-> #
-term-> factor term*
-arithExpr*-> #
-arithExpr-> term arithExpr*
+id:decimal:9
+type-> float
 ;:;:9
+arraySize*-> #
+id:maxValue:10
+varDecl-> type id arraySize*;
+=:=:10
+id:array:10
+[:[:10
+integer:3:10
+]:]:10
+factor-> number
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+[:[:10
+indice-> [arithExpr]
+integer:5:10
+]:]:10
+factor-> number
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+;:;:10
 indice-> [arithExpr]
 indice*-> #
 indice*-> indice indice*
@@ -96,16 +102,16 @@ arithExpr*-> #
 arithExpr-> term arithExpr*
 expr-> arithExpr
 assignStat-> variable=expr
-id:idx:10
+id:idx:11
 statement-> assignStat;
-=:=:10
+=:=:11
 indice*-> #
 idnest-> idnest* id indice*
 idnest*-> #
 idnest*-> idnest idnest*
 variable-> idnest* id indice*
-integer:17:10
-;:;:10
+integer:17:11
+;:;:11
 factor-> number
 term*-> #
 term-> factor term*
@@ -113,11 +119,11 @@ arithExpr*-> #
 arithExpr-> term arithExpr*
 expr-> arithExpr
 assignStat-> variable=expr
-if:if:11
+if:if:12
 statement-> assignStat;
-(:(:11
-id:idx:11
-<=:<=:11
+(:(:12
+id:idx:12
+<=:<=:12
 indice*-> #
 idnest-> idnest* id indice*
 idnest*-> #
@@ -128,25 +134,25 @@ term*-> #
 term-> factor term*
 arithExpr*-> #
 arithExpr-> term arithExpr*
-integer:5:11
+integer:5:12
 relOp-> == | <= | >= | < | > | <>
-):):11
+):):12
 factor-> number
 term*-> #
 term-> factor term*
 arithExpr*-> #
 arithExpr-> term arithExpr*
-then:then:11
-{:{:11
-id:idx:12
-=:=:12
+then:then:12
+{:{:12
+id:idx:13
+=:=:13
 indice*-> #
 idnest-> idnest* id indice*
 idnest*-> #
 idnest*-> idnest idnest*
 variable-> idnest* id indice*
-id:idx:12
-+:+:12
+id:idx:13
++:+:13
 indice*-> #
 idnest-> idnest* id indice*
 idnest*-> #
@@ -155,8 +161,8 @@ variable-> idnest* id indice*
 factor-> variable
 term*-> #
 term-> factor term*
-integer:1:12
-;:;:12
+integer:1:13
+;:;:13
 factor-> number
 term*-> #
 term-> factor term*
@@ -165,22 +171,22 @@ arithExpr*-> +term arithExpr*
 arithExpr-> term arithExpr*
 expr-> arithExpr
 assignStat-> variable=expr
-}:}:13
+}:}:14
 statement-> assignStat;
 statement*-> #
 statement*-> statement statement*
-else:else:13
+else:else:14
 statBlock-> {statement*}
-{:{:13
-}:}:13
+{:{:14
+}:}:14
 statement*-> #
-;:;:13
+;:;:14
 statBlock-> {statement*}
-return:return:14
+return:return:15
 statement-> if(expr)then statBlock else statBlock;
-(:(:14
-id:idx:14
-):):14
+(:(:15
+id:idx:15
+):):15
 indice*-> #
 idnest-> idnest* id indice*
 idnest*-> #
@@ -192,21 +198,21 @@ term-> factor term*
 arithExpr*-> #
 arithExpr-> term arithExpr*
 expr-> arithExpr
-;:;:14
-}:}:15
+;:;:15
+}:}:16
 statement-> return(expr);
 statement*-> #
 statement*-> statement statement*
 statement*-> statement statement*
 statement*-> statement statement*
 statement*-> statement statement*
-;:;:15
+;:;:16
 funcBody-> {varDecl* statement*}
-}:}:16
+}:}:17
 funcDef-> funcHead funcBody
 funcDef*-> #
 funcDef*-> funcDef funcDef*
-;:;:16
+;:;:17
 program:program:19
 classDecl-> class id {varDecl*funcDef*};
 classDecl-> #
@@ -286,22 +292,22 @@ arithExpr*-> #
 arithExpr-> term arithExpr*
 expr-> arithExpr
 assignStat-> variable=expr
-get:get:31
+get:get:32
 statement-> assignStat;
-(:(:31
-id:loan:31
-):):31
+(:(:32
+id:loan:32
+):):32
 indice*-> #
 idnest-> idnest* id indice*
 idnest*-> #
 idnest*-> idnest idnest*
 variable-> idnest* id indice*
-;:;:31
-if:if:32
+;:;:32
+if:if:33
 statement-> get(T3);
-(:(:32
-id:minValue:32
-==:==:32
+(:(:33
+id:minValue:33
+==:==:33
 indice*-> #
 idnest-> idnest* id indice*
 idnest*-> #
@@ -312,25 +318,25 @@ term*-> #
 term-> factor term*
 arithExpr*-> #
 arithExpr-> term arithExpr*
-integer:10:32
+integer:10:33
 relOp-> == | <= | >= | < | > | <>
-):):32
+):):33
 factor-> number
 term*-> #
 term-> factor term*
 arithExpr*-> #
 arithExpr-> term arithExpr*
-then:then:32
-{:{:32
-id:minValue:33
-=:=:33
+then:then:33
+{:{:33
+id:minValue:34
+=:=:34
 indice*-> #
 idnest-> idnest* id indice*
 idnest*-> #
 idnest*-> idnest idnest*
 variable-> idnest* id indice*
-integer:5:33
-;:;:33
+integer:5:34
+;:;:34
 factor-> number
 term*-> #
 term-> factor term*
@@ -338,22 +344,22 @@ arithExpr*-> #
 arithExpr-> term arithExpr*
 expr-> arithExpr
 assignStat-> variable=expr
-}:}:34
+}:}:35
 statement-> assignStat;
 statement*-> #
 statement*-> statement statement*
-else:else:34
+else:else:35
 statBlock-> {statement*}
-{:{:34
-id:minValue:35
-=:=:35
+{:{:35
+id:minValue:36
+=:=:36
 indice*-> #
 idnest-> idnest* id indice*
 idnest*-> #
 idnest*-> idnest idnest*
 variable-> idnest* id indice*
-id:minValue:35
-+:+:35
+id:minValue:36
++:+:36
 indice*-> #
 idnest-> idnest* id indice*
 idnest*-> #
@@ -362,8 +368,8 @@ variable-> idnest* id indice*
 factor-> variable
 term*-> #
 term-> factor term*
-integer:10:35
-;:;:35
+integer:10:36
+;:;:36
 factor-> number
 term*-> #
 term-> factor term*
@@ -372,17 +378,17 @@ arithExpr*-> +term arithExpr*
 arithExpr-> term arithExpr*
 expr-> arithExpr
 assignStat-> variable=expr
-}:}:36
+}:}:37
 statement-> assignStat;
 statement*-> #
 statement*-> statement statement*
-;:;:36
+;:;:37
 statBlock-> {statement*}
-put:put:37
+put:put:38
 statement-> if(expr)then statBlock else statBlock;
-(:(:37
-id:minValue:37
-):):37
+(:(:38
+id:minValue:38
+):):38
 indice*-> #
 idnest-> idnest* id indice*
 idnest*-> #
@@ -394,8 +400,8 @@ term-> factor term*
 arithExpr*-> #
 arithExpr-> term arithExpr*
 expr-> arithExpr
-;:;:37
-}:}:38
+;:;:38
+}:}:39
 statement-> put(expr);
 statement*-> #
 statement*-> statement statement*
@@ -403,74 +409,35 @@ statement*-> statement statement*
 statement*-> statement statement*
 statement*-> statement statement*
 statement*-> statement statement*
-;:;:38
-int:int:40
-id:randomize:40
+;:;:39
+int:int:41
+id:randomize:41
 type-> int
-(:(:40
-int:int:40
-id:debt:40
+(:(:41
+int:int:41
+id:debt:41
 type-> int
-):):40
+):):41
 arraySize*-> #
 fParamsTail*-> #
 fParams-> type id arraySize* fParamsTail
-{:{:41
+{:{:42
 funcHead-> type id(fParams)
-int:int:42
-id:value:42
-type-> int
-;:;:42
-arraySize*-> #
 int:int:43
-varDecl-> type id arraySize*;
-id:price:43
+id:value:43
 type-> int
 ;:;:43
 arraySize*-> #
-id:value:44
+int:int:44
 varDecl-> type id arraySize*;
-=:=:44
-integer:100:44
-+:+:44
-factor-> number
-term*-> #
-term-> factor term*
-integer:2:44
-*:*:44
-factor-> number
-(:(:44
-integer:5:44
-+:+:44
-factor-> number
-term*-> #
-term-> factor term*
-integer:3:44
-):):44
-factor-> number
-term*-> #
-term-> factor term*
-arithExpr*-> #
-arithExpr*-> +term arithExpr*
-arithExpr-> term arithExpr*
-;:;:44
-factor-> (arithExpr)
-term*-> #
-term*-> *factor term*
-term-> factor term*
-arithExpr*-> #
-arithExpr*-> +term arithExpr*
-arithExpr-> term arithExpr*
-expr-> arithExpr
-assignStat-> variable=expr
-for:for:45
-statement-> assignStat;
-(:(:45
-int:int:45
-id:price:45
+id:price:44
 type-> int
+;:;:44
+arraySize*-> #
+id:value:45
+varDecl-> type id arraySize*;
 =:=:45
-integer:0:45
+integer:100:45
 ;:;:45
 factor-> number
 term*-> #
@@ -478,8 +445,24 @@ term-> factor term*
 arithExpr*-> #
 arithExpr-> term arithExpr*
 expr-> arithExpr
-id:price:45
-<:<:45
+assignStat-> variable=expr
+for:for:46
+statement-> assignStat;
+(:(:46
+int:int:46
+id:price:46
+type-> int
+=:=:46
+integer:0:46
+;:;:46
+factor-> number
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+expr-> arithExpr
+id:price:46
+<:<:46
 indice*-> #
 idnest-> idnest* id indice*
 idnest*-> #
@@ -490,24 +473,24 @@ term*-> #
 term-> factor term*
 arithExpr*-> #
 arithExpr-> term arithExpr*
-integer:3:45
+integer:3:46
 relOp-> == | <= | >= | < | > | <>
-;:;:45
+;:;:46
 factor-> number
 term*-> #
 term-> factor term*
 arithExpr*-> #
 arithExpr-> term arithExpr*
 relExpr-> arithExpr relOp arithExpr
-id:price:45
-=:=:45
+id:price:46
+=:=:46
 indice*-> #
 idnest-> idnest* id indice*
 idnest*-> #
 idnest*-> idnest idnest*
 variable-> idnest* id indice*
-id:price:45
-+:+:45
+id:price:46
++:+:46
 indice*-> #
 idnest-> idnest* id indice*
 idnest*-> #
@@ -516,8 +499,8 @@ variable-> idnest* id indice*
 factor-> variable
 term*-> #
 term-> factor term*
-integer:2:45
-):):45
+integer:2:46
+):):46
 factor-> number
 term*-> #
 term-> factor term*
@@ -526,11 +509,11 @@ arithExpr*-> +term arithExpr*
 arithExpr-> term arithExpr*
 expr-> arithExpr
 assignStat-> variable=expr
-{:{:46
-if:if:47
-(:(:47
-id:price:47
->:>:47
+{:{:47
+if:if:48
+(:(:48
+id:price:48
+>:>:48
 indice*-> #
 idnest-> idnest* id indice*
 idnest*-> #
@@ -541,25 +524,25 @@ term*-> #
 term-> factor term*
 arithExpr*-> #
 arithExpr-> term arithExpr*
-integer:0:47
+integer:0:48
 relOp-> == | <= | >= | < | > | <>
-):):47
+):):48
 factor-> number
 term*-> #
 term-> factor term*
 arithExpr*-> #
 arithExpr-> term arithExpr*
-then:then:47
-{:{:47
-id:price:48
-=:=:48
+then:then:48
+{:{:48
+id:price:49
+=:=:49
 indice*-> #
 idnest-> idnest* id indice*
 idnest*-> #
 idnest*-> idnest idnest*
 variable-> idnest* id indice*
-integer:10:48
-;:;:48
+integer:10:49
+;:;:49
 factor-> number
 term*-> #
 term-> factor term*
@@ -567,28 +550,28 @@ arithExpr*-> #
 arithExpr-> term arithExpr*
 expr-> arithExpr
 assignStat-> variable=expr
-}:}:49
+}:}:50
 statement-> assignStat;
 statement*-> #
 statement*-> statement statement*
-else:else:49
+else:else:50
 statBlock-> {statement*}
-{:{:49
-}:}:49
-statement*-> #
-;:;:49
-statBlock-> {statement*}
+{:{:50
 }:}:50
+statement*-> #
+;:;:50
+statBlock-> {statement*}
+}:}:51
 statement-> if(expr)then statBlock else statBlock;
 statement*-> #
 statement*-> statement statement*
-;:;:50
+;:;:51
 statBlock-> {statement*}
-return:return:51
+return:return:52
 statement-> for(type id=expr;relExpr;assignStat)statBlock;
-(:(:51
-id:value:51
-):):51
+(:(:52
+id:value:52
+):):52
 indice*-> #
 idnest-> idnest* id indice*
 idnest*-> #
@@ -600,14 +583,14 @@ term-> factor term*
 arithExpr*-> #
 arithExpr-> term arithExpr*
 expr-> arithExpr
-;:;:51
-}:}:52
+;:;:52
+}:}:53
 statement-> return(expr);
 statement*-> #
 statement*-> statement statement*
 statement*-> statement statement*
 statement*-> statement statement*
-;:;:52
+;:;:53
 funcBody-> {varDecl* statement*}
 $
 funcDef-> funcHead funcBody

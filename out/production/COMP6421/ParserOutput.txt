@@ -1,0 +1,632 @@
+class:class:1
+id:Utility:1
+{:{:2
+int:int:3
+id:varA:3
+type-> int
+;:;:3
+arraySize*-> #
+int:int:4
+varDecl-> type id arraySize*;
+id:findMax:4
+type-> int
+(:(:4
+varDecl*-> varDecl varDecl*
+varDecl*-> varDecl varDecl*
+int:int:4
+id:array:4
+type-> int
+[:[:4
+integer:3:4
+]:]:4
+[:[:4
+arraySize-> [ integer ]
+integer:5:4
+]:]:4
+):):4
+arraySize-> [ integer ]
+arraySize*-> #
+arraySize*-> arraySize arraySize*
+arraySize*-> arraySize arraySize*
+fParamsTail*-> #
+fParams-> type id arraySize* fParamsTail
+{:{:5
+funcHead-> type id(fParams)
+int:int:6
+id:maxValue:6
+type-> int
+[:[:6
+integer:3:6
+]:]:6
+[:[:6
+arraySize-> [ integer ]
+integer:5:6
+]:]:6
+;:;:6
+arraySize-> [ integer ]
+arraySize*-> #
+arraySize*-> arraySize arraySize*
+arraySize*-> arraySize arraySize*
+int:int:7
+varDecl-> type id arraySize*;
+id:idx:7
+type-> int
+;:;:7
+arraySize*-> #
+float:float:8
+varDecl-> type id arraySize*;
+id:idx:8
+type-> float
+;:;:8
+arraySize*-> #
+float:float:9
+varDecl-> type id arraySize*;
+id:decimal:9
+type-> float
+;:;:9
+arraySize*-> #
+id:maxValue:10
+varDecl-> type id arraySize*;
+=:=:10
+id:array:10
+[:[:10
+integer:3:10
+]:]:10
+factor-> number
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+[:[:10
+indice-> [arithExpr]
+integer:5:10
+]:]:10
+factor-> number
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+;:;:10
+indice-> [arithExpr]
+indice*-> #
+indice*-> indice indice*
+indice*-> indice indice*
+idnest-> idnest* id indice*
+idnest*-> #
+idnest*-> idnest idnest*
+variable-> idnest* id indice*
+factor-> variable
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+expr-> arithExpr
+assignStat-> variable=expr
+id:idx:11
+statement-> assignStat;
+=:=:11
+indice*-> #
+idnest-> idnest* id indice*
+idnest*-> #
+idnest*-> idnest idnest*
+variable-> idnest* id indice*
+integer:17:11
+;:;:11
+factor-> number
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+expr-> arithExpr
+assignStat-> variable=expr
+if:if:12
+statement-> assignStat;
+(:(:12
+id:idx:12
+<=:<=:12
+indice*-> #
+idnest-> idnest* id indice*
+idnest*-> #
+idnest*-> idnest idnest*
+variable-> idnest* id indice*
+factor-> variable
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+integer:5:12
+relOp-> == | <= | >= | < | > | <>
+):):12
+factor-> number
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+then:then:12
+{:{:12
+id:idx:13
+=:=:13
+indice*-> #
+idnest-> idnest* id indice*
+idnest*-> #
+idnest*-> idnest idnest*
+variable-> idnest* id indice*
+id:idx:13
++:+:13
+indice*-> #
+idnest-> idnest* id indice*
+idnest*-> #
+idnest*-> idnest idnest*
+variable-> idnest* id indice*
+factor-> variable
+term*-> #
+term-> factor term*
+integer:1:13
+;:;:13
+factor-> number
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr*-> +term arithExpr*
+arithExpr-> term arithExpr*
+expr-> arithExpr
+assignStat-> variable=expr
+}:}:14
+statement-> assignStat;
+statement*-> #
+statement*-> statement statement*
+else:else:14
+statBlock-> {statement*}
+{:{:14
+}:}:14
+statement*-> #
+;:;:14
+statBlock-> {statement*}
+return:return:15
+statement-> if(expr)then statBlock else statBlock;
+(:(:15
+id:idx:15
+):):15
+indice*-> #
+idnest-> idnest* id indice*
+idnest*-> #
+idnest*-> idnest idnest*
+variable-> idnest* id indice*
+factor-> variable
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+expr-> arithExpr
+;:;:15
+}:}:16
+statement-> return(expr);
+statement*-> #
+statement*-> statement statement*
+statement*-> statement statement*
+statement*-> statement statement*
+statement*-> statement statement*
+;:;:16
+funcBody-> {varDecl* statement*}
+}:}:17
+funcDef-> funcHead funcBody
+funcDef*-> #
+funcDef*-> funcDef funcDef*
+;:;:17
+program:program:19
+classDecl-> class id {varDecl*funcDef*};
+classDecl-> #
+classDecl*-> classDecl classDecl*
+{:{:19
+int:int:20
+id:maxValue:20
+type-> int
+;:;:20
+arraySize*-> #
+int:int:21
+varDecl-> type id arraySize*;
+id:minValue:21
+type-> int
+;:;:21
+arraySize*-> #
+id:Utility:22
+varDecl-> type id arraySize*;
+id:utility:22
+;:;:22
+arraySize*-> #
+float:float:23
+varDecl-> type id arraySize*;
+id:loan:23
+type-> float
+;:;:23
+arraySize*-> #
+id:minValue:29
+varDecl-> type id arraySize*;
+=:=:29
+id:randomize:29
+(:(:29
+id:loan:29
+):):29
+indice*-> #
+idnest-> idnest* id indice*
+idnest*-> #
+idnest*-> idnest idnest*
+variable-> idnest* id indice*
+factor-> variable
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+expr-> arithExpr
+aParamsTail*-> #
+aParams-> expr aParamsTail*
+;:;:29
+factor-> idnest* id(aParams)
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+expr-> arithExpr
+assignStat-> variable=expr
+id:maxValue:30
+statement-> assignStat;
+=:=:30
+indice*-> #
+idnest-> idnest* id indice*
+idnest*-> #
+idnest*-> idnest idnest*
+variable-> idnest* id indice*
+id:utility:30
+.:.:30
+indice*-> #
+id:findMax:30
+idnest-> id indice* .
+(:(:30
+):):30
+aParams-> #
+;:;:30
+factor-> idnest* id(aParams)
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+expr-> arithExpr
+assignStat-> variable=expr
+id:bike:31
+statement-> assignStat;
+=:=:31
+indice*-> #
+idnest-> idnest* id indice*
+idnest*-> #
+idnest*-> idnest idnest*
+variable-> idnest* id indice*
+id:utility:31
+.:.:31
+indice*-> #
+id:work:31
+idnest-> id indice* .
+(:(:31
+):):31
+aParams-> #
+;:;:31
+factor-> idnest* id(aParams)
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+expr-> arithExpr
+assignStat-> variable=expr
+get:get:32
+statement-> assignStat;
+(:(:32
+id:loan:32
+):):32
+indice*-> #
+idnest-> idnest* id indice*
+idnest*-> #
+idnest*-> idnest idnest*
+variable-> idnest* id indice*
+;:;:32
+if:if:33
+statement-> get(T3);
+(:(:33
+id:minValue:33
+==:==:33
+indice*-> #
+idnest-> idnest* id indice*
+idnest*-> #
+idnest*-> idnest idnest*
+variable-> idnest* id indice*
+factor-> variable
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+integer:10:33
+relOp-> == | <= | >= | < | > | <>
+):):33
+factor-> number
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+then:then:33
+{:{:33
+id:minValue:34
+=:=:34
+indice*-> #
+idnest-> idnest* id indice*
+idnest*-> #
+idnest*-> idnest idnest*
+variable-> idnest* id indice*
+integer:5:34
+;:;:34
+factor-> number
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+expr-> arithExpr
+assignStat-> variable=expr
+}:}:35
+statement-> assignStat;
+statement*-> #
+statement*-> statement statement*
+else:else:35
+statBlock-> {statement*}
+{:{:35
+id:minValue:36
+=:=:36
+indice*-> #
+idnest-> idnest* id indice*
+idnest*-> #
+idnest*-> idnest idnest*
+variable-> idnest* id indice*
+id:minValue:36
++:+:36
+indice*-> #
+idnest-> idnest* id indice*
+idnest*-> #
+idnest*-> idnest idnest*
+variable-> idnest* id indice*
+factor-> variable
+term*-> #
+term-> factor term*
+integer:10:36
+;:;:36
+factor-> number
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr*-> +term arithExpr*
+arithExpr-> term arithExpr*
+expr-> arithExpr
+assignStat-> variable=expr
+}:}:37
+statement-> assignStat;
+statement*-> #
+statement*-> statement statement*
+;:;:37
+statBlock-> {statement*}
+put:put:38
+statement-> if(expr)then statBlock else statBlock;
+(:(:38
+id:minValue:38
+):):38
+indice*-> #
+idnest-> idnest* id indice*
+idnest*-> #
+idnest*-> idnest idnest*
+variable-> idnest* id indice*
+factor-> variable
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+expr-> arithExpr
+;:;:38
+}:}:39
+statement-> put(expr);
+statement*-> #
+statement*-> statement statement*
+statement*-> statement statement*
+statement*-> statement statement*
+statement*-> statement statement*
+statement*-> statement statement*
+statement*-> statement statement*
+;:;:39
+int:int:41
+id:randomize:41
+type-> int
+(:(:41
+int:int:41
+id:debt:41
+type-> int
+):):41
+arraySize*-> #
+fParamsTail*-> #
+fParams-> type id arraySize* fParamsTail
+{:{:42
+funcHead-> type id(fParams)
+int:int:43
+id:value:43
+type-> int
+;:;:43
+arraySize*-> #
+int:int:44
+varDecl-> type id arraySize*;
+id:price:44
+type-> int
+;:;:44
+arraySize*-> #
+float:float:45
+varDecl-> type id arraySize*;
+id:key:45
+type-> float
+;:;:45
+arraySize*-> #
+id:value:46
+varDecl-> type id arraySize*;
+=:=:46
+integer:1:46
+;:;:46
+factor-> number
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+expr-> arithExpr
+assignStat-> variable=expr
+for:for:47
+statement-> assignStat;
+(:(:47
+int:int:47
+id:price:47
+type-> int
+=:=:47
+integer:0:47
+;:;:47
+factor-> number
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+expr-> arithExpr
+id:price:47
+<:<:47
+indice*-> #
+idnest-> idnest* id indice*
+idnest*-> #
+idnest*-> idnest idnest*
+variable-> idnest* id indice*
+factor-> variable
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+integer:3:47
+relOp-> == | <= | >= | < | > | <>
+;:;:47
+factor-> number
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+relExpr-> arithExpr relOp arithExpr
+id:price:47
+=:=:47
+indice*-> #
+idnest-> idnest* id indice*
+idnest*-> #
+idnest*-> idnest idnest*
+variable-> idnest* id indice*
+id:price:47
++:+:47
+indice*-> #
+idnest-> idnest* id indice*
+idnest*-> #
+idnest*-> idnest idnest*
+variable-> idnest* id indice*
+factor-> variable
+term*-> #
+term-> factor term*
+integer:2:47
+):):47
+factor-> number
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr*-> +term arithExpr*
+arithExpr-> term arithExpr*
+expr-> arithExpr
+assignStat-> variable=expr
+{:{:48
+if:if:49
+(:(:49
+id:price:49
+>:>:49
+indice*-> #
+idnest-> idnest* id indice*
+idnest*-> #
+idnest*-> idnest idnest*
+variable-> idnest* id indice*
+factor-> variable
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+integer:0:49
+relOp-> == | <= | >= | < | > | <>
+):):49
+factor-> number
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+then:then:49
+{:{:49
+id:price:50
+=:=:50
+indice*-> #
+idnest-> idnest* id indice*
+idnest*-> #
+idnest*-> idnest idnest*
+variable-> idnest* id indice*
+integer:10:50
+;:;:50
+factor-> number
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+expr-> arithExpr
+assignStat-> variable=expr
+}:}:51
+statement-> assignStat;
+statement*-> #
+statement*-> statement statement*
+else:else:51
+statBlock-> {statement*}
+{:{:51
+}:}:51
+statement*-> #
+;:;:51
+statBlock-> {statement*}
+}:}:52
+statement-> if(expr)then statBlock else statBlock;
+statement*-> #
+statement*-> statement statement*
+;:;:52
+statBlock-> {statement*}
+return:return:53
+statement-> for(type id=expr;relExpr;assignStat)statBlock;
+(:(:53
+id:key:53
+):):53
+indice*-> #
+idnest-> idnest* id indice*
+idnest*-> #
+idnest*-> idnest idnest*
+variable-> idnest* id indice*
+factor-> variable
+term*-> #
+term-> factor term*
+arithExpr*-> #
+arithExpr-> term arithExpr*
+expr-> arithExpr
+;:;:53
+}:}:54
+statement-> return(expr);
+statement*-> #
+statement*-> statement statement*
+statement*-> statement statement*
+statement*-> statement statement*
+;:;:54
+funcBody-> {varDecl* statement*}
+$
+funcDef-> funcHead funcBody
+funcDef*-> #
+funcDef*-> funcDef funcDef*
+progBody-> program{varDecl*statement*};funcDef*
+E-> classDecl* progBody
+$

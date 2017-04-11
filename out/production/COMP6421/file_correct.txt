@@ -5,6 +5,7 @@ class Utility
     {
         int maxValue[3][5];
         int idx;
+        float idx;
         float decimal;
         maxValue = array[3][5];
         idx = 17;
@@ -14,7 +15,6 @@ class Utility
         return (idx);
     };
 };
-
 // program part
 program {
     int maxValue;
@@ -28,6 +28,7 @@ program {
     */
     minValue = randomize(loan);
     maxValue = utility.findMax();
+
     get(loan);
     if(minValue == 10) then {
         minValue = 5;
@@ -41,7 +42,7 @@ int randomize(int debt)
 {
     int value;
     int price;
-    value = 100 + 2 * (5 + 3);
+    value = 100;
     for(int price = 0; price < 3; price = price + 2)
     {
         if(price > 0) then {
