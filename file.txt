@@ -34,7 +34,9 @@ program {
     undefined2 = utility.findMin();
     get(loan);
     if(minValue == 10) then {
-        minValue = 5;
+        if(price > 0) then {
+            price = 10;
+        }else{};
     }else{
         minValue = minValue + 10;
     };
@@ -45,7 +47,7 @@ int randomize(int debt)
 {
     int value;
     int price;
-    value = 100 + 2 * (5 + 3)>0 and 1 + a.a[a[a+1]][2].a;
+    value = 100 + 2 * (5 + 3)
     for(int price = 0; price < 3; price = price + 2)
     {
         if(price > 0) then {
